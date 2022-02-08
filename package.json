@@ -1,0 +1,22 @@
+{
+  "name": "opencypher-antlr",
+  "version": "0.1.0",
+  "description": "ANTLR processing of Cypher",
+  "license": "ISC",
+  "private": true,
+  "author": "Jake Boone",
+  "main": "dist/index.js",
+  "dependencies": {
+    "antlr4ts": "^0.5.0-alpha.4"
+  },
+  "devDependencies": {
+    "antlr4ts-cli": "^0.5.0-alpha.4",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist > out/results.txt",
+    "reset": "yarn build && yarn start",
+    "gen-parser": "antlr4ts -visitor src/antlr/Cypher.g4 -o ."
+  }
+}
