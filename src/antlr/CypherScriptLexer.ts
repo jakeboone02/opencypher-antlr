@@ -1,4 +1,4 @@
-// Generated from src/antlr/Cypher.g4 by ANTLR 4.9.0-SNAPSHOT
+// Generated from CypherScript.g4 by ANTLR 4.9.0-SNAPSHOT
 
 
 import { ATN } from "antlr4ts/atn/ATN";
@@ -15,7 +15,7 @@ import { VocabularyImpl } from "antlr4ts/VocabularyImpl";
 import * as Utils from "antlr4ts/misc/Utils";
 
 
-export class CypherLexer extends Lexer {
+export class CypherScriptLexer extends Lexer {
 	public static readonly T__0 = 1;
 	public static readonly T__1 = 2;
 	public static readonly T__2 = 3;
@@ -214,35 +214,35 @@ export class CypherLexer extends Lexer {
 		"OF", "ADD", "DROP", "FILTER", "EXTRACT", "UnescapedSymbolicName", "IdentifierStart", 
 		"IdentifierPart", "EscapedSymbolicName", "SP", "WHITESPACE", "Comment",
 	];
-	public static readonly VOCABULARY: Vocabulary = new VocabularyImpl(CypherLexer._LITERAL_NAMES, CypherLexer._SYMBOLIC_NAMES, []);
+	public static readonly VOCABULARY: Vocabulary = new VocabularyImpl(CypherScriptLexer._LITERAL_NAMES, CypherScriptLexer._SYMBOLIC_NAMES, []);
 
 	// @Override
 	// @NotNull
 	public get vocabulary(): Vocabulary {
-		return CypherLexer.VOCABULARY;
+		return CypherScriptLexer.VOCABULARY;
 	}
 	// tslint:enable:no-trailing-whitespace
 
 
 	constructor(input: CharStream) {
 		super(input);
-		this._interp = new LexerATNSimulator(CypherLexer._ATN, this);
+		this._interp = new LexerATNSimulator(CypherScriptLexer._ATN, this);
 	}
 
 	// @Override
-	public get grammarFileName(): string { return "Cypher.g4"; }
+	public get grammarFileName(): string { return "CypherScript.g4"; }
 
 	// @Override
-	public get ruleNames(): string[] { return CypherLexer.ruleNames; }
+	public get ruleNames(): string[] { return CypherScriptLexer.ruleNames; }
 
 	// @Override
-	public get serializedATN(): string { return CypherLexer._serializedATN; }
+	public get serializedATN(): string { return CypherScriptLexer._serializedATN; }
 
 	// @Override
-	public get channelNames(): string[] { return CypherLexer.channelNames; }
+	public get channelNames(): string[] { return CypherScriptLexer.channelNames; }
 
 	// @Override
-	public get modeNames(): string[] { return CypherLexer.modeNames; }
+	public get modeNames(): string[] { return CypherScriptLexer.modeNames; }
 
 	private static readonly _serializedATNSegments: number = 3;
 	private static readonly _serializedATNSegment0: string =
@@ -1087,19 +1087,19 @@ export class CypherLexer extends Lexer {
 		"\u0379\u037F\u0385\u038A\u0398\u03A0\u03A2\u03AD\u03B1\u03B5\u03B7\x02";
 	public static readonly _serializedATN: string = Utils.join(
 		[
-			CypherLexer._serializedATNSegment0,
-			CypherLexer._serializedATNSegment1,
-			CypherLexer._serializedATNSegment2,
+			CypherScriptLexer._serializedATNSegment0,
+			CypherScriptLexer._serializedATNSegment1,
+			CypherScriptLexer._serializedATNSegment2,
 		],
 		"",
 	);
 	public static __ATN: ATN;
 	public static get _ATN(): ATN {
-		if (!CypherLexer.__ATN) {
-			CypherLexer.__ATN = new ATNDeserializer().deserialize(Utils.toCharArray(CypherLexer._serializedATN));
+		if (!CypherScriptLexer.__ATN) {
+			CypherScriptLexer.__ATN = new ATNDeserializer().deserialize(Utils.toCharArray(CypherScriptLexer._serializedATN));
 		}
 
-		return CypherLexer.__ATN;
+		return CypherScriptLexer.__ATN;
 	}
 
 }

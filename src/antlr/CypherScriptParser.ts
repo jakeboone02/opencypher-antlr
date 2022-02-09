@@ -1,4 +1,4 @@
-// Generated from src/antlr/Cypher.g4 by ANTLR 4.9.0-SNAPSHOT
+// Generated from CypherScript.g4 by ANTLR 4.9.0-SNAPSHOT
 
 
 import { ATN } from "antlr4ts/atn/ATN";
@@ -23,11 +23,11 @@ import { VocabularyImpl } from "antlr4ts/VocabularyImpl";
 
 import * as Utils from "antlr4ts/misc/Utils";
 
-import { CypherListener } from "./CypherListener";
-import { CypherVisitor } from "./CypherVisitor";
+import { CypherScriptListener } from "./CypherScriptListener";
+import { CypherScriptVisitor } from "./CypherScriptVisitor";
 
 
-export class CypherParser extends Parser {
+export class CypherScriptParser extends Parser {
 	public static readonly T__0 = 1;
 	public static readonly T__1 = 2;
 	public static readonly T__2 = 3;
@@ -321,23 +321,23 @@ export class CypherParser extends Parser {
 		"OF", "ADD", "DROP", "FILTER", "EXTRACT", "UnescapedSymbolicName", "IdentifierStart", 
 		"IdentifierPart", "EscapedSymbolicName", "SP", "WHITESPACE", "Comment",
 	];
-	public static readonly VOCABULARY: Vocabulary = new VocabularyImpl(CypherParser._LITERAL_NAMES, CypherParser._SYMBOLIC_NAMES, []);
+	public static readonly VOCABULARY: Vocabulary = new VocabularyImpl(CypherScriptParser._LITERAL_NAMES, CypherScriptParser._SYMBOLIC_NAMES, []);
 
 	// @Override
 	// @NotNull
 	public get vocabulary(): Vocabulary {
-		return CypherParser.VOCABULARY;
+		return CypherScriptParser.VOCABULARY;
 	}
 	// tslint:enable:no-trailing-whitespace
 
 	// @Override
-	public get grammarFileName(): string { return "Cypher.g4"; }
+	public get grammarFileName(): string { return "CypherScript.g4"; }
 
 	// @Override
-	public get ruleNames(): string[] { return CypherParser.ruleNames; }
+	public get ruleNames(): string[] { return CypherScriptParser.ruleNames; }
 
 	// @Override
-	public get serializedATN(): string { return CypherParser._serializedATN; }
+	public get serializedATN(): string { return CypherScriptParser._serializedATN; }
 
 	protected createFailedPredicateException(predicate?: string, message?: string): FailedPredicateException {
 		return new FailedPredicateException(this, predicate, message);
@@ -345,12 +345,12 @@ export class CypherParser extends Parser {
 
 	constructor(input: TokenStream) {
 		super(input);
-		this._interp = new ParserATNSimulator(CypherParser._ATN, this);
+		this._interp = new ParserATNSimulator(CypherScriptParser._ATN, this);
 	}
 	// @RuleVersion(0)
 	public oC_Cypher(): OC_CypherContext {
 		let _localctx: OC_CypherContext = new OC_CypherContext(this._ctx, this.state);
-		this.enterRule(_localctx, 0, CypherParser.RULE_oC_Cypher);
+		this.enterRule(_localctx, 0, CypherScriptParser.RULE_oC_Cypher);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -363,10 +363,10 @@ export class CypherParser extends Parser {
 				this.state = 201;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 200;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -380,30 +380,30 @@ export class CypherParser extends Parser {
 					this.state = 205;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 204;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
 					this.state = 207;
-					this.match(CypherParser.T__0);
+					this.match(CypherScriptParser.T__0);
 					}
 					break;
 				}
 				this.state = 211;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 210;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 213;
-				this.match(CypherParser.EOF);
+				this.match(CypherScriptParser.EOF);
 				}
 				break;
 
@@ -413,10 +413,10 @@ export class CypherParser extends Parser {
 				this.state = 216;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 215;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -432,22 +432,22 @@ export class CypherParser extends Parser {
 						this.state = 220;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 219;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
 						this.state = 222;
-						this.match(CypherParser.T__0);
+						this.match(CypherScriptParser.T__0);
 						this.state = 224;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 223;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -468,30 +468,30 @@ export class CypherParser extends Parser {
 					this.state = 233;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 232;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
 					this.state = 235;
-					this.match(CypherParser.T__0);
+					this.match(CypherScriptParser.T__0);
 					}
 					break;
 				}
 				this.state = 239;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 238;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 241;
-				this.match(CypherParser.EOF);
+				this.match(CypherScriptParser.EOF);
 				}
 				break;
 			}
@@ -513,7 +513,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Statement(): OC_StatementContext {
 		let _localctx: OC_StatementContext = new OC_StatementContext(this._ctx, this.state);
-		this.enterRule(_localctx, 2, CypherParser.RULE_oC_Statement);
+		this.enterRule(_localctx, 2, CypherScriptParser.RULE_oC_Statement);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
@@ -538,7 +538,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Query(): OC_QueryContext {
 		let _localctx: OC_QueryContext = new OC_QueryContext(this._ctx, this.state);
-		this.enterRule(_localctx, 4, CypherParser.RULE_oC_Query);
+		this.enterRule(_localctx, 4, CypherScriptParser.RULE_oC_Query);
 		try {
 			this.state = 249;
 			this._errHandler.sync(this);
@@ -577,7 +577,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_RegularQuery(): OC_RegularQueryContext {
 		let _localctx: OC_RegularQueryContext = new OC_RegularQueryContext(this._ctx, this.state);
-		this.enterRule(_localctx, 6, CypherParser.RULE_oC_RegularQuery);
+		this.enterRule(_localctx, 6, CypherScriptParser.RULE_oC_RegularQuery);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -595,10 +595,10 @@ export class CypherParser extends Parser {
 					this.state = 253;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 252;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -630,7 +630,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Union(): OC_UnionContext {
 		let _localctx: OC_UnionContext = new OC_UnionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 8, CypherParser.RULE_oC_Union);
+		this.enterRule(_localctx, 8, CypherScriptParser.RULE_oC_Union);
 		let _la: number;
 		try {
 			this.state = 273;
@@ -641,18 +641,18 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 261;
-				this.match(CypherParser.UNION);
+				this.match(CypherScriptParser.UNION);
 				this.state = 262;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 263;
-				this.match(CypherParser.ALL);
+				this.match(CypherScriptParser.ALL);
 				this.state = 265;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 264;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -667,14 +667,14 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 268;
-				this.match(CypherParser.UNION);
+				this.match(CypherScriptParser.UNION);
 				this.state = 270;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 269;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -702,7 +702,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_SingleQuery(): OC_SingleQueryContext {
 		let _localctx: OC_SingleQueryContext = new OC_SingleQueryContext(this._ctx, this.state);
-		this.enterRule(_localctx, 10, CypherParser.RULE_oC_SingleQuery);
+		this.enterRule(_localctx, 10, CypherScriptParser.RULE_oC_SingleQuery);
 		try {
 			this.state = 277;
 			this._errHandler.sync(this);
@@ -741,7 +741,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_SinglePartQuery(): OC_SinglePartQueryContext {
 		let _localctx: OC_SinglePartQueryContext = new OC_SinglePartQueryContext(this._ctx, this.state);
-		this.enterRule(_localctx, 12, CypherParser.RULE_oC_SinglePartQuery);
+		this.enterRule(_localctx, 12, CypherScriptParser.RULE_oC_SinglePartQuery);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -755,7 +755,7 @@ export class CypherParser extends Parser {
 				this.state = 285;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				while (((((_la - 48)) & ~0x1F) === 0 && ((1 << (_la - 48)) & ((1 << (CypherParser.OPTIONAL - 48)) | (1 << (CypherParser.MATCH - 48)) | (1 << (CypherParser.UNWIND - 48)) | (1 << (CypherParser.CALL - 48)))) !== 0)) {
+				while (((((_la - 48)) & ~0x1F) === 0 && ((1 << (_la - 48)) & ((1 << (CypherScriptParser.OPTIONAL - 48)) | (1 << (CypherScriptParser.MATCH - 48)) | (1 << (CypherScriptParser.UNWIND - 48)) | (1 << (CypherScriptParser.CALL - 48)))) !== 0)) {
 					{
 					{
 					this.state = 279;
@@ -763,10 +763,10 @@ export class CypherParser extends Parser {
 					this.state = 281;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 280;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -789,7 +789,7 @@ export class CypherParser extends Parser {
 				this.state = 295;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				while (((((_la - 48)) & ~0x1F) === 0 && ((1 << (_la - 48)) & ((1 << (CypherParser.OPTIONAL - 48)) | (1 << (CypherParser.MATCH - 48)) | (1 << (CypherParser.UNWIND - 48)) | (1 << (CypherParser.CALL - 48)))) !== 0)) {
+				while (((((_la - 48)) & ~0x1F) === 0 && ((1 << (_la - 48)) & ((1 << (CypherScriptParser.OPTIONAL - 48)) | (1 << (CypherScriptParser.MATCH - 48)) | (1 << (CypherScriptParser.UNWIND - 48)) | (1 << (CypherScriptParser.CALL - 48)))) !== 0)) {
 					{
 					{
 					this.state = 289;
@@ -797,10 +797,10 @@ export class CypherParser extends Parser {
 					this.state = 291;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 290;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -822,10 +822,10 @@ export class CypherParser extends Parser {
 						this.state = 300;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 299;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -846,10 +846,10 @@ export class CypherParser extends Parser {
 					this.state = 309;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 308;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -880,7 +880,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_MultiPartQuery(): OC_MultiPartQueryContext {
 		let _localctx: OC_MultiPartQueryContext = new OC_MultiPartQueryContext(this._ctx, this.state);
-		this.enterRule(_localctx, 14, CypherParser.RULE_oC_MultiPartQuery);
+		this.enterRule(_localctx, 14, CypherScriptParser.RULE_oC_MultiPartQuery);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -897,7 +897,7 @@ export class CypherParser extends Parser {
 					this.state = 322;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					while (((((_la - 48)) & ~0x1F) === 0 && ((1 << (_la - 48)) & ((1 << (CypherParser.OPTIONAL - 48)) | (1 << (CypherParser.MATCH - 48)) | (1 << (CypherParser.UNWIND - 48)) | (1 << (CypherParser.CALL - 48)))) !== 0)) {
+					while (((((_la - 48)) & ~0x1F) === 0 && ((1 << (_la - 48)) & ((1 << (CypherScriptParser.OPTIONAL - 48)) | (1 << (CypherScriptParser.MATCH - 48)) | (1 << (CypherScriptParser.UNWIND - 48)) | (1 << (CypherScriptParser.CALL - 48)))) !== 0)) {
 						{
 						{
 						this.state = 316;
@@ -905,10 +905,10 @@ export class CypherParser extends Parser {
 						this.state = 318;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 317;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -921,7 +921,7 @@ export class CypherParser extends Parser {
 					this.state = 331;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					while (((((_la - 52)) & ~0x1F) === 0 && ((1 << (_la - 52)) & ((1 << (CypherParser.MERGE - 52)) | (1 << (CypherParser.CREATE - 52)) | (1 << (CypherParser.SET - 52)) | (1 << (CypherParser.DETACH - 52)) | (1 << (CypherParser.DELETE - 52)) | (1 << (CypherParser.REMOVE - 52)))) !== 0)) {
+					while (((((_la - 52)) & ~0x1F) === 0 && ((1 << (_la - 52)) & ((1 << (CypherScriptParser.MERGE - 52)) | (1 << (CypherScriptParser.CREATE - 52)) | (1 << (CypherScriptParser.SET - 52)) | (1 << (CypherScriptParser.DETACH - 52)) | (1 << (CypherScriptParser.DELETE - 52)) | (1 << (CypherScriptParser.REMOVE - 52)))) !== 0)) {
 						{
 						{
 						this.state = 325;
@@ -929,10 +929,10 @@ export class CypherParser extends Parser {
 						this.state = 327;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 326;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -947,10 +947,10 @@ export class CypherParser extends Parser {
 					this.state = 336;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 335;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -985,41 +985,41 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_UpdatingClause(): OC_UpdatingClauseContext {
 		let _localctx: OC_UpdatingClauseContext = new OC_UpdatingClauseContext(this._ctx, this.state);
-		this.enterRule(_localctx, 16, CypherParser.RULE_oC_UpdatingClause);
+		this.enterRule(_localctx, 16, CypherScriptParser.RULE_oC_UpdatingClause);
 		try {
 			this.state = 349;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case CypherParser.CREATE:
+			case CypherScriptParser.CREATE:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				this.state = 344;
 				this.oC_Create();
 				}
 				break;
-			case CypherParser.MERGE:
+			case CypherScriptParser.MERGE:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 345;
 				this.oC_Merge();
 				}
 				break;
-			case CypherParser.DETACH:
-			case CypherParser.DELETE:
+			case CypherScriptParser.DETACH:
+			case CypherScriptParser.DELETE:
 				this.enterOuterAlt(_localctx, 3);
 				{
 				this.state = 346;
 				this.oC_Delete();
 				}
 				break;
-			case CypherParser.SET:
+			case CypherScriptParser.SET:
 				this.enterOuterAlt(_localctx, 4);
 				{
 				this.state = 347;
 				this.oC_Set();
 				}
 				break;
-			case CypherParser.REMOVE:
+			case CypherScriptParser.REMOVE:
 				this.enterOuterAlt(_localctx, 5);
 				{
 				this.state = 348;
@@ -1047,27 +1047,27 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ReadingClause(): OC_ReadingClauseContext {
 		let _localctx: OC_ReadingClauseContext = new OC_ReadingClauseContext(this._ctx, this.state);
-		this.enterRule(_localctx, 18, CypherParser.RULE_oC_ReadingClause);
+		this.enterRule(_localctx, 18, CypherScriptParser.RULE_oC_ReadingClause);
 		try {
 			this.state = 354;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case CypherParser.OPTIONAL:
-			case CypherParser.MATCH:
+			case CypherScriptParser.OPTIONAL:
+			case CypherScriptParser.MATCH:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				this.state = 351;
 				this.oC_Match();
 				}
 				break;
-			case CypherParser.UNWIND:
+			case CypherScriptParser.UNWIND:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 352;
 				this.oC_Unwind();
 				}
 				break;
-			case CypherParser.CALL:
+			case CypherScriptParser.CALL:
 				this.enterOuterAlt(_localctx, 3);
 				{
 				this.state = 353;
@@ -1095,7 +1095,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Match(): OC_MatchContext {
 		let _localctx: OC_MatchContext = new OC_MatchContext(this._ctx, this.state);
-		this.enterRule(_localctx, 20, CypherParser.RULE_oC_Match);
+		this.enterRule(_localctx, 20, CypherScriptParser.RULE_oC_Match);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
@@ -1103,24 +1103,24 @@ export class CypherParser extends Parser {
 			this.state = 358;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.OPTIONAL) {
+			if (_la === CypherScriptParser.OPTIONAL) {
 				{
 				this.state = 356;
-				this.match(CypherParser.OPTIONAL);
+				this.match(CypherScriptParser.OPTIONAL);
 				this.state = 357;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 360;
-			this.match(CypherParser.MATCH);
+			this.match(CypherScriptParser.MATCH);
 			this.state = 362;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 361;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -1134,10 +1134,10 @@ export class CypherParser extends Parser {
 				this.state = 366;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 365;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -1165,31 +1165,31 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Unwind(): OC_UnwindContext {
 		let _localctx: OC_UnwindContext = new OC_UnwindContext(this._ctx, this.state);
-		this.enterRule(_localctx, 22, CypherParser.RULE_oC_Unwind);
+		this.enterRule(_localctx, 22, CypherScriptParser.RULE_oC_Unwind);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 371;
-			this.match(CypherParser.UNWIND);
+			this.match(CypherScriptParser.UNWIND);
 			this.state = 373;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 372;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 375;
 			this.oC_Expression();
 			this.state = 376;
-			this.match(CypherParser.SP);
+			this.match(CypherScriptParser.SP);
 			this.state = 377;
-			this.match(CypherParser.AS);
+			this.match(CypherScriptParser.AS);
 			this.state = 378;
-			this.match(CypherParser.SP);
+			this.match(CypherScriptParser.SP);
 			this.state = 379;
 			this.oC_Variable();
 			}
@@ -1211,21 +1211,21 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Merge(): OC_MergeContext {
 		let _localctx: OC_MergeContext = new OC_MergeContext(this._ctx, this.state);
-		this.enterRule(_localctx, 24, CypherParser.RULE_oC_Merge);
+		this.enterRule(_localctx, 24, CypherScriptParser.RULE_oC_Merge);
 		let _la: number;
 		try {
 			let _alt: number;
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 381;
-			this.match(CypherParser.MERGE);
+			this.match(CypherScriptParser.MERGE);
 			this.state = 383;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 382;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -1239,7 +1239,7 @@ export class CypherParser extends Parser {
 					{
 					{
 					this.state = 386;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					this.state = 387;
 					this.oC_MergeAction();
 					}
@@ -1268,7 +1268,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_MergeAction(): OC_MergeActionContext {
 		let _localctx: OC_MergeActionContext = new OC_MergeActionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 26, CypherParser.RULE_oC_MergeAction);
+		this.enterRule(_localctx, 26, CypherScriptParser.RULE_oC_MergeAction);
 		try {
 			this.state = 403;
 			this._errHandler.sync(this);
@@ -1278,13 +1278,13 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 393;
-				this.match(CypherParser.ON);
+				this.match(CypherScriptParser.ON);
 				this.state = 394;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 395;
-				this.match(CypherParser.MATCH);
+				this.match(CypherScriptParser.MATCH);
 				this.state = 396;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 397;
 				this.oC_Set();
 				}
@@ -1296,13 +1296,13 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 398;
-				this.match(CypherParser.ON);
+				this.match(CypherScriptParser.ON);
 				this.state = 399;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 400;
-				this.match(CypherParser.CREATE);
+				this.match(CypherScriptParser.CREATE);
 				this.state = 401;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 402;
 				this.oC_Set();
 				}
@@ -1327,20 +1327,20 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Create(): OC_CreateContext {
 		let _localctx: OC_CreateContext = new OC_CreateContext(this._ctx, this.state);
-		this.enterRule(_localctx, 28, CypherParser.RULE_oC_Create);
+		this.enterRule(_localctx, 28, CypherScriptParser.RULE_oC_Create);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 405;
-			this.match(CypherParser.CREATE);
+			this.match(CypherScriptParser.CREATE);
 			this.state = 407;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 406;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -1365,21 +1365,21 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Set(): OC_SetContext {
 		let _localctx: OC_SetContext = new OC_SetContext(this._ctx, this.state);
-		this.enterRule(_localctx, 30, CypherParser.RULE_oC_Set);
+		this.enterRule(_localctx, 30, CypherScriptParser.RULE_oC_Set);
 		let _la: number;
 		try {
 			let _alt: number;
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 411;
-			this.match(CypherParser.SET);
+			this.match(CypherScriptParser.SET);
 			this.state = 413;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 412;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -1395,22 +1395,22 @@ export class CypherParser extends Parser {
 					this.state = 417;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 416;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
 					this.state = 419;
-					this.match(CypherParser.T__1);
+					this.match(CypherScriptParser.T__1);
 					this.state = 421;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 420;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -1442,7 +1442,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_SetItem(): OC_SetItemContext {
 		let _localctx: OC_SetItemContext = new OC_SetItemContext(this._ctx, this.state);
-		this.enterRule(_localctx, 32, CypherParser.RULE_oC_SetItem);
+		this.enterRule(_localctx, 32, CypherScriptParser.RULE_oC_SetItem);
 		let _la: number;
 		try {
 			this.state = 465;
@@ -1457,22 +1457,22 @@ export class CypherParser extends Parser {
 				this.state = 431;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 430;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 433;
-				this.match(CypherParser.T__2);
+				this.match(CypherScriptParser.T__2);
 				this.state = 435;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 434;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -1491,22 +1491,22 @@ export class CypherParser extends Parser {
 				this.state = 441;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 440;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 443;
-				this.match(CypherParser.T__2);
+				this.match(CypherScriptParser.T__2);
 				this.state = 445;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 444;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -1525,22 +1525,22 @@ export class CypherParser extends Parser {
 				this.state = 451;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 450;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 453;
-				this.match(CypherParser.T__3);
+				this.match(CypherScriptParser.T__3);
 				this.state = 455;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 454;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -1559,10 +1559,10 @@ export class CypherParser extends Parser {
 				this.state = 461;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 460;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -1590,7 +1590,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Delete(): OC_DeleteContext {
 		let _localctx: OC_DeleteContext = new OC_DeleteContext(this._ctx, this.state);
-		this.enterRule(_localctx, 34, CypherParser.RULE_oC_Delete);
+		this.enterRule(_localctx, 34, CypherScriptParser.RULE_oC_Delete);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -1599,24 +1599,24 @@ export class CypherParser extends Parser {
 			this.state = 469;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.DETACH) {
+			if (_la === CypherScriptParser.DETACH) {
 				{
 				this.state = 467;
-				this.match(CypherParser.DETACH);
+				this.match(CypherScriptParser.DETACH);
 				this.state = 468;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 471;
-			this.match(CypherParser.DELETE);
+			this.match(CypherScriptParser.DELETE);
 			this.state = 473;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 472;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -1632,22 +1632,22 @@ export class CypherParser extends Parser {
 					this.state = 477;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 476;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
 					this.state = 479;
-					this.match(CypherParser.T__1);
+					this.match(CypherScriptParser.T__1);
 					this.state = 481;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 480;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -1679,16 +1679,16 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Remove(): OC_RemoveContext {
 		let _localctx: OC_RemoveContext = new OC_RemoveContext(this._ctx, this.state);
-		this.enterRule(_localctx, 36, CypherParser.RULE_oC_Remove);
+		this.enterRule(_localctx, 36, CypherScriptParser.RULE_oC_Remove);
 		let _la: number;
 		try {
 			let _alt: number;
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 489;
-			this.match(CypherParser.REMOVE);
+			this.match(CypherScriptParser.REMOVE);
 			this.state = 490;
-			this.match(CypherParser.SP);
+			this.match(CypherScriptParser.SP);
 			this.state = 491;
 			this.oC_RemoveItem();
 			this.state = 502;
@@ -1701,22 +1701,22 @@ export class CypherParser extends Parser {
 					this.state = 493;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 492;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
 					this.state = 495;
-					this.match(CypherParser.T__1);
+					this.match(CypherScriptParser.T__1);
 					this.state = 497;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 496;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -1748,7 +1748,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_RemoveItem(): OC_RemoveItemContext {
 		let _localctx: OC_RemoveItemContext = new OC_RemoveItemContext(this._ctx, this.state);
-		this.enterRule(_localctx, 38, CypherParser.RULE_oC_RemoveItem);
+		this.enterRule(_localctx, 38, CypherScriptParser.RULE_oC_RemoveItem);
 		try {
 			this.state = 509;
 			this._errHandler.sync(this);
@@ -1791,15 +1791,15 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_InQueryCall(): OC_InQueryCallContext {
 		let _localctx: OC_InQueryCallContext = new OC_InQueryCallContext(this._ctx, this.state);
-		this.enterRule(_localctx, 40, CypherParser.RULE_oC_InQueryCall);
+		this.enterRule(_localctx, 40, CypherScriptParser.RULE_oC_InQueryCall);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 511;
-			this.match(CypherParser.CALL);
+			this.match(CypherScriptParser.CALL);
 			this.state = 512;
-			this.match(CypherParser.SP);
+			this.match(CypherScriptParser.SP);
 			this.state = 513;
 			this.oC_ExplicitProcedureInvocation();
 			this.state = 520;
@@ -1810,17 +1810,17 @@ export class CypherParser extends Parser {
 				this.state = 515;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 514;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 517;
-				this.match(CypherParser.YIELD);
+				this.match(CypherScriptParser.YIELD);
 				this.state = 518;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 519;
 				this.oC_YieldItems();
 				}
@@ -1845,15 +1845,15 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_StandaloneCall(): OC_StandaloneCallContext {
 		let _localctx: OC_StandaloneCallContext = new OC_StandaloneCallContext(this._ctx, this.state);
-		this.enterRule(_localctx, 42, CypherParser.RULE_oC_StandaloneCall);
+		this.enterRule(_localctx, 42, CypherScriptParser.RULE_oC_StandaloneCall);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 522;
-			this.match(CypherParser.CALL);
+			this.match(CypherScriptParser.CALL);
 			this.state = 523;
-			this.match(CypherParser.SP);
+			this.match(CypherScriptParser.SP);
 			this.state = 526;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 68, this._ctx) ) {
@@ -1879,35 +1879,35 @@ export class CypherParser extends Parser {
 				this.state = 529;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 528;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 531;
-				this.match(CypherParser.YIELD);
+				this.match(CypherScriptParser.YIELD);
 				this.state = 532;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 535;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
-				case CypherParser.T__4:
+				case CypherScriptParser.T__4:
 					{
 					this.state = 533;
-					this.match(CypherParser.T__4);
+					this.match(CypherScriptParser.T__4);
 					}
 					break;
-				case CypherParser.COUNT:
-				case CypherParser.ANY:
-				case CypherParser.NONE:
-				case CypherParser.SINGLE:
-				case CypherParser.HexLetter:
-				case CypherParser.FILTER:
-				case CypherParser.EXTRACT:
-				case CypherParser.UnescapedSymbolicName:
-				case CypherParser.EscapedSymbolicName:
+				case CypherScriptParser.COUNT:
+				case CypherScriptParser.ANY:
+				case CypherScriptParser.NONE:
+				case CypherScriptParser.SINGLE:
+				case CypherScriptParser.HexLetter:
+				case CypherScriptParser.FILTER:
+				case CypherScriptParser.EXTRACT:
+				case CypherScriptParser.UnescapedSymbolicName:
+				case CypherScriptParser.EscapedSymbolicName:
 					{
 					this.state = 534;
 					this.oC_YieldItems();
@@ -1938,7 +1938,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_YieldItems(): OC_YieldItemsContext {
 		let _localctx: OC_YieldItemsContext = new OC_YieldItemsContext(this._ctx, this.state);
-		this.enterRule(_localctx, 44, CypherParser.RULE_oC_YieldItems);
+		this.enterRule(_localctx, 44, CypherScriptParser.RULE_oC_YieldItems);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -1956,22 +1956,22 @@ export class CypherParser extends Parser {
 					this.state = 541;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 540;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
 					this.state = 543;
-					this.match(CypherParser.T__1);
+					this.match(CypherScriptParser.T__1);
 					this.state = 545;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 544;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -1992,10 +1992,10 @@ export class CypherParser extends Parser {
 				this.state = 554;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 553;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -2023,7 +2023,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_YieldItem(): OC_YieldItemContext {
 		let _localctx: OC_YieldItemContext = new OC_YieldItemContext(this._ctx, this.state);
-		this.enterRule(_localctx, 46, CypherParser.RULE_oC_YieldItem);
+		this.enterRule(_localctx, 46, CypherScriptParser.RULE_oC_YieldItem);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
@@ -2035,11 +2035,11 @@ export class CypherParser extends Parser {
 				this.state = 559;
 				this.oC_ProcedureResultField();
 				this.state = 560;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 561;
-				this.match(CypherParser.AS);
+				this.match(CypherScriptParser.AS);
 				this.state = 562;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 				break;
 			}
@@ -2064,13 +2064,13 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_With(): OC_WithContext {
 		let _localctx: OC_WithContext = new OC_WithContext(this._ctx, this.state);
-		this.enterRule(_localctx, 48, CypherParser.RULE_oC_With);
+		this.enterRule(_localctx, 48, CypherScriptParser.RULE_oC_With);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 568;
-			this.match(CypherParser.WITH);
+			this.match(CypherScriptParser.WITH);
 			this.state = 569;
 			this.oC_ProjectionBody();
 			this.state = 574;
@@ -2081,10 +2081,10 @@ export class CypherParser extends Parser {
 				this.state = 571;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 570;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -2112,12 +2112,12 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Return(): OC_ReturnContext {
 		let _localctx: OC_ReturnContext = new OC_ReturnContext(this._ctx, this.state);
-		this.enterRule(_localctx, 50, CypherParser.RULE_oC_Return);
+		this.enterRule(_localctx, 50, CypherScriptParser.RULE_oC_Return);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 576;
-			this.match(CypherParser.RETURN);
+			this.match(CypherScriptParser.RETURN);
 			this.state = 577;
 			this.oC_ProjectionBody();
 			}
@@ -2139,7 +2139,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ProjectionBody(): OC_ProjectionBodyContext {
 		let _localctx: OC_ProjectionBodyContext = new OC_ProjectionBodyContext(this._ctx, this.state);
-		this.enterRule(_localctx, 52, CypherParser.RULE_oC_ProjectionBody);
+		this.enterRule(_localctx, 52, CypherScriptParser.RULE_oC_ProjectionBody);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
@@ -2152,20 +2152,20 @@ export class CypherParser extends Parser {
 				this.state = 580;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 579;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 582;
-				this.match(CypherParser.DISTINCT);
+				this.match(CypherScriptParser.DISTINCT);
 				}
 				break;
 			}
 			this.state = 585;
-			this.match(CypherParser.SP);
+			this.match(CypherScriptParser.SP);
 			this.state = 586;
 			this.oC_ProjectionItems();
 			this.state = 589;
@@ -2174,7 +2174,7 @@ export class CypherParser extends Parser {
 			case 1:
 				{
 				this.state = 587;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 588;
 				this.oC_Order();
 				}
@@ -2186,7 +2186,7 @@ export class CypherParser extends Parser {
 			case 1:
 				{
 				this.state = 591;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 592;
 				this.oC_Skip();
 				}
@@ -2198,7 +2198,7 @@ export class CypherParser extends Parser {
 			case 1:
 				{
 				this.state = 595;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 596;
 				this.oC_Limit();
 				}
@@ -2223,19 +2223,19 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ProjectionItems(): OC_ProjectionItemsContext {
 		let _localctx: OC_ProjectionItemsContext = new OC_ProjectionItemsContext(this._ctx, this.state);
-		this.enterRule(_localctx, 54, CypherParser.RULE_oC_ProjectionItems);
+		this.enterRule(_localctx, 54, CypherScriptParser.RULE_oC_ProjectionItems);
 		let _la: number;
 		try {
 			let _alt: number;
 			this.state = 627;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case CypherParser.T__4:
+			case CypherScriptParser.T__4:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				{
 				this.state = 599;
-				this.match(CypherParser.T__4);
+				this.match(CypherScriptParser.T__4);
 				this.state = 610;
 				this._errHandler.sync(this);
 				_alt = this.interpreter.adaptivePredict(this._input, 87, this._ctx);
@@ -2246,22 +2246,22 @@ export class CypherParser extends Parser {
 						this.state = 601;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 600;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
 						this.state = 603;
-						this.match(CypherParser.T__1);
+						this.match(CypherScriptParser.T__1);
 						this.state = 605;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 604;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -2277,34 +2277,34 @@ export class CypherParser extends Parser {
 				}
 				}
 				break;
-			case CypherParser.T__5:
-			case CypherParser.T__7:
-			case CypherParser.T__12:
-			case CypherParser.T__13:
-			case CypherParser.T__22:
-			case CypherParser.T__25:
-			case CypherParser.ALL:
-			case CypherParser.NOT:
-			case CypherParser.NULL:
-			case CypherParser.COUNT:
-			case CypherParser.ANY:
-			case CypherParser.NONE:
-			case CypherParser.SINGLE:
-			case CypherParser.TRUE:
-			case CypherParser.FALSE:
-			case CypherParser.EXISTS:
-			case CypherParser.CASE:
-			case CypherParser.StringLiteral:
-			case CypherParser.HexInteger:
-			case CypherParser.DecimalInteger:
-			case CypherParser.OctalInteger:
-			case CypherParser.HexLetter:
-			case CypherParser.ExponentDecimalReal:
-			case CypherParser.RegularDecimalReal:
-			case CypherParser.FILTER:
-			case CypherParser.EXTRACT:
-			case CypherParser.UnescapedSymbolicName:
-			case CypherParser.EscapedSymbolicName:
+			case CypherScriptParser.T__5:
+			case CypherScriptParser.T__7:
+			case CypherScriptParser.T__12:
+			case CypherScriptParser.T__13:
+			case CypherScriptParser.T__22:
+			case CypherScriptParser.T__25:
+			case CypherScriptParser.ALL:
+			case CypherScriptParser.NOT:
+			case CypherScriptParser.NULL:
+			case CypherScriptParser.COUNT:
+			case CypherScriptParser.ANY:
+			case CypherScriptParser.NONE:
+			case CypherScriptParser.SINGLE:
+			case CypherScriptParser.TRUE:
+			case CypherScriptParser.FALSE:
+			case CypherScriptParser.EXISTS:
+			case CypherScriptParser.CASE:
+			case CypherScriptParser.StringLiteral:
+			case CypherScriptParser.HexInteger:
+			case CypherScriptParser.DecimalInteger:
+			case CypherScriptParser.OctalInteger:
+			case CypherScriptParser.HexLetter:
+			case CypherScriptParser.ExponentDecimalReal:
+			case CypherScriptParser.RegularDecimalReal:
+			case CypherScriptParser.FILTER:
+			case CypherScriptParser.EXTRACT:
+			case CypherScriptParser.UnescapedSymbolicName:
+			case CypherScriptParser.EscapedSymbolicName:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				{
@@ -2320,22 +2320,22 @@ export class CypherParser extends Parser {
 						this.state = 615;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 614;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
 						this.state = 617;
-						this.match(CypherParser.T__1);
+						this.match(CypherScriptParser.T__1);
 						this.state = 619;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 618;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -2372,7 +2372,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ProjectionItem(): OC_ProjectionItemContext {
 		let _localctx: OC_ProjectionItemContext = new OC_ProjectionItemContext(this._ctx, this.state);
-		this.enterRule(_localctx, 56, CypherParser.RULE_oC_ProjectionItem);
+		this.enterRule(_localctx, 56, CypherScriptParser.RULE_oC_ProjectionItem);
 		try {
 			this.state = 636;
 			this._errHandler.sync(this);
@@ -2384,11 +2384,11 @@ export class CypherParser extends Parser {
 				this.state = 629;
 				this.oC_Expression();
 				this.state = 630;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 631;
-				this.match(CypherParser.AS);
+				this.match(CypherScriptParser.AS);
 				this.state = 632;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 633;
 				this.oC_Variable();
 				}
@@ -2421,36 +2421,36 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Order(): OC_OrderContext {
 		let _localctx: OC_OrderContext = new OC_OrderContext(this._ctx, this.state);
-		this.enterRule(_localctx, 58, CypherParser.RULE_oC_Order);
+		this.enterRule(_localctx, 58, CypherScriptParser.RULE_oC_Order);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 638;
-			this.match(CypherParser.ORDER);
+			this.match(CypherScriptParser.ORDER);
 			this.state = 639;
-			this.match(CypherParser.SP);
+			this.match(CypherScriptParser.SP);
 			this.state = 640;
-			this.match(CypherParser.BY);
+			this.match(CypherScriptParser.BY);
 			this.state = 641;
-			this.match(CypherParser.SP);
+			this.match(CypherScriptParser.SP);
 			this.state = 642;
 			this.oC_SortItem();
 			this.state = 650;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			while (_la === CypherParser.T__1) {
+			while (_la === CypherScriptParser.T__1) {
 				{
 				{
 				this.state = 643;
-				this.match(CypherParser.T__1);
+				this.match(CypherScriptParser.T__1);
 				this.state = 645;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 644;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -2481,14 +2481,14 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Skip(): OC_SkipContext {
 		let _localctx: OC_SkipContext = new OC_SkipContext(this._ctx, this.state);
-		this.enterRule(_localctx, 60, CypherParser.RULE_oC_Skip);
+		this.enterRule(_localctx, 60, CypherScriptParser.RULE_oC_Skip);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 653;
-			this.match(CypherParser.L_SKIP);
+			this.match(CypherScriptParser.L_SKIP);
 			this.state = 654;
-			this.match(CypherParser.SP);
+			this.match(CypherScriptParser.SP);
 			this.state = 655;
 			this.oC_Expression();
 			}
@@ -2510,14 +2510,14 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Limit(): OC_LimitContext {
 		let _localctx: OC_LimitContext = new OC_LimitContext(this._ctx, this.state);
-		this.enterRule(_localctx, 62, CypherParser.RULE_oC_Limit);
+		this.enterRule(_localctx, 62, CypherScriptParser.RULE_oC_Limit);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 657;
-			this.match(CypherParser.LIMIT);
+			this.match(CypherScriptParser.LIMIT);
 			this.state = 658;
-			this.match(CypherParser.SP);
+			this.match(CypherScriptParser.SP);
 			this.state = 659;
 			this.oC_Expression();
 			}
@@ -2539,7 +2539,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_SortItem(): OC_SortItemContext {
 		let _localctx: OC_SortItemContext = new OC_SortItemContext(this._ctx, this.state);
-		this.enterRule(_localctx, 64, CypherParser.RULE_oC_SortItem);
+		this.enterRule(_localctx, 64, CypherScriptParser.RULE_oC_SortItem);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
@@ -2554,16 +2554,16 @@ export class CypherParser extends Parser {
 				this.state = 663;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 662;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 665;
 				_la = this._input.LA(1);
-				if (!(((((_la - 68)) & ~0x1F) === 0 && ((1 << (_la - 68)) & ((1 << (CypherParser.ASCENDING - 68)) | (1 << (CypherParser.ASC - 68)) | (1 << (CypherParser.DESCENDING - 68)) | (1 << (CypherParser.DESC - 68)))) !== 0))) {
+				if (!(((((_la - 68)) & ~0x1F) === 0 && ((1 << (_la - 68)) & ((1 << (CypherScriptParser.ASCENDING - 68)) | (1 << (CypherScriptParser.ASC - 68)) | (1 << (CypherScriptParser.DESCENDING - 68)) | (1 << (CypherScriptParser.DESC - 68)))) !== 0))) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -2595,14 +2595,14 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Where(): OC_WhereContext {
 		let _localctx: OC_WhereContext = new OC_WhereContext(this._ctx, this.state);
-		this.enterRule(_localctx, 66, CypherParser.RULE_oC_Where);
+		this.enterRule(_localctx, 66, CypherScriptParser.RULE_oC_Where);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 668;
-			this.match(CypherParser.WHERE);
+			this.match(CypherScriptParser.WHERE);
 			this.state = 669;
-			this.match(CypherParser.SP);
+			this.match(CypherScriptParser.SP);
 			this.state = 670;
 			this.oC_Expression();
 			}
@@ -2624,7 +2624,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Pattern(): OC_PatternContext {
 		let _localctx: OC_PatternContext = new OC_PatternContext(this._ctx, this.state);
-		this.enterRule(_localctx, 68, CypherParser.RULE_oC_Pattern);
+		this.enterRule(_localctx, 68, CypherScriptParser.RULE_oC_Pattern);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -2642,22 +2642,22 @@ export class CypherParser extends Parser {
 					this.state = 674;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 673;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
 					this.state = 676;
-					this.match(CypherParser.T__1);
+					this.match(CypherScriptParser.T__1);
 					this.state = 678;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 677;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -2689,21 +2689,21 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_PatternPart(): OC_PatternPartContext {
 		let _localctx: OC_PatternPartContext = new OC_PatternPartContext(this._ctx, this.state);
-		this.enterRule(_localctx, 70, CypherParser.RULE_oC_PatternPart);
+		this.enterRule(_localctx, 70, CypherScriptParser.RULE_oC_PatternPart);
 		let _la: number;
 		try {
 			this.state = 697;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case CypherParser.COUNT:
-			case CypherParser.ANY:
-			case CypherParser.NONE:
-			case CypherParser.SINGLE:
-			case CypherParser.HexLetter:
-			case CypherParser.FILTER:
-			case CypherParser.EXTRACT:
-			case CypherParser.UnescapedSymbolicName:
-			case CypherParser.EscapedSymbolicName:
+			case CypherScriptParser.COUNT:
+			case CypherScriptParser.ANY:
+			case CypherScriptParser.NONE:
+			case CypherScriptParser.SINGLE:
+			case CypherScriptParser.HexLetter:
+			case CypherScriptParser.FILTER:
+			case CypherScriptParser.EXTRACT:
+			case CypherScriptParser.UnescapedSymbolicName:
+			case CypherScriptParser.EscapedSymbolicName:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				{
@@ -2712,22 +2712,22 @@ export class CypherParser extends Parser {
 				this.state = 688;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 687;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 690;
-				this.match(CypherParser.T__2);
+				this.match(CypherScriptParser.T__2);
 				this.state = 692;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 691;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -2736,7 +2736,7 @@ export class CypherParser extends Parser {
 				}
 				}
 				break;
-			case CypherParser.T__5:
+			case CypherScriptParser.T__5:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 696;
@@ -2764,7 +2764,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_AnonymousPatternPart(): OC_AnonymousPatternPartContext {
 		let _localctx: OC_AnonymousPatternPartContext = new OC_AnonymousPatternPartContext(this._ctx, this.state);
-		this.enterRule(_localctx, 72, CypherParser.RULE_oC_AnonymousPatternPart);
+		this.enterRule(_localctx, 72, CypherScriptParser.RULE_oC_AnonymousPatternPart);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
@@ -2789,7 +2789,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_PatternElement(): OC_PatternElementContext {
 		let _localctx: OC_PatternElementContext = new OC_PatternElementContext(this._ctx, this.state);
-		this.enterRule(_localctx, 74, CypherParser.RULE_oC_PatternElement);
+		this.enterRule(_localctx, 74, CypherScriptParser.RULE_oC_PatternElement);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -2812,10 +2812,10 @@ export class CypherParser extends Parser {
 						this.state = 703;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 702;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -2837,11 +2837,11 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 711;
-				this.match(CypherParser.T__5);
+				this.match(CypherScriptParser.T__5);
 				this.state = 712;
 				this.oC_PatternElement();
 				this.state = 713;
-				this.match(CypherParser.T__6);
+				this.match(CypherScriptParser.T__6);
 				}
 				}
 				break;
@@ -2864,37 +2864,37 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_NodePattern(): OC_NodePatternContext {
 		let _localctx: OC_NodePatternContext = new OC_NodePatternContext(this._ctx, this.state);
-		this.enterRule(_localctx, 76, CypherParser.RULE_oC_NodePattern);
+		this.enterRule(_localctx, 76, CypherScriptParser.RULE_oC_NodePattern);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 717;
-			this.match(CypherParser.T__5);
+			this.match(CypherScriptParser.T__5);
 			this.state = 719;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 718;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 725;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (((((_la - 83)) & ~0x1F) === 0 && ((1 << (_la - 83)) & ((1 << (CypherParser.COUNT - 83)) | (1 << (CypherParser.ANY - 83)) | (1 << (CypherParser.NONE - 83)) | (1 << (CypherParser.SINGLE - 83)) | (1 << (CypherParser.HexLetter - 83)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherParser.FILTER - 119)) | (1 << (CypherParser.EXTRACT - 119)) | (1 << (CypherParser.UnescapedSymbolicName - 119)) | (1 << (CypherParser.EscapedSymbolicName - 119)))) !== 0)) {
+			if (((((_la - 83)) & ~0x1F) === 0 && ((1 << (_la - 83)) & ((1 << (CypherScriptParser.COUNT - 83)) | (1 << (CypherScriptParser.ANY - 83)) | (1 << (CypherScriptParser.NONE - 83)) | (1 << (CypherScriptParser.SINGLE - 83)) | (1 << (CypherScriptParser.HexLetter - 83)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherScriptParser.FILTER - 119)) | (1 << (CypherScriptParser.EXTRACT - 119)) | (1 << (CypherScriptParser.UnescapedSymbolicName - 119)) | (1 << (CypherScriptParser.EscapedSymbolicName - 119)))) !== 0)) {
 				{
 				this.state = 721;
 				this.oC_Variable();
 				this.state = 723;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 722;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -2904,17 +2904,17 @@ export class CypherParser extends Parser {
 			this.state = 731;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.T__9) {
+			if (_la === CypherScriptParser.T__9) {
 				{
 				this.state = 727;
 				this.oC_NodeLabels();
 				this.state = 729;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 728;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -2924,17 +2924,17 @@ export class CypherParser extends Parser {
 			this.state = 737;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.T__22 || _la === CypherParser.T__25) {
+			if (_la === CypherScriptParser.T__22 || _la === CypherScriptParser.T__25) {
 				{
 				this.state = 733;
 				this.oC_Properties();
 				this.state = 735;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 734;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -2942,7 +2942,7 @@ export class CypherParser extends Parser {
 			}
 
 			this.state = 739;
-			this.match(CypherParser.T__6);
+			this.match(CypherScriptParser.T__6);
 			}
 		}
 		catch (re) {
@@ -2962,7 +2962,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_PatternElementChain(): OC_PatternElementChainContext {
 		let _localctx: OC_PatternElementChainContext = new OC_PatternElementChainContext(this._ctx, this.state);
-		this.enterRule(_localctx, 78, CypherParser.RULE_oC_PatternElementChain);
+		this.enterRule(_localctx, 78, CypherScriptParser.RULE_oC_PatternElementChain);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
@@ -2972,10 +2972,10 @@ export class CypherParser extends Parser {
 			this.state = 743;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 742;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -3000,7 +3000,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_RelationshipPattern(): OC_RelationshipPatternContext {
 		let _localctx: OC_RelationshipPatternContext = new OC_RelationshipPatternContext(this._ctx, this.state);
-		this.enterRule(_localctx, 80, CypherParser.RULE_oC_RelationshipPattern);
+		this.enterRule(_localctx, 80, CypherScriptParser.RULE_oC_RelationshipPattern);
 		let _la: number;
 		try {
 			this.state = 811;
@@ -3015,10 +3015,10 @@ export class CypherParser extends Parser {
 				this.state = 749;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 748;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -3030,14 +3030,14 @@ export class CypherParser extends Parser {
 				case 1:
 					{
 					this.state = 752;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 					break;
 				}
 				this.state = 756;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.T__7) {
+				if (_la === CypherScriptParser.T__7) {
 					{
 					this.state = 755;
 					this.oC_RelationshipDetail();
@@ -3047,10 +3047,10 @@ export class CypherParser extends Parser {
 				this.state = 759;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 758;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -3059,10 +3059,10 @@ export class CypherParser extends Parser {
 				this.state = 763;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 762;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -3081,10 +3081,10 @@ export class CypherParser extends Parser {
 				this.state = 769;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 768;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -3096,14 +3096,14 @@ export class CypherParser extends Parser {
 				case 1:
 					{
 					this.state = 772;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 					break;
 				}
 				this.state = 776;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.T__7) {
+				if (_la === CypherScriptParser.T__7) {
 					{
 					this.state = 775;
 					this.oC_RelationshipDetail();
@@ -3113,10 +3113,10 @@ export class CypherParser extends Parser {
 				this.state = 779;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 778;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -3138,14 +3138,14 @@ export class CypherParser extends Parser {
 				case 1:
 					{
 					this.state = 784;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 					break;
 				}
 				this.state = 788;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.T__7) {
+				if (_la === CypherScriptParser.T__7) {
 					{
 					this.state = 787;
 					this.oC_RelationshipDetail();
@@ -3155,10 +3155,10 @@ export class CypherParser extends Parser {
 				this.state = 791;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 790;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -3167,10 +3167,10 @@ export class CypherParser extends Parser {
 				this.state = 795;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 794;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -3192,14 +3192,14 @@ export class CypherParser extends Parser {
 				case 1:
 					{
 					this.state = 800;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 					break;
 				}
 				this.state = 804;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.T__7) {
+				if (_la === CypherScriptParser.T__7) {
 					{
 					this.state = 803;
 					this.oC_RelationshipDetail();
@@ -3209,10 +3209,10 @@ export class CypherParser extends Parser {
 				this.state = 807;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 806;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -3240,37 +3240,37 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_RelationshipDetail(): OC_RelationshipDetailContext {
 		let _localctx: OC_RelationshipDetailContext = new OC_RelationshipDetailContext(this._ctx, this.state);
-		this.enterRule(_localctx, 82, CypherParser.RULE_oC_RelationshipDetail);
+		this.enterRule(_localctx, 82, CypherScriptParser.RULE_oC_RelationshipDetail);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 813;
-			this.match(CypherParser.T__7);
+			this.match(CypherScriptParser.T__7);
 			this.state = 815;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 814;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 821;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (((((_la - 83)) & ~0x1F) === 0 && ((1 << (_la - 83)) & ((1 << (CypherParser.COUNT - 83)) | (1 << (CypherParser.ANY - 83)) | (1 << (CypherParser.NONE - 83)) | (1 << (CypherParser.SINGLE - 83)) | (1 << (CypherParser.HexLetter - 83)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherParser.FILTER - 119)) | (1 << (CypherParser.EXTRACT - 119)) | (1 << (CypherParser.UnescapedSymbolicName - 119)) | (1 << (CypherParser.EscapedSymbolicName - 119)))) !== 0)) {
+			if (((((_la - 83)) & ~0x1F) === 0 && ((1 << (_la - 83)) & ((1 << (CypherScriptParser.COUNT - 83)) | (1 << (CypherScriptParser.ANY - 83)) | (1 << (CypherScriptParser.NONE - 83)) | (1 << (CypherScriptParser.SINGLE - 83)) | (1 << (CypherScriptParser.HexLetter - 83)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherScriptParser.FILTER - 119)) | (1 << (CypherScriptParser.EXTRACT - 119)) | (1 << (CypherScriptParser.UnescapedSymbolicName - 119)) | (1 << (CypherScriptParser.EscapedSymbolicName - 119)))) !== 0)) {
 				{
 				this.state = 817;
 				this.oC_Variable();
 				this.state = 819;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 818;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -3280,17 +3280,17 @@ export class CypherParser extends Parser {
 			this.state = 827;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.T__9) {
+			if (_la === CypherScriptParser.T__9) {
 				{
 				this.state = 823;
 				this.oC_RelationshipTypes();
 				this.state = 825;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 824;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -3300,7 +3300,7 @@ export class CypherParser extends Parser {
 			this.state = 830;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.T__4) {
+			if (_la === CypherScriptParser.T__4) {
 				{
 				this.state = 829;
 				this.oC_RangeLiteral();
@@ -3310,17 +3310,17 @@ export class CypherParser extends Parser {
 			this.state = 836;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.T__22 || _la === CypherParser.T__25) {
+			if (_la === CypherScriptParser.T__22 || _la === CypherScriptParser.T__25) {
 				{
 				this.state = 832;
 				this.oC_Properties();
 				this.state = 834;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 833;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -3328,7 +3328,7 @@ export class CypherParser extends Parser {
 			}
 
 			this.state = 838;
-			this.match(CypherParser.T__8);
+			this.match(CypherScriptParser.T__8);
 			}
 		}
 		catch (re) {
@@ -3348,19 +3348,19 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Properties(): OC_PropertiesContext {
 		let _localctx: OC_PropertiesContext = new OC_PropertiesContext(this._ctx, this.state);
-		this.enterRule(_localctx, 84, CypherParser.RULE_oC_Properties);
+		this.enterRule(_localctx, 84, CypherScriptParser.RULE_oC_Properties);
 		try {
 			this.state = 842;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case CypherParser.T__22:
+			case CypherScriptParser.T__22:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				this.state = 840;
 				this.oC_MapLiteral();
 				}
 				break;
-			case CypherParser.T__25:
+			case CypherScriptParser.T__25:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 841;
@@ -3388,21 +3388,21 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_RelationshipTypes(): OC_RelationshipTypesContext {
 		let _localctx: OC_RelationshipTypesContext = new OC_RelationshipTypesContext(this._ctx, this.state);
-		this.enterRule(_localctx, 86, CypherParser.RULE_oC_RelationshipTypes);
+		this.enterRule(_localctx, 86, CypherScriptParser.RULE_oC_RelationshipTypes);
 		let _la: number;
 		try {
 			let _alt: number;
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 844;
-			this.match(CypherParser.T__9);
+			this.match(CypherScriptParser.T__9);
 			this.state = 846;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 845;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -3418,32 +3418,32 @@ export class CypherParser extends Parser {
 					this.state = 850;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 849;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
 					this.state = 852;
-					this.match(CypherParser.T__10);
+					this.match(CypherScriptParser.T__10);
 					this.state = 854;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.T__9) {
+					if (_la === CypherScriptParser.T__9) {
 						{
 						this.state = 853;
-						this.match(CypherParser.T__9);
+						this.match(CypherScriptParser.T__9);
 						}
 					}
 
 					this.state = 857;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 856;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -3475,7 +3475,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_NodeLabels(): OC_NodeLabelsContext {
 		let _localctx: OC_NodeLabelsContext = new OC_NodeLabelsContext(this._ctx, this.state);
-		this.enterRule(_localctx, 88, CypherParser.RULE_oC_NodeLabels);
+		this.enterRule(_localctx, 88, CypherScriptParser.RULE_oC_NodeLabels);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -3493,10 +3493,10 @@ export class CypherParser extends Parser {
 					this.state = 867;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 866;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -3528,20 +3528,20 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_NodeLabel(): OC_NodeLabelContext {
 		let _localctx: OC_NodeLabelContext = new OC_NodeLabelContext(this._ctx, this.state);
-		this.enterRule(_localctx, 90, CypherParser.RULE_oC_NodeLabel);
+		this.enterRule(_localctx, 90, CypherScriptParser.RULE_oC_NodeLabel);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 875;
-			this.match(CypherParser.T__9);
+			this.match(CypherScriptParser.T__9);
 			this.state = 877;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 876;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -3566,37 +3566,37 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_RangeLiteral(): OC_RangeLiteralContext {
 		let _localctx: OC_RangeLiteralContext = new OC_RangeLiteralContext(this._ctx, this.state);
-		this.enterRule(_localctx, 92, CypherParser.RULE_oC_RangeLiteral);
+		this.enterRule(_localctx, 92, CypherScriptParser.RULE_oC_RangeLiteral);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 881;
-			this.match(CypherParser.T__4);
+			this.match(CypherScriptParser.T__4);
 			this.state = 883;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 882;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 889;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (((((_la - 97)) & ~0x1F) === 0 && ((1 << (_la - 97)) & ((1 << (CypherParser.HexInteger - 97)) | (1 << (CypherParser.DecimalInteger - 97)) | (1 << (CypherParser.OctalInteger - 97)))) !== 0)) {
+			if (((((_la - 97)) & ~0x1F) === 0 && ((1 << (_la - 97)) & ((1 << (CypherScriptParser.HexInteger - 97)) | (1 << (CypherScriptParser.DecimalInteger - 97)) | (1 << (CypherScriptParser.OctalInteger - 97)))) !== 0)) {
 				{
 				this.state = 885;
 				this.oC_IntegerLiteral();
 				this.state = 887;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 886;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -3606,34 +3606,34 @@ export class CypherParser extends Parser {
 			this.state = 901;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.T__11) {
+			if (_la === CypherScriptParser.T__11) {
 				{
 				this.state = 891;
-				this.match(CypherParser.T__11);
+				this.match(CypherScriptParser.T__11);
 				this.state = 893;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 892;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 899;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (((((_la - 97)) & ~0x1F) === 0 && ((1 << (_la - 97)) & ((1 << (CypherParser.HexInteger - 97)) | (1 << (CypherParser.DecimalInteger - 97)) | (1 << (CypherParser.OctalInteger - 97)))) !== 0)) {
+				if (((((_la - 97)) & ~0x1F) === 0 && ((1 << (_la - 97)) & ((1 << (CypherScriptParser.HexInteger - 97)) | (1 << (CypherScriptParser.DecimalInteger - 97)) | (1 << (CypherScriptParser.OctalInteger - 97)))) !== 0)) {
 					{
 					this.state = 895;
 					this.oC_IntegerLiteral();
 					this.state = 897;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 896;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -3662,7 +3662,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_LabelName(): OC_LabelNameContext {
 		let _localctx: OC_LabelNameContext = new OC_LabelNameContext(this._ctx, this.state);
-		this.enterRule(_localctx, 94, CypherParser.RULE_oC_LabelName);
+		this.enterRule(_localctx, 94, CypherScriptParser.RULE_oC_LabelName);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
@@ -3687,7 +3687,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_RelTypeName(): OC_RelTypeNameContext {
 		let _localctx: OC_RelTypeNameContext = new OC_RelTypeNameContext(this._ctx, this.state);
-		this.enterRule(_localctx, 96, CypherParser.RULE_oC_RelTypeName);
+		this.enterRule(_localctx, 96, CypherScriptParser.RULE_oC_RelTypeName);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
@@ -3712,7 +3712,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Expression(): OC_ExpressionContext {
 		let _localctx: OC_ExpressionContext = new OC_ExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 98, CypherParser.RULE_oC_Expression);
+		this.enterRule(_localctx, 98, CypherScriptParser.RULE_oC_Expression);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
@@ -3737,7 +3737,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_OrExpression(): OC_OrExpressionContext {
 		let _localctx: OC_OrExpressionContext = new OC_OrExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 100, CypherParser.RULE_oC_OrExpression);
+		this.enterRule(_localctx, 100, CypherScriptParser.RULE_oC_OrExpression);
 		try {
 			let _alt: number;
 			this.enterOuterAlt(_localctx, 1);
@@ -3752,11 +3752,11 @@ export class CypherParser extends Parser {
 					{
 					{
 					this.state = 910;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					this.state = 911;
-					this.match(CypherParser.OR);
+					this.match(CypherScriptParser.OR);
 					this.state = 912;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					this.state = 913;
 					this.oC_XorExpression();
 					}
@@ -3785,7 +3785,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_XorExpression(): OC_XorExpressionContext {
 		let _localctx: OC_XorExpressionContext = new OC_XorExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 102, CypherParser.RULE_oC_XorExpression);
+		this.enterRule(_localctx, 102, CypherScriptParser.RULE_oC_XorExpression);
 		try {
 			let _alt: number;
 			this.enterOuterAlt(_localctx, 1);
@@ -3800,11 +3800,11 @@ export class CypherParser extends Parser {
 					{
 					{
 					this.state = 920;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					this.state = 921;
-					this.match(CypherParser.XOR);
+					this.match(CypherScriptParser.XOR);
 					this.state = 922;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					this.state = 923;
 					this.oC_AndExpression();
 					}
@@ -3833,7 +3833,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_AndExpression(): OC_AndExpressionContext {
 		let _localctx: OC_AndExpressionContext = new OC_AndExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 104, CypherParser.RULE_oC_AndExpression);
+		this.enterRule(_localctx, 104, CypherScriptParser.RULE_oC_AndExpression);
 		try {
 			let _alt: number;
 			this.enterOuterAlt(_localctx, 1);
@@ -3848,11 +3848,11 @@ export class CypherParser extends Parser {
 					{
 					{
 					this.state = 930;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					this.state = 931;
-					this.match(CypherParser.AND);
+					this.match(CypherScriptParser.AND);
 					this.state = 932;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					this.state = 933;
 					this.oC_NotExpression();
 					}
@@ -3881,7 +3881,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_NotExpression(): OC_NotExpressionContext {
 		let _localctx: OC_NotExpressionContext = new OC_NotExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 106, CypherParser.RULE_oC_NotExpression);
+		this.enterRule(_localctx, 106, CypherScriptParser.RULE_oC_NotExpression);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
@@ -3889,18 +3889,18 @@ export class CypherParser extends Parser {
 			this.state = 945;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			while (_la === CypherParser.NOT) {
+			while (_la === CypherScriptParser.NOT) {
 				{
 				{
 				this.state = 939;
-				this.match(CypherParser.NOT);
+				this.match(CypherScriptParser.NOT);
 				this.state = 941;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 940;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -3931,7 +3931,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ComparisonExpression(): OC_ComparisonExpressionContext {
 		let _localctx: OC_ComparisonExpressionContext = new OC_ComparisonExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 108, CypherParser.RULE_oC_ComparisonExpression);
+		this.enterRule(_localctx, 108, CypherScriptParser.RULE_oC_ComparisonExpression);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -3949,10 +3949,10 @@ export class CypherParser extends Parser {
 					this.state = 952;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 951;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -3984,7 +3984,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_AddOrSubtractExpression(): OC_AddOrSubtractExpressionContext {
 		let _localctx: OC_AddOrSubtractExpressionContext = new OC_AddOrSubtractExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 110, CypherParser.RULE_oC_AddOrSubtractExpression);
+		this.enterRule(_localctx, 110, CypherScriptParser.RULE_oC_AddOrSubtractExpression);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -4007,22 +4007,22 @@ export class CypherParser extends Parser {
 						this.state = 962;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 961;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
 						this.state = 964;
-						this.match(CypherParser.T__12);
+						this.match(CypherScriptParser.T__12);
 						this.state = 966;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 965;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -4038,22 +4038,22 @@ export class CypherParser extends Parser {
 						this.state = 970;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 969;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
 						this.state = 972;
-						this.match(CypherParser.T__13);
+						this.match(CypherScriptParser.T__13);
 						this.state = 974;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 973;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -4088,7 +4088,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_MultiplyDivideModuloExpression(): OC_MultiplyDivideModuloExpressionContext {
 		let _localctx: OC_MultiplyDivideModuloExpressionContext = new OC_MultiplyDivideModuloExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 112, CypherParser.RULE_oC_MultiplyDivideModuloExpression);
+		this.enterRule(_localctx, 112, CypherScriptParser.RULE_oC_MultiplyDivideModuloExpression);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -4111,22 +4111,22 @@ export class CypherParser extends Parser {
 						this.state = 984;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 983;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
 						this.state = 986;
-						this.match(CypherParser.T__4);
+						this.match(CypherScriptParser.T__4);
 						this.state = 988;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 987;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -4142,22 +4142,22 @@ export class CypherParser extends Parser {
 						this.state = 992;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 991;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
 						this.state = 994;
-						this.match(CypherParser.T__14);
+						this.match(CypherScriptParser.T__14);
 						this.state = 996;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 995;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -4173,22 +4173,22 @@ export class CypherParser extends Parser {
 						this.state = 1000;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 999;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
 						this.state = 1002;
-						this.match(CypherParser.T__15);
+						this.match(CypherScriptParser.T__15);
 						this.state = 1004;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 1003;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -4223,7 +4223,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_PowerOfExpression(): OC_PowerOfExpressionContext {
 		let _localctx: OC_PowerOfExpressionContext = new OC_PowerOfExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 114, CypherParser.RULE_oC_PowerOfExpression);
+		this.enterRule(_localctx, 114, CypherScriptParser.RULE_oC_PowerOfExpression);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -4241,22 +4241,22 @@ export class CypherParser extends Parser {
 					this.state = 1014;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1013;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
 					this.state = 1016;
-					this.match(CypherParser.T__16);
+					this.match(CypherScriptParser.T__16);
 					this.state = 1018;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1017;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -4288,7 +4288,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_UnaryAddOrSubtractExpression(): OC_UnaryAddOrSubtractExpressionContext {
 		let _localctx: OC_UnaryAddOrSubtractExpressionContext = new OC_UnaryAddOrSubtractExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 116, CypherParser.RULE_oC_UnaryAddOrSubtractExpression);
+		this.enterRule(_localctx, 116, CypherScriptParser.RULE_oC_UnaryAddOrSubtractExpression);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
@@ -4296,12 +4296,12 @@ export class CypherParser extends Parser {
 			this.state = 1032;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			while (_la === CypherParser.T__12 || _la === CypherParser.T__13) {
+			while (_la === CypherScriptParser.T__12 || _la === CypherScriptParser.T__13) {
 				{
 				{
 				this.state = 1026;
 				_la = this._input.LA(1);
-				if (!(_la === CypherParser.T__12 || _la === CypherParser.T__13)) {
+				if (!(_la === CypherScriptParser.T__12 || _la === CypherScriptParser.T__13)) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -4314,10 +4314,10 @@ export class CypherParser extends Parser {
 				this.state = 1028;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1027;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -4348,7 +4348,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_StringListNullOperatorExpression(): OC_StringListNullOperatorExpressionContext {
 		let _localctx: OC_StringListNullOperatorExpressionContext = new OC_StringListNullOperatorExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 118, CypherParser.RULE_oC_StringListNullOperatorExpression);
+		this.enterRule(_localctx, 118, CypherScriptParser.RULE_oC_StringListNullOperatorExpression);
 		try {
 			let _alt: number;
 			this.enterOuterAlt(_localctx, 1);
@@ -4410,7 +4410,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ListOperatorExpression(): OC_ListOperatorExpressionContext {
 		let _localctx: OC_ListOperatorExpressionContext = new OC_ListOperatorExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 120, CypherParser.RULE_oC_ListOperatorExpression);
+		this.enterRule(_localctx, 120, CypherScriptParser.RULE_oC_ListOperatorExpression);
 		let _la: number;
 		try {
 			this.state = 1071;
@@ -4421,16 +4421,16 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 1046;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 1047;
-				this.match(CypherParser.IN);
+				this.match(CypherScriptParser.IN);
 				this.state = 1049;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1048;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -4447,19 +4447,19 @@ export class CypherParser extends Parser {
 				this.state = 1053;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1052;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1055;
-				this.match(CypherParser.T__7);
+				this.match(CypherScriptParser.T__7);
 				this.state = 1056;
 				this.oC_Expression();
 				this.state = 1057;
-				this.match(CypherParser.T__8);
+				this.match(CypherScriptParser.T__8);
 				}
 				}
 				break;
@@ -4471,19 +4471,19 @@ export class CypherParser extends Parser {
 				this.state = 1060;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1059;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1062;
-				this.match(CypherParser.T__7);
+				this.match(CypherScriptParser.T__7);
 				this.state = 1064;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << CypherParser.T__5) | (1 << CypherParser.T__7) | (1 << CypherParser.T__12) | (1 << CypherParser.T__13) | (1 << CypherParser.T__22) | (1 << CypherParser.T__25))) !== 0) || _la === CypherParser.ALL || _la === CypherParser.NOT || ((((_la - 82)) & ~0x1F) === 0 && ((1 << (_la - 82)) & ((1 << (CypherParser.NULL - 82)) | (1 << (CypherParser.COUNT - 82)) | (1 << (CypherParser.ANY - 82)) | (1 << (CypherParser.NONE - 82)) | (1 << (CypherParser.SINGLE - 82)) | (1 << (CypherParser.TRUE - 82)) | (1 << (CypherParser.FALSE - 82)) | (1 << (CypherParser.EXISTS - 82)) | (1 << (CypherParser.CASE - 82)) | (1 << (CypherParser.StringLiteral - 82)) | (1 << (CypherParser.HexInteger - 82)) | (1 << (CypherParser.DecimalInteger - 82)) | (1 << (CypherParser.OctalInteger - 82)) | (1 << (CypherParser.HexLetter - 82)) | (1 << (CypherParser.ExponentDecimalReal - 82)) | (1 << (CypherParser.RegularDecimalReal - 82)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherParser.FILTER - 119)) | (1 << (CypherParser.EXTRACT - 119)) | (1 << (CypherParser.UnescapedSymbolicName - 119)) | (1 << (CypherParser.EscapedSymbolicName - 119)))) !== 0)) {
+				if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << CypherScriptParser.T__5) | (1 << CypherScriptParser.T__7) | (1 << CypherScriptParser.T__12) | (1 << CypherScriptParser.T__13) | (1 << CypherScriptParser.T__22) | (1 << CypherScriptParser.T__25))) !== 0) || _la === CypherScriptParser.ALL || _la === CypherScriptParser.NOT || ((((_la - 82)) & ~0x1F) === 0 && ((1 << (_la - 82)) & ((1 << (CypherScriptParser.NULL - 82)) | (1 << (CypherScriptParser.COUNT - 82)) | (1 << (CypherScriptParser.ANY - 82)) | (1 << (CypherScriptParser.NONE - 82)) | (1 << (CypherScriptParser.SINGLE - 82)) | (1 << (CypherScriptParser.TRUE - 82)) | (1 << (CypherScriptParser.FALSE - 82)) | (1 << (CypherScriptParser.EXISTS - 82)) | (1 << (CypherScriptParser.CASE - 82)) | (1 << (CypherScriptParser.StringLiteral - 82)) | (1 << (CypherScriptParser.HexInteger - 82)) | (1 << (CypherScriptParser.DecimalInteger - 82)) | (1 << (CypherScriptParser.OctalInteger - 82)) | (1 << (CypherScriptParser.HexLetter - 82)) | (1 << (CypherScriptParser.ExponentDecimalReal - 82)) | (1 << (CypherScriptParser.RegularDecimalReal - 82)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherScriptParser.FILTER - 119)) | (1 << (CypherScriptParser.EXTRACT - 119)) | (1 << (CypherScriptParser.UnescapedSymbolicName - 119)) | (1 << (CypherScriptParser.EscapedSymbolicName - 119)))) !== 0)) {
 					{
 					this.state = 1063;
 					this.oC_Expression();
@@ -4491,11 +4491,11 @@ export class CypherParser extends Parser {
 				}
 
 				this.state = 1066;
-				this.match(CypherParser.T__11);
+				this.match(CypherScriptParser.T__11);
 				this.state = 1068;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << CypherParser.T__5) | (1 << CypherParser.T__7) | (1 << CypherParser.T__12) | (1 << CypherParser.T__13) | (1 << CypherParser.T__22) | (1 << CypherParser.T__25))) !== 0) || _la === CypherParser.ALL || _la === CypherParser.NOT || ((((_la - 82)) & ~0x1F) === 0 && ((1 << (_la - 82)) & ((1 << (CypherParser.NULL - 82)) | (1 << (CypherParser.COUNT - 82)) | (1 << (CypherParser.ANY - 82)) | (1 << (CypherParser.NONE - 82)) | (1 << (CypherParser.SINGLE - 82)) | (1 << (CypherParser.TRUE - 82)) | (1 << (CypherParser.FALSE - 82)) | (1 << (CypherParser.EXISTS - 82)) | (1 << (CypherParser.CASE - 82)) | (1 << (CypherParser.StringLiteral - 82)) | (1 << (CypherParser.HexInteger - 82)) | (1 << (CypherParser.DecimalInteger - 82)) | (1 << (CypherParser.OctalInteger - 82)) | (1 << (CypherParser.HexLetter - 82)) | (1 << (CypherParser.ExponentDecimalReal - 82)) | (1 << (CypherParser.RegularDecimalReal - 82)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherParser.FILTER - 119)) | (1 << (CypherParser.EXTRACT - 119)) | (1 << (CypherParser.UnescapedSymbolicName - 119)) | (1 << (CypherParser.EscapedSymbolicName - 119)))) !== 0)) {
+				if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << CypherScriptParser.T__5) | (1 << CypherScriptParser.T__7) | (1 << CypherScriptParser.T__12) | (1 << CypherScriptParser.T__13) | (1 << CypherScriptParser.T__22) | (1 << CypherScriptParser.T__25))) !== 0) || _la === CypherScriptParser.ALL || _la === CypherScriptParser.NOT || ((((_la - 82)) & ~0x1F) === 0 && ((1 << (_la - 82)) & ((1 << (CypherScriptParser.NULL - 82)) | (1 << (CypherScriptParser.COUNT - 82)) | (1 << (CypherScriptParser.ANY - 82)) | (1 << (CypherScriptParser.NONE - 82)) | (1 << (CypherScriptParser.SINGLE - 82)) | (1 << (CypherScriptParser.TRUE - 82)) | (1 << (CypherScriptParser.FALSE - 82)) | (1 << (CypherScriptParser.EXISTS - 82)) | (1 << (CypherScriptParser.CASE - 82)) | (1 << (CypherScriptParser.StringLiteral - 82)) | (1 << (CypherScriptParser.HexInteger - 82)) | (1 << (CypherScriptParser.DecimalInteger - 82)) | (1 << (CypherScriptParser.OctalInteger - 82)) | (1 << (CypherScriptParser.HexLetter - 82)) | (1 << (CypherScriptParser.ExponentDecimalReal - 82)) | (1 << (CypherScriptParser.RegularDecimalReal - 82)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherScriptParser.FILTER - 119)) | (1 << (CypherScriptParser.EXTRACT - 119)) | (1 << (CypherScriptParser.UnescapedSymbolicName - 119)) | (1 << (CypherScriptParser.EscapedSymbolicName - 119)))) !== 0)) {
 					{
 					this.state = 1067;
 					this.oC_Expression();
@@ -4503,7 +4503,7 @@ export class CypherParser extends Parser {
 				}
 
 				this.state = 1070;
-				this.match(CypherParser.T__8);
+				this.match(CypherScriptParser.T__8);
 				}
 				}
 				break;
@@ -4526,7 +4526,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_StringOperatorExpression(): OC_StringOperatorExpressionContext {
 		let _localctx: OC_StringOperatorExpressionContext = new OC_StringOperatorExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 122, CypherParser.RULE_oC_StringOperatorExpression);
+		this.enterRule(_localctx, 122, CypherScriptParser.RULE_oC_StringOperatorExpression);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
@@ -4538,13 +4538,13 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 1073;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 1074;
-				this.match(CypherParser.STARTS);
+				this.match(CypherScriptParser.STARTS);
 				this.state = 1075;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 1076;
-				this.match(CypherParser.WITH);
+				this.match(CypherScriptParser.WITH);
 				}
 				}
 				break;
@@ -4553,13 +4553,13 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 1077;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 1078;
-				this.match(CypherParser.ENDS);
+				this.match(CypherScriptParser.ENDS);
 				this.state = 1079;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 1080;
-				this.match(CypherParser.WITH);
+				this.match(CypherScriptParser.WITH);
 				}
 				}
 				break;
@@ -4568,9 +4568,9 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 1081;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 1082;
-				this.match(CypherParser.CONTAINS);
+				this.match(CypherScriptParser.CONTAINS);
 				}
 				}
 				break;
@@ -4578,10 +4578,10 @@ export class CypherParser extends Parser {
 			this.state = 1086;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1085;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -4606,7 +4606,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_NullOperatorExpression(): OC_NullOperatorExpressionContext {
 		let _localctx: OC_NullOperatorExpressionContext = new OC_NullOperatorExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 124, CypherParser.RULE_oC_NullOperatorExpression);
+		this.enterRule(_localctx, 124, CypherScriptParser.RULE_oC_NullOperatorExpression);
 		try {
 			this.state = 1100;
 			this._errHandler.sync(this);
@@ -4616,13 +4616,13 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 1090;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 1091;
-				this.match(CypherParser.IS);
+				this.match(CypherScriptParser.IS);
 				this.state = 1092;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 1093;
-				this.match(CypherParser.NULL);
+				this.match(CypherScriptParser.NULL);
 				}
 				}
 				break;
@@ -4632,17 +4632,17 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 1094;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 1095;
-				this.match(CypherParser.IS);
+				this.match(CypherScriptParser.IS);
 				this.state = 1096;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 1097;
-				this.match(CypherParser.NOT);
+				this.match(CypherScriptParser.NOT);
 				this.state = 1098;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				this.state = 1099;
-				this.match(CypherParser.NULL);
+				this.match(CypherScriptParser.NULL);
 				}
 				}
 				break;
@@ -4665,7 +4665,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_PropertyOrLabelsExpression(): OC_PropertyOrLabelsExpressionContext {
 		let _localctx: OC_PropertyOrLabelsExpressionContext = new OC_PropertyOrLabelsExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 126, CypherParser.RULE_oC_PropertyOrLabelsExpression);
+		this.enterRule(_localctx, 126, CypherScriptParser.RULE_oC_PropertyOrLabelsExpression);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -4683,10 +4683,10 @@ export class CypherParser extends Parser {
 					this.state = 1104;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1103;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -4707,10 +4707,10 @@ export class CypherParser extends Parser {
 				this.state = 1113;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1112;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -4738,7 +4738,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Atom(): OC_AtomContext {
 		let _localctx: OC_AtomContext = new OC_AtomContext(this._ctx, this.state);
-		this.enterRule(_localctx, 128, CypherParser.RULE_oC_Atom);
+		this.enterRule(_localctx, 128, CypherScriptParser.RULE_oC_Atom);
 		let _la: number;
 		try {
 			this.state = 1197;
@@ -4773,43 +4773,43 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 1121;
-				this.match(CypherParser.COUNT);
+				this.match(CypherScriptParser.COUNT);
 				this.state = 1123;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1122;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1125;
-				this.match(CypherParser.T__5);
+				this.match(CypherScriptParser.T__5);
 				this.state = 1127;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1126;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1129;
-				this.match(CypherParser.T__4);
+				this.match(CypherScriptParser.T__4);
 				this.state = 1131;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1130;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1133;
-				this.match(CypherParser.T__6);
+				this.match(CypherScriptParser.T__6);
 				}
 				}
 				break;
@@ -4835,26 +4835,26 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 1136;
-				this.match(CypherParser.ALL);
+				this.match(CypherScriptParser.ALL);
 				this.state = 1138;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1137;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1140;
-				this.match(CypherParser.T__5);
+				this.match(CypherScriptParser.T__5);
 				this.state = 1142;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1141;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -4863,15 +4863,15 @@ export class CypherParser extends Parser {
 				this.state = 1146;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1145;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1148;
-				this.match(CypherParser.T__6);
+				this.match(CypherScriptParser.T__6);
 				}
 				}
 				break;
@@ -4881,26 +4881,26 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 1150;
-				this.match(CypherParser.ANY);
+				this.match(CypherScriptParser.ANY);
 				this.state = 1152;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1151;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1154;
-				this.match(CypherParser.T__5);
+				this.match(CypherScriptParser.T__5);
 				this.state = 1156;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1155;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -4909,15 +4909,15 @@ export class CypherParser extends Parser {
 				this.state = 1160;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1159;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1162;
-				this.match(CypherParser.T__6);
+				this.match(CypherScriptParser.T__6);
 				}
 				}
 				break;
@@ -4927,26 +4927,26 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 1164;
-				this.match(CypherParser.NONE);
+				this.match(CypherScriptParser.NONE);
 				this.state = 1166;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1165;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1168;
-				this.match(CypherParser.T__5);
+				this.match(CypherScriptParser.T__5);
 				this.state = 1170;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1169;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -4955,15 +4955,15 @@ export class CypherParser extends Parser {
 				this.state = 1174;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1173;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1176;
-				this.match(CypherParser.T__6);
+				this.match(CypherScriptParser.T__6);
 				}
 				}
 				break;
@@ -4973,26 +4973,26 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 1178;
-				this.match(CypherParser.SINGLE);
+				this.match(CypherScriptParser.SINGLE);
 				this.state = 1180;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1179;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1182;
-				this.match(CypherParser.T__5);
+				this.match(CypherScriptParser.T__5);
 				this.state = 1184;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1183;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -5001,15 +5001,15 @@ export class CypherParser extends Parser {
 				this.state = 1188;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1187;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1190;
-				this.match(CypherParser.T__6);
+				this.match(CypherScriptParser.T__6);
 				}
 				}
 				break;
@@ -5072,52 +5072,52 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Literal(): OC_LiteralContext {
 		let _localctx: OC_LiteralContext = new OC_LiteralContext(this._ctx, this.state);
-		this.enterRule(_localctx, 130, CypherParser.RULE_oC_Literal);
+		this.enterRule(_localctx, 130, CypherScriptParser.RULE_oC_Literal);
 		try {
 			this.state = 1205;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case CypherParser.HexInteger:
-			case CypherParser.DecimalInteger:
-			case CypherParser.OctalInteger:
-			case CypherParser.ExponentDecimalReal:
-			case CypherParser.RegularDecimalReal:
+			case CypherScriptParser.HexInteger:
+			case CypherScriptParser.DecimalInteger:
+			case CypherScriptParser.OctalInteger:
+			case CypherScriptParser.ExponentDecimalReal:
+			case CypherScriptParser.RegularDecimalReal:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				this.state = 1199;
 				this.oC_NumberLiteral();
 				}
 				break;
-			case CypherParser.StringLiteral:
+			case CypherScriptParser.StringLiteral:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 1200;
-				this.match(CypherParser.StringLiteral);
+				this.match(CypherScriptParser.StringLiteral);
 				}
 				break;
-			case CypherParser.TRUE:
-			case CypherParser.FALSE:
+			case CypherScriptParser.TRUE:
+			case CypherScriptParser.FALSE:
 				this.enterOuterAlt(_localctx, 3);
 				{
 				this.state = 1201;
 				this.oC_BooleanLiteral();
 				}
 				break;
-			case CypherParser.NULL:
+			case CypherScriptParser.NULL:
 				this.enterOuterAlt(_localctx, 4);
 				{
 				this.state = 1202;
-				this.match(CypherParser.NULL);
+				this.match(CypherScriptParser.NULL);
 				}
 				break;
-			case CypherParser.T__22:
+			case CypherScriptParser.T__22:
 				this.enterOuterAlt(_localctx, 5);
 				{
 				this.state = 1203;
 				this.oC_MapLiteral();
 				}
 				break;
-			case CypherParser.T__7:
+			case CypherScriptParser.T__7:
 				this.enterOuterAlt(_localctx, 6);
 				{
 				this.state = 1204;
@@ -5145,14 +5145,14 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_BooleanLiteral(): OC_BooleanLiteralContext {
 		let _localctx: OC_BooleanLiteralContext = new OC_BooleanLiteralContext(this._ctx, this.state);
-		this.enterRule(_localctx, 132, CypherParser.RULE_oC_BooleanLiteral);
+		this.enterRule(_localctx, 132, CypherScriptParser.RULE_oC_BooleanLiteral);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1207;
 			_la = this._input.LA(1);
-			if (!(_la === CypherParser.TRUE || _la === CypherParser.FALSE)) {
+			if (!(_la === CypherScriptParser.TRUE || _la === CypherScriptParser.FALSE)) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -5181,55 +5181,55 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ListLiteral(): OC_ListLiteralContext {
 		let _localctx: OC_ListLiteralContext = new OC_ListLiteralContext(this._ctx, this.state);
-		this.enterRule(_localctx, 134, CypherParser.RULE_oC_ListLiteral);
+		this.enterRule(_localctx, 134, CypherScriptParser.RULE_oC_ListLiteral);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1209;
-			this.match(CypherParser.T__7);
+			this.match(CypherScriptParser.T__7);
 			this.state = 1211;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1210;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1230;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << CypherParser.T__5) | (1 << CypherParser.T__7) | (1 << CypherParser.T__12) | (1 << CypherParser.T__13) | (1 << CypherParser.T__22) | (1 << CypherParser.T__25))) !== 0) || _la === CypherParser.ALL || _la === CypherParser.NOT || ((((_la - 82)) & ~0x1F) === 0 && ((1 << (_la - 82)) & ((1 << (CypherParser.NULL - 82)) | (1 << (CypherParser.COUNT - 82)) | (1 << (CypherParser.ANY - 82)) | (1 << (CypherParser.NONE - 82)) | (1 << (CypherParser.SINGLE - 82)) | (1 << (CypherParser.TRUE - 82)) | (1 << (CypherParser.FALSE - 82)) | (1 << (CypherParser.EXISTS - 82)) | (1 << (CypherParser.CASE - 82)) | (1 << (CypherParser.StringLiteral - 82)) | (1 << (CypherParser.HexInteger - 82)) | (1 << (CypherParser.DecimalInteger - 82)) | (1 << (CypherParser.OctalInteger - 82)) | (1 << (CypherParser.HexLetter - 82)) | (1 << (CypherParser.ExponentDecimalReal - 82)) | (1 << (CypherParser.RegularDecimalReal - 82)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherParser.FILTER - 119)) | (1 << (CypherParser.EXTRACT - 119)) | (1 << (CypherParser.UnescapedSymbolicName - 119)) | (1 << (CypherParser.EscapedSymbolicName - 119)))) !== 0)) {
+			if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << CypherScriptParser.T__5) | (1 << CypherScriptParser.T__7) | (1 << CypherScriptParser.T__12) | (1 << CypherScriptParser.T__13) | (1 << CypherScriptParser.T__22) | (1 << CypherScriptParser.T__25))) !== 0) || _la === CypherScriptParser.ALL || _la === CypherScriptParser.NOT || ((((_la - 82)) & ~0x1F) === 0 && ((1 << (_la - 82)) & ((1 << (CypherScriptParser.NULL - 82)) | (1 << (CypherScriptParser.COUNT - 82)) | (1 << (CypherScriptParser.ANY - 82)) | (1 << (CypherScriptParser.NONE - 82)) | (1 << (CypherScriptParser.SINGLE - 82)) | (1 << (CypherScriptParser.TRUE - 82)) | (1 << (CypherScriptParser.FALSE - 82)) | (1 << (CypherScriptParser.EXISTS - 82)) | (1 << (CypherScriptParser.CASE - 82)) | (1 << (CypherScriptParser.StringLiteral - 82)) | (1 << (CypherScriptParser.HexInteger - 82)) | (1 << (CypherScriptParser.DecimalInteger - 82)) | (1 << (CypherScriptParser.OctalInteger - 82)) | (1 << (CypherScriptParser.HexLetter - 82)) | (1 << (CypherScriptParser.ExponentDecimalReal - 82)) | (1 << (CypherScriptParser.RegularDecimalReal - 82)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherScriptParser.FILTER - 119)) | (1 << (CypherScriptParser.EXTRACT - 119)) | (1 << (CypherScriptParser.UnescapedSymbolicName - 119)) | (1 << (CypherScriptParser.EscapedSymbolicName - 119)))) !== 0)) {
 				{
 				this.state = 1213;
 				this.oC_Expression();
 				this.state = 1215;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1214;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1227;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				while (_la === CypherParser.T__1) {
+				while (_la === CypherScriptParser.T__1) {
 					{
 					{
 					this.state = 1217;
-					this.match(CypherParser.T__1);
+					this.match(CypherScriptParser.T__1);
 					this.state = 1219;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1218;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -5238,10 +5238,10 @@ export class CypherParser extends Parser {
 					this.state = 1223;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1222;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -5255,7 +5255,7 @@ export class CypherParser extends Parser {
 			}
 
 			this.state = 1232;
-			this.match(CypherParser.T__8);
+			this.match(CypherScriptParser.T__8);
 			}
 		}
 		catch (re) {
@@ -5275,25 +5275,25 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_PartialComparisonExpression(): OC_PartialComparisonExpressionContext {
 		let _localctx: OC_PartialComparisonExpressionContext = new OC_PartialComparisonExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 136, CypherParser.RULE_oC_PartialComparisonExpression);
+		this.enterRule(_localctx, 136, CypherScriptParser.RULE_oC_PartialComparisonExpression);
 		let _la: number;
 		try {
 			this.state = 1264;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case CypherParser.T__2:
+			case CypherScriptParser.T__2:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				{
 				this.state = 1234;
-				this.match(CypherParser.T__2);
+				this.match(CypherScriptParser.T__2);
 				this.state = 1236;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1235;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -5302,19 +5302,19 @@ export class CypherParser extends Parser {
 				}
 				}
 				break;
-			case CypherParser.T__17:
+			case CypherScriptParser.T__17:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				{
 				this.state = 1239;
-				this.match(CypherParser.T__17);
+				this.match(CypherScriptParser.T__17);
 				this.state = 1241;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1240;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -5323,19 +5323,19 @@ export class CypherParser extends Parser {
 				}
 				}
 				break;
-			case CypherParser.T__18:
+			case CypherScriptParser.T__18:
 				this.enterOuterAlt(_localctx, 3);
 				{
 				{
 				this.state = 1244;
-				this.match(CypherParser.T__18);
+				this.match(CypherScriptParser.T__18);
 				this.state = 1246;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1245;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -5344,19 +5344,19 @@ export class CypherParser extends Parser {
 				}
 				}
 				break;
-			case CypherParser.T__19:
+			case CypherScriptParser.T__19:
 				this.enterOuterAlt(_localctx, 4);
 				{
 				{
 				this.state = 1249;
-				this.match(CypherParser.T__19);
+				this.match(CypherScriptParser.T__19);
 				this.state = 1251;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1250;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -5365,19 +5365,19 @@ export class CypherParser extends Parser {
 				}
 				}
 				break;
-			case CypherParser.T__20:
+			case CypherScriptParser.T__20:
 				this.enterOuterAlt(_localctx, 5);
 				{
 				{
 				this.state = 1254;
-				this.match(CypherParser.T__20);
+				this.match(CypherScriptParser.T__20);
 				this.state = 1256;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1255;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -5386,19 +5386,19 @@ export class CypherParser extends Parser {
 				}
 				}
 				break;
-			case CypherParser.T__21:
+			case CypherScriptParser.T__21:
 				this.enterOuterAlt(_localctx, 6);
 				{
 				{
 				this.state = 1259;
-				this.match(CypherParser.T__21);
+				this.match(CypherScriptParser.T__21);
 				this.state = 1261;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1260;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -5428,20 +5428,20 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ParenthesizedExpression(): OC_ParenthesizedExpressionContext {
 		let _localctx: OC_ParenthesizedExpressionContext = new OC_ParenthesizedExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 138, CypherParser.RULE_oC_ParenthesizedExpression);
+		this.enterRule(_localctx, 138, CypherScriptParser.RULE_oC_ParenthesizedExpression);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1266;
-			this.match(CypherParser.T__5);
+			this.match(CypherScriptParser.T__5);
 			this.state = 1268;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1267;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -5450,15 +5450,15 @@ export class CypherParser extends Parser {
 			this.state = 1272;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1271;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1274;
-			this.match(CypherParser.T__6);
+			this.match(CypherScriptParser.T__6);
 			}
 		}
 		catch (re) {
@@ -5478,7 +5478,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_RelationshipsPattern(): OC_RelationshipsPatternContext {
 		let _localctx: OC_RelationshipsPatternContext = new OC_RelationshipsPatternContext(this._ctx, this.state);
-		this.enterRule(_localctx, 140, CypherParser.RULE_oC_RelationshipsPattern);
+		this.enterRule(_localctx, 140, CypherScriptParser.RULE_oC_RelationshipsPattern);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -5497,10 +5497,10 @@ export class CypherParser extends Parser {
 					this.state = 1278;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1277;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -5535,7 +5535,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_FilterExpression(): OC_FilterExpressionContext {
 		let _localctx: OC_FilterExpressionContext = new OC_FilterExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 142, CypherParser.RULE_oC_FilterExpression);
+		this.enterRule(_localctx, 142, CypherScriptParser.RULE_oC_FilterExpression);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
@@ -5550,10 +5550,10 @@ export class CypherParser extends Parser {
 				this.state = 1287;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1286;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -5581,18 +5581,18 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_IdInColl(): OC_IdInCollContext {
 		let _localctx: OC_IdInCollContext = new OC_IdInCollContext(this._ctx, this.state);
-		this.enterRule(_localctx, 144, CypherParser.RULE_oC_IdInColl);
+		this.enterRule(_localctx, 144, CypherScriptParser.RULE_oC_IdInColl);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1292;
 			this.oC_Variable();
 			this.state = 1293;
-			this.match(CypherParser.SP);
+			this.match(CypherScriptParser.SP);
 			this.state = 1294;
-			this.match(CypherParser.IN);
+			this.match(CypherScriptParser.IN);
 			this.state = 1295;
-			this.match(CypherParser.SP);
+			this.match(CypherScriptParser.SP);
 			this.state = 1296;
 			this.oC_Expression();
 			}
@@ -5614,7 +5614,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_FunctionInvocation(): OC_FunctionInvocationContext {
 		let _localctx: OC_FunctionInvocationContext = new OC_FunctionInvocationContext(this._ctx, this.state);
-		this.enterRule(_localctx, 146, CypherParser.RULE_oC_FunctionInvocation);
+		this.enterRule(_localctx, 146, CypherScriptParser.RULE_oC_FunctionInvocation);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
@@ -5624,39 +5624,39 @@ export class CypherParser extends Parser {
 			this.state = 1300;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1299;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1302;
-			this.match(CypherParser.T__5);
+			this.match(CypherScriptParser.T__5);
 			this.state = 1304;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1303;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1310;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.DISTINCT) {
+			if (_la === CypherScriptParser.DISTINCT) {
 				{
 				this.state = 1306;
-				this.match(CypherParser.DISTINCT);
+				this.match(CypherScriptParser.DISTINCT);
 				this.state = 1308;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1307;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -5666,35 +5666,35 @@ export class CypherParser extends Parser {
 			this.state = 1329;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << CypherParser.T__5) | (1 << CypherParser.T__7) | (1 << CypherParser.T__12) | (1 << CypherParser.T__13) | (1 << CypherParser.T__22) | (1 << CypherParser.T__25))) !== 0) || _la === CypherParser.ALL || _la === CypherParser.NOT || ((((_la - 82)) & ~0x1F) === 0 && ((1 << (_la - 82)) & ((1 << (CypherParser.NULL - 82)) | (1 << (CypherParser.COUNT - 82)) | (1 << (CypherParser.ANY - 82)) | (1 << (CypherParser.NONE - 82)) | (1 << (CypherParser.SINGLE - 82)) | (1 << (CypherParser.TRUE - 82)) | (1 << (CypherParser.FALSE - 82)) | (1 << (CypherParser.EXISTS - 82)) | (1 << (CypherParser.CASE - 82)) | (1 << (CypherParser.StringLiteral - 82)) | (1 << (CypherParser.HexInteger - 82)) | (1 << (CypherParser.DecimalInteger - 82)) | (1 << (CypherParser.OctalInteger - 82)) | (1 << (CypherParser.HexLetter - 82)) | (1 << (CypherParser.ExponentDecimalReal - 82)) | (1 << (CypherParser.RegularDecimalReal - 82)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherParser.FILTER - 119)) | (1 << (CypherParser.EXTRACT - 119)) | (1 << (CypherParser.UnescapedSymbolicName - 119)) | (1 << (CypherParser.EscapedSymbolicName - 119)))) !== 0)) {
+			if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << CypherScriptParser.T__5) | (1 << CypherScriptParser.T__7) | (1 << CypherScriptParser.T__12) | (1 << CypherScriptParser.T__13) | (1 << CypherScriptParser.T__22) | (1 << CypherScriptParser.T__25))) !== 0) || _la === CypherScriptParser.ALL || _la === CypherScriptParser.NOT || ((((_la - 82)) & ~0x1F) === 0 && ((1 << (_la - 82)) & ((1 << (CypherScriptParser.NULL - 82)) | (1 << (CypherScriptParser.COUNT - 82)) | (1 << (CypherScriptParser.ANY - 82)) | (1 << (CypherScriptParser.NONE - 82)) | (1 << (CypherScriptParser.SINGLE - 82)) | (1 << (CypherScriptParser.TRUE - 82)) | (1 << (CypherScriptParser.FALSE - 82)) | (1 << (CypherScriptParser.EXISTS - 82)) | (1 << (CypherScriptParser.CASE - 82)) | (1 << (CypherScriptParser.StringLiteral - 82)) | (1 << (CypherScriptParser.HexInteger - 82)) | (1 << (CypherScriptParser.DecimalInteger - 82)) | (1 << (CypherScriptParser.OctalInteger - 82)) | (1 << (CypherScriptParser.HexLetter - 82)) | (1 << (CypherScriptParser.ExponentDecimalReal - 82)) | (1 << (CypherScriptParser.RegularDecimalReal - 82)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherScriptParser.FILTER - 119)) | (1 << (CypherScriptParser.EXTRACT - 119)) | (1 << (CypherScriptParser.UnescapedSymbolicName - 119)) | (1 << (CypherScriptParser.EscapedSymbolicName - 119)))) !== 0)) {
 				{
 				this.state = 1312;
 				this.oC_Expression();
 				this.state = 1314;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1313;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1326;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				while (_la === CypherParser.T__1) {
+				while (_la === CypherScriptParser.T__1) {
 					{
 					{
 					this.state = 1316;
-					this.match(CypherParser.T__1);
+					this.match(CypherScriptParser.T__1);
 					this.state = 1318;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1317;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -5703,10 +5703,10 @@ export class CypherParser extends Parser {
 					this.state = 1322;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1321;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -5720,7 +5720,7 @@ export class CypherParser extends Parser {
 			}
 
 			this.state = 1331;
-			this.match(CypherParser.T__6);
+			this.match(CypherScriptParser.T__6);
 			}
 		}
 		catch (re) {
@@ -5740,7 +5740,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_FunctionName(): OC_FunctionNameContext {
 		let _localctx: OC_FunctionNameContext = new OC_FunctionNameContext(this._ctx, this.state);
-		this.enterRule(_localctx, 148, CypherParser.RULE_oC_FunctionName);
+		this.enterRule(_localctx, 148, CypherScriptParser.RULE_oC_FunctionName);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
@@ -5767,65 +5767,65 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ExistentialSubquery(): OC_ExistentialSubqueryContext {
 		let _localctx: OC_ExistentialSubqueryContext = new OC_ExistentialSubqueryContext(this._ctx, this.state);
-		this.enterRule(_localctx, 150, CypherParser.RULE_oC_ExistentialSubquery);
+		this.enterRule(_localctx, 150, CypherScriptParser.RULE_oC_ExistentialSubquery);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1336;
-			this.match(CypherParser.EXISTS);
+			this.match(CypherScriptParser.EXISTS);
 			this.state = 1338;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1337;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1340;
-			this.match(CypherParser.T__22);
+			this.match(CypherScriptParser.T__22);
 			this.state = 1342;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1341;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1352;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case CypherParser.OPTIONAL:
-			case CypherParser.MATCH:
-			case CypherParser.UNWIND:
-			case CypherParser.MERGE:
-			case CypherParser.CREATE:
-			case CypherParser.SET:
-			case CypherParser.DETACH:
-			case CypherParser.DELETE:
-			case CypherParser.REMOVE:
-			case CypherParser.CALL:
-			case CypherParser.WITH:
-			case CypherParser.RETURN:
+			case CypherScriptParser.OPTIONAL:
+			case CypherScriptParser.MATCH:
+			case CypherScriptParser.UNWIND:
+			case CypherScriptParser.MERGE:
+			case CypherScriptParser.CREATE:
+			case CypherScriptParser.SET:
+			case CypherScriptParser.DETACH:
+			case CypherScriptParser.DELETE:
+			case CypherScriptParser.REMOVE:
+			case CypherScriptParser.CALL:
+			case CypherScriptParser.WITH:
+			case CypherScriptParser.RETURN:
 				{
 				this.state = 1344;
 				this.oC_RegularQuery();
 				}
 				break;
-			case CypherParser.T__5:
-			case CypherParser.COUNT:
-			case CypherParser.ANY:
-			case CypherParser.NONE:
-			case CypherParser.SINGLE:
-			case CypherParser.HexLetter:
-			case CypherParser.FILTER:
-			case CypherParser.EXTRACT:
-			case CypherParser.UnescapedSymbolicName:
-			case CypherParser.EscapedSymbolicName:
+			case CypherScriptParser.T__5:
+			case CypherScriptParser.COUNT:
+			case CypherScriptParser.ANY:
+			case CypherScriptParser.NONE:
+			case CypherScriptParser.SINGLE:
+			case CypherScriptParser.HexLetter:
+			case CypherScriptParser.FILTER:
+			case CypherScriptParser.EXTRACT:
+			case CypherScriptParser.UnescapedSymbolicName:
+			case CypherScriptParser.EscapedSymbolicName:
 				{
 				{
 				this.state = 1345;
@@ -5838,10 +5838,10 @@ export class CypherParser extends Parser {
 					this.state = 1347;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1346;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -5859,15 +5859,15 @@ export class CypherParser extends Parser {
 			this.state = 1355;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1354;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1357;
-			this.match(CypherParser.T__23);
+			this.match(CypherScriptParser.T__23);
 			}
 		}
 		catch (re) {
@@ -5887,7 +5887,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ExplicitProcedureInvocation(): OC_ExplicitProcedureInvocationContext {
 		let _localctx: OC_ExplicitProcedureInvocationContext = new OC_ExplicitProcedureInvocationContext(this._ctx, this.state);
-		this.enterRule(_localctx, 152, CypherParser.RULE_oC_ExplicitProcedureInvocation);
+		this.enterRule(_localctx, 152, CypherScriptParser.RULE_oC_ExplicitProcedureInvocation);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
@@ -5897,57 +5897,57 @@ export class CypherParser extends Parser {
 			this.state = 1361;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1360;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1363;
-			this.match(CypherParser.T__5);
+			this.match(CypherScriptParser.T__5);
 			this.state = 1365;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1364;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1384;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << CypherParser.T__5) | (1 << CypherParser.T__7) | (1 << CypherParser.T__12) | (1 << CypherParser.T__13) | (1 << CypherParser.T__22) | (1 << CypherParser.T__25))) !== 0) || _la === CypherParser.ALL || _la === CypherParser.NOT || ((((_la - 82)) & ~0x1F) === 0 && ((1 << (_la - 82)) & ((1 << (CypherParser.NULL - 82)) | (1 << (CypherParser.COUNT - 82)) | (1 << (CypherParser.ANY - 82)) | (1 << (CypherParser.NONE - 82)) | (1 << (CypherParser.SINGLE - 82)) | (1 << (CypherParser.TRUE - 82)) | (1 << (CypherParser.FALSE - 82)) | (1 << (CypherParser.EXISTS - 82)) | (1 << (CypherParser.CASE - 82)) | (1 << (CypherParser.StringLiteral - 82)) | (1 << (CypherParser.HexInteger - 82)) | (1 << (CypherParser.DecimalInteger - 82)) | (1 << (CypherParser.OctalInteger - 82)) | (1 << (CypherParser.HexLetter - 82)) | (1 << (CypherParser.ExponentDecimalReal - 82)) | (1 << (CypherParser.RegularDecimalReal - 82)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherParser.FILTER - 119)) | (1 << (CypherParser.EXTRACT - 119)) | (1 << (CypherParser.UnescapedSymbolicName - 119)) | (1 << (CypherParser.EscapedSymbolicName - 119)))) !== 0)) {
+			if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << CypherScriptParser.T__5) | (1 << CypherScriptParser.T__7) | (1 << CypherScriptParser.T__12) | (1 << CypherScriptParser.T__13) | (1 << CypherScriptParser.T__22) | (1 << CypherScriptParser.T__25))) !== 0) || _la === CypherScriptParser.ALL || _la === CypherScriptParser.NOT || ((((_la - 82)) & ~0x1F) === 0 && ((1 << (_la - 82)) & ((1 << (CypherScriptParser.NULL - 82)) | (1 << (CypherScriptParser.COUNT - 82)) | (1 << (CypherScriptParser.ANY - 82)) | (1 << (CypherScriptParser.NONE - 82)) | (1 << (CypherScriptParser.SINGLE - 82)) | (1 << (CypherScriptParser.TRUE - 82)) | (1 << (CypherScriptParser.FALSE - 82)) | (1 << (CypherScriptParser.EXISTS - 82)) | (1 << (CypherScriptParser.CASE - 82)) | (1 << (CypherScriptParser.StringLiteral - 82)) | (1 << (CypherScriptParser.HexInteger - 82)) | (1 << (CypherScriptParser.DecimalInteger - 82)) | (1 << (CypherScriptParser.OctalInteger - 82)) | (1 << (CypherScriptParser.HexLetter - 82)) | (1 << (CypherScriptParser.ExponentDecimalReal - 82)) | (1 << (CypherScriptParser.RegularDecimalReal - 82)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherScriptParser.FILTER - 119)) | (1 << (CypherScriptParser.EXTRACT - 119)) | (1 << (CypherScriptParser.UnescapedSymbolicName - 119)) | (1 << (CypherScriptParser.EscapedSymbolicName - 119)))) !== 0)) {
 				{
 				this.state = 1367;
 				this.oC_Expression();
 				this.state = 1369;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1368;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1381;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				while (_la === CypherParser.T__1) {
+				while (_la === CypherScriptParser.T__1) {
 					{
 					{
 					this.state = 1371;
-					this.match(CypherParser.T__1);
+					this.match(CypherScriptParser.T__1);
 					this.state = 1373;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1372;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -5956,10 +5956,10 @@ export class CypherParser extends Parser {
 					this.state = 1377;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1376;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -5973,7 +5973,7 @@ export class CypherParser extends Parser {
 			}
 
 			this.state = 1386;
-			this.match(CypherParser.T__6);
+			this.match(CypherScriptParser.T__6);
 			}
 		}
 		catch (re) {
@@ -5993,7 +5993,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ImplicitProcedureInvocation(): OC_ImplicitProcedureInvocationContext {
 		let _localctx: OC_ImplicitProcedureInvocationContext = new OC_ImplicitProcedureInvocationContext(this._ctx, this.state);
-		this.enterRule(_localctx, 154, CypherParser.RULE_oC_ImplicitProcedureInvocation);
+		this.enterRule(_localctx, 154, CypherScriptParser.RULE_oC_ImplicitProcedureInvocation);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
@@ -6018,7 +6018,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ProcedureResultField(): OC_ProcedureResultFieldContext {
 		let _localctx: OC_ProcedureResultFieldContext = new OC_ProcedureResultFieldContext(this._ctx, this.state);
-		this.enterRule(_localctx, 156, CypherParser.RULE_oC_ProcedureResultField);
+		this.enterRule(_localctx, 156, CypherScriptParser.RULE_oC_ProcedureResultField);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
@@ -6043,7 +6043,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ProcedureName(): OC_ProcedureNameContext {
 		let _localctx: OC_ProcedureNameContext = new OC_ProcedureNameContext(this._ctx, this.state);
-		this.enterRule(_localctx, 158, CypherParser.RULE_oC_ProcedureName);
+		this.enterRule(_localctx, 158, CypherScriptParser.RULE_oC_ProcedureName);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
@@ -6070,7 +6070,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Namespace(): OC_NamespaceContext {
 		let _localctx: OC_NamespaceContext = new OC_NamespaceContext(this._ctx, this.state);
-		this.enterRule(_localctx, 160, CypherParser.RULE_oC_Namespace);
+		this.enterRule(_localctx, 160, CypherScriptParser.RULE_oC_Namespace);
 		try {
 			let _alt: number;
 			this.enterOuterAlt(_localctx, 1);
@@ -6085,7 +6085,7 @@ export class CypherParser extends Parser {
 					this.state = 1395;
 					this.oC_SymbolicName();
 					this.state = 1396;
-					this.match(CypherParser.T__24);
+					this.match(CypherScriptParser.T__24);
 					}
 					}
 				}
@@ -6112,20 +6112,20 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ListComprehension(): OC_ListComprehensionContext {
 		let _localctx: OC_ListComprehensionContext = new OC_ListComprehensionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 162, CypherParser.RULE_oC_ListComprehension);
+		this.enterRule(_localctx, 162, CypherScriptParser.RULE_oC_ListComprehension);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1403;
-			this.match(CypherParser.T__7);
+			this.match(CypherScriptParser.T__7);
 			this.state = 1405;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1404;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -6139,22 +6139,22 @@ export class CypherParser extends Parser {
 				this.state = 1409;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1408;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1411;
-				this.match(CypherParser.T__10);
+				this.match(CypherScriptParser.T__10);
 				this.state = 1413;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1412;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -6166,15 +6166,15 @@ export class CypherParser extends Parser {
 			this.state = 1419;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1418;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1421;
-			this.match(CypherParser.T__8);
+			this.match(CypherScriptParser.T__8);
 			}
 		}
 		catch (re) {
@@ -6194,49 +6194,49 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_PatternComprehension(): OC_PatternComprehensionContext {
 		let _localctx: OC_PatternComprehensionContext = new OC_PatternComprehensionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 164, CypherParser.RULE_oC_PatternComprehension);
+		this.enterRule(_localctx, 164, CypherScriptParser.RULE_oC_PatternComprehension);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1423;
-			this.match(CypherParser.T__7);
+			this.match(CypherScriptParser.T__7);
 			this.state = 1425;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1424;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1435;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (((((_la - 83)) & ~0x1F) === 0 && ((1 << (_la - 83)) & ((1 << (CypherParser.COUNT - 83)) | (1 << (CypherParser.ANY - 83)) | (1 << (CypherParser.NONE - 83)) | (1 << (CypherParser.SINGLE - 83)) | (1 << (CypherParser.HexLetter - 83)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherParser.FILTER - 119)) | (1 << (CypherParser.EXTRACT - 119)) | (1 << (CypherParser.UnescapedSymbolicName - 119)) | (1 << (CypherParser.EscapedSymbolicName - 119)))) !== 0)) {
+			if (((((_la - 83)) & ~0x1F) === 0 && ((1 << (_la - 83)) & ((1 << (CypherScriptParser.COUNT - 83)) | (1 << (CypherScriptParser.ANY - 83)) | (1 << (CypherScriptParser.NONE - 83)) | (1 << (CypherScriptParser.SINGLE - 83)) | (1 << (CypherScriptParser.HexLetter - 83)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherScriptParser.FILTER - 119)) | (1 << (CypherScriptParser.EXTRACT - 119)) | (1 << (CypherScriptParser.UnescapedSymbolicName - 119)) | (1 << (CypherScriptParser.EscapedSymbolicName - 119)))) !== 0)) {
 				{
 				this.state = 1427;
 				this.oC_Variable();
 				this.state = 1429;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1428;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1431;
-				this.match(CypherParser.T__2);
+				this.match(CypherScriptParser.T__2);
 				this.state = 1433;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1432;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -6248,27 +6248,27 @@ export class CypherParser extends Parser {
 			this.state = 1439;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1438;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1445;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.WHERE) {
+			if (_la === CypherScriptParser.WHERE) {
 				{
 				this.state = 1441;
 				this.oC_Where();
 				this.state = 1443;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1442;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -6276,14 +6276,14 @@ export class CypherParser extends Parser {
 			}
 
 			this.state = 1447;
-			this.match(CypherParser.T__10);
+			this.match(CypherScriptParser.T__10);
 			this.state = 1449;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1448;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -6292,15 +6292,15 @@ export class CypherParser extends Parser {
 			this.state = 1453;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1452;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1455;
-			this.match(CypherParser.T__8);
+			this.match(CypherScriptParser.T__8);
 			}
 		}
 		catch (re) {
@@ -6320,20 +6320,20 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_PropertyLookup(): OC_PropertyLookupContext {
 		let _localctx: OC_PropertyLookupContext = new OC_PropertyLookupContext(this._ctx, this.state);
-		this.enterRule(_localctx, 166, CypherParser.RULE_oC_PropertyLookup);
+		this.enterRule(_localctx, 166, CypherScriptParser.RULE_oC_PropertyLookup);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1457;
-			this.match(CypherParser.T__24);
+			this.match(CypherScriptParser.T__24);
 			this.state = 1459;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1458;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -6360,7 +6360,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_CaseExpression(): OC_CaseExpressionContext {
 		let _localctx: OC_CaseExpressionContext = new OC_CaseExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 168, CypherParser.RULE_oC_CaseExpression);
+		this.enterRule(_localctx, 168, CypherScriptParser.RULE_oC_CaseExpression);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -6373,7 +6373,7 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 1463;
-				this.match(CypherParser.CASE);
+				this.match(CypherScriptParser.CASE);
 				this.state = 1468;
 				this._errHandler.sync(this);
 				_alt = 1;
@@ -6385,10 +6385,10 @@ export class CypherParser extends Parser {
 						this.state = 1465;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 1464;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -6412,14 +6412,14 @@ export class CypherParser extends Parser {
 				{
 				{
 				this.state = 1472;
-				this.match(CypherParser.CASE);
+				this.match(CypherScriptParser.CASE);
 				this.state = 1474;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1473;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -6436,10 +6436,10 @@ export class CypherParser extends Parser {
 						this.state = 1478;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === CypherParser.SP) {
+						if (_la === CypherScriptParser.SP) {
 							{
 							this.state = 1477;
-							this.match(CypherParser.SP);
+							this.match(CypherScriptParser.SP);
 							}
 						}
 
@@ -6467,22 +6467,22 @@ export class CypherParser extends Parser {
 				this.state = 1488;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1487;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1490;
-				this.match(CypherParser.ELSE);
+				this.match(CypherScriptParser.ELSE);
 				this.state = 1492;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1491;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -6494,15 +6494,15 @@ export class CypherParser extends Parser {
 			this.state = 1498;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1497;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1500;
-			this.match(CypherParser.END);
+			this.match(CypherScriptParser.END);
 			}
 		}
 		catch (re) {
@@ -6522,20 +6522,20 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_CaseAlternative(): OC_CaseAlternativeContext {
 		let _localctx: OC_CaseAlternativeContext = new OC_CaseAlternativeContext(this._ctx, this.state);
-		this.enterRule(_localctx, 170, CypherParser.RULE_oC_CaseAlternative);
+		this.enterRule(_localctx, 170, CypherScriptParser.RULE_oC_CaseAlternative);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1502;
-			this.match(CypherParser.WHEN);
+			this.match(CypherScriptParser.WHEN);
 			this.state = 1504;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1503;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -6544,22 +6544,22 @@ export class CypherParser extends Parser {
 			this.state = 1508;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1507;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1510;
-			this.match(CypherParser.THEN);
+			this.match(CypherScriptParser.THEN);
 			this.state = 1512;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1511;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
@@ -6584,7 +6584,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Variable(): OC_VariableContext {
 		let _localctx: OC_VariableContext = new OC_VariableContext(this._ctx, this.state);
-		this.enterRule(_localctx, 172, CypherParser.RULE_oC_Variable);
+		this.enterRule(_localctx, 172, CypherScriptParser.RULE_oC_Variable);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
@@ -6609,22 +6609,22 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_NumberLiteral(): OC_NumberLiteralContext {
 		let _localctx: OC_NumberLiteralContext = new OC_NumberLiteralContext(this._ctx, this.state);
-		this.enterRule(_localctx, 174, CypherParser.RULE_oC_NumberLiteral);
+		this.enterRule(_localctx, 174, CypherScriptParser.RULE_oC_NumberLiteral);
 		try {
 			this.state = 1520;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case CypherParser.ExponentDecimalReal:
-			case CypherParser.RegularDecimalReal:
+			case CypherScriptParser.ExponentDecimalReal:
+			case CypherScriptParser.RegularDecimalReal:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				this.state = 1518;
 				this.oC_DoubleLiteral();
 				}
 				break;
-			case CypherParser.HexInteger:
-			case CypherParser.DecimalInteger:
-			case CypherParser.OctalInteger:
+			case CypherScriptParser.HexInteger:
+			case CypherScriptParser.DecimalInteger:
+			case CypherScriptParser.OctalInteger:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 1519;
@@ -6652,49 +6652,49 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_MapLiteral(): OC_MapLiteralContext {
 		let _localctx: OC_MapLiteralContext = new OC_MapLiteralContext(this._ctx, this.state);
-		this.enterRule(_localctx, 176, CypherParser.RULE_oC_MapLiteral);
+		this.enterRule(_localctx, 176, CypherScriptParser.RULE_oC_MapLiteral);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1522;
-			this.match(CypherParser.T__22);
+			this.match(CypherScriptParser.T__22);
 			this.state = 1524;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === CypherParser.SP) {
+			if (_la === CypherScriptParser.SP) {
 				{
 				this.state = 1523;
-				this.match(CypherParser.SP);
+				this.match(CypherScriptParser.SP);
 				}
 			}
 
 			this.state = 1559;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (((((_la - 46)) & ~0x1F) === 0 && ((1 << (_la - 46)) & ((1 << (CypherParser.UNION - 46)) | (1 << (CypherParser.ALL - 46)) | (1 << (CypherParser.OPTIONAL - 46)) | (1 << (CypherParser.MATCH - 46)) | (1 << (CypherParser.UNWIND - 46)) | (1 << (CypherParser.AS - 46)) | (1 << (CypherParser.MERGE - 46)) | (1 << (CypherParser.ON - 46)) | (1 << (CypherParser.CREATE - 46)) | (1 << (CypherParser.SET - 46)) | (1 << (CypherParser.DETACH - 46)) | (1 << (CypherParser.DELETE - 46)) | (1 << (CypherParser.REMOVE - 46)) | (1 << (CypherParser.WITH - 46)) | (1 << (CypherParser.RETURN - 46)) | (1 << (CypherParser.DISTINCT - 46)) | (1 << (CypherParser.ORDER - 46)) | (1 << (CypherParser.BY - 46)) | (1 << (CypherParser.L_SKIP - 46)) | (1 << (CypherParser.LIMIT - 46)) | (1 << (CypherParser.ASCENDING - 46)) | (1 << (CypherParser.ASC - 46)) | (1 << (CypherParser.DESCENDING - 46)) | (1 << (CypherParser.DESC - 46)) | (1 << (CypherParser.WHERE - 46)) | (1 << (CypherParser.OR - 46)) | (1 << (CypherParser.XOR - 46)) | (1 << (CypherParser.AND - 46)) | (1 << (CypherParser.NOT - 46)) | (1 << (CypherParser.IN - 46)))) !== 0) || ((((_la - 78)) & ~0x1F) === 0 && ((1 << (_la - 78)) & ((1 << (CypherParser.STARTS - 78)) | (1 << (CypherParser.ENDS - 78)) | (1 << (CypherParser.CONTAINS - 78)) | (1 << (CypherParser.IS - 78)) | (1 << (CypherParser.NULL - 78)) | (1 << (CypherParser.COUNT - 78)) | (1 << (CypherParser.ANY - 78)) | (1 << (CypherParser.NONE - 78)) | (1 << (CypherParser.SINGLE - 78)) | (1 << (CypherParser.TRUE - 78)) | (1 << (CypherParser.FALSE - 78)) | (1 << (CypherParser.EXISTS - 78)) | (1 << (CypherParser.CASE - 78)) | (1 << (CypherParser.ELSE - 78)) | (1 << (CypherParser.END - 78)) | (1 << (CypherParser.WHEN - 78)) | (1 << (CypherParser.THEN - 78)) | (1 << (CypherParser.HexLetter - 78)) | (1 << (CypherParser.CONSTRAINT - 78)))) !== 0) || ((((_la - 110)) & ~0x1F) === 0 && ((1 << (_la - 110)) & ((1 << (CypherParser.DO - 110)) | (1 << (CypherParser.FOR - 110)) | (1 << (CypherParser.REQUIRE - 110)) | (1 << (CypherParser.UNIQUE - 110)) | (1 << (CypherParser.MANDATORY - 110)) | (1 << (CypherParser.SCALAR - 110)) | (1 << (CypherParser.OF - 110)) | (1 << (CypherParser.ADD - 110)) | (1 << (CypherParser.DROP - 110)) | (1 << (CypherParser.FILTER - 110)) | (1 << (CypherParser.EXTRACT - 110)) | (1 << (CypherParser.UnescapedSymbolicName - 110)) | (1 << (CypherParser.EscapedSymbolicName - 110)))) !== 0)) {
+			if (((((_la - 46)) & ~0x1F) === 0 && ((1 << (_la - 46)) & ((1 << (CypherScriptParser.UNION - 46)) | (1 << (CypherScriptParser.ALL - 46)) | (1 << (CypherScriptParser.OPTIONAL - 46)) | (1 << (CypherScriptParser.MATCH - 46)) | (1 << (CypherScriptParser.UNWIND - 46)) | (1 << (CypherScriptParser.AS - 46)) | (1 << (CypherScriptParser.MERGE - 46)) | (1 << (CypherScriptParser.ON - 46)) | (1 << (CypherScriptParser.CREATE - 46)) | (1 << (CypherScriptParser.SET - 46)) | (1 << (CypherScriptParser.DETACH - 46)) | (1 << (CypherScriptParser.DELETE - 46)) | (1 << (CypherScriptParser.REMOVE - 46)) | (1 << (CypherScriptParser.WITH - 46)) | (1 << (CypherScriptParser.RETURN - 46)) | (1 << (CypherScriptParser.DISTINCT - 46)) | (1 << (CypherScriptParser.ORDER - 46)) | (1 << (CypherScriptParser.BY - 46)) | (1 << (CypherScriptParser.L_SKIP - 46)) | (1 << (CypherScriptParser.LIMIT - 46)) | (1 << (CypherScriptParser.ASCENDING - 46)) | (1 << (CypherScriptParser.ASC - 46)) | (1 << (CypherScriptParser.DESCENDING - 46)) | (1 << (CypherScriptParser.DESC - 46)) | (1 << (CypherScriptParser.WHERE - 46)) | (1 << (CypherScriptParser.OR - 46)) | (1 << (CypherScriptParser.XOR - 46)) | (1 << (CypherScriptParser.AND - 46)) | (1 << (CypherScriptParser.NOT - 46)) | (1 << (CypherScriptParser.IN - 46)))) !== 0) || ((((_la - 78)) & ~0x1F) === 0 && ((1 << (_la - 78)) & ((1 << (CypherScriptParser.STARTS - 78)) | (1 << (CypherScriptParser.ENDS - 78)) | (1 << (CypherScriptParser.CONTAINS - 78)) | (1 << (CypherScriptParser.IS - 78)) | (1 << (CypherScriptParser.NULL - 78)) | (1 << (CypherScriptParser.COUNT - 78)) | (1 << (CypherScriptParser.ANY - 78)) | (1 << (CypherScriptParser.NONE - 78)) | (1 << (CypherScriptParser.SINGLE - 78)) | (1 << (CypherScriptParser.TRUE - 78)) | (1 << (CypherScriptParser.FALSE - 78)) | (1 << (CypherScriptParser.EXISTS - 78)) | (1 << (CypherScriptParser.CASE - 78)) | (1 << (CypherScriptParser.ELSE - 78)) | (1 << (CypherScriptParser.END - 78)) | (1 << (CypherScriptParser.WHEN - 78)) | (1 << (CypherScriptParser.THEN - 78)) | (1 << (CypherScriptParser.HexLetter - 78)) | (1 << (CypherScriptParser.CONSTRAINT - 78)))) !== 0) || ((((_la - 110)) & ~0x1F) === 0 && ((1 << (_la - 110)) & ((1 << (CypherScriptParser.DO - 110)) | (1 << (CypherScriptParser.FOR - 110)) | (1 << (CypherScriptParser.REQUIRE - 110)) | (1 << (CypherScriptParser.UNIQUE - 110)) | (1 << (CypherScriptParser.MANDATORY - 110)) | (1 << (CypherScriptParser.SCALAR - 110)) | (1 << (CypherScriptParser.OF - 110)) | (1 << (CypherScriptParser.ADD - 110)) | (1 << (CypherScriptParser.DROP - 110)) | (1 << (CypherScriptParser.FILTER - 110)) | (1 << (CypherScriptParser.EXTRACT - 110)) | (1 << (CypherScriptParser.UnescapedSymbolicName - 110)) | (1 << (CypherScriptParser.EscapedSymbolicName - 110)))) !== 0)) {
 				{
 				this.state = 1526;
 				this.oC_PropertyKeyName();
 				this.state = 1528;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1527;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1530;
-				this.match(CypherParser.T__9);
+				this.match(CypherScriptParser.T__9);
 				this.state = 1532;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1531;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
@@ -6703,28 +6703,28 @@ export class CypherParser extends Parser {
 				this.state = 1536;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === CypherParser.SP) {
+				if (_la === CypherScriptParser.SP) {
 					{
 					this.state = 1535;
-					this.match(CypherParser.SP);
+					this.match(CypherScriptParser.SP);
 					}
 				}
 
 				this.state = 1556;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				while (_la === CypherParser.T__1) {
+				while (_la === CypherScriptParser.T__1) {
 					{
 					{
 					this.state = 1538;
-					this.match(CypherParser.T__1);
+					this.match(CypherScriptParser.T__1);
 					this.state = 1540;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1539;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -6733,22 +6733,22 @@ export class CypherParser extends Parser {
 					this.state = 1544;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1543;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
 					this.state = 1546;
-					this.match(CypherParser.T__9);
+					this.match(CypherScriptParser.T__9);
 					this.state = 1548;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1547;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -6757,10 +6757,10 @@ export class CypherParser extends Parser {
 					this.state = 1552;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1551;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -6774,7 +6774,7 @@ export class CypherParser extends Parser {
 			}
 
 			this.state = 1561;
-			this.match(CypherParser.T__23);
+			this.match(CypherScriptParser.T__23);
 			}
 		}
 		catch (re) {
@@ -6794,33 +6794,33 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Parameter(): OC_ParameterContext {
 		let _localctx: OC_ParameterContext = new OC_ParameterContext(this._ctx, this.state);
-		this.enterRule(_localctx, 178, CypherParser.RULE_oC_Parameter);
+		this.enterRule(_localctx, 178, CypherScriptParser.RULE_oC_Parameter);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1563;
-			this.match(CypherParser.T__25);
+			this.match(CypherScriptParser.T__25);
 			this.state = 1566;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case CypherParser.COUNT:
-			case CypherParser.ANY:
-			case CypherParser.NONE:
-			case CypherParser.SINGLE:
-			case CypherParser.HexLetter:
-			case CypherParser.FILTER:
-			case CypherParser.EXTRACT:
-			case CypherParser.UnescapedSymbolicName:
-			case CypherParser.EscapedSymbolicName:
+			case CypherScriptParser.COUNT:
+			case CypherScriptParser.ANY:
+			case CypherScriptParser.NONE:
+			case CypherScriptParser.SINGLE:
+			case CypherScriptParser.HexLetter:
+			case CypherScriptParser.FILTER:
+			case CypherScriptParser.EXTRACT:
+			case CypherScriptParser.UnescapedSymbolicName:
+			case CypherScriptParser.EscapedSymbolicName:
 				{
 				this.state = 1564;
 				this.oC_SymbolicName();
 				}
 				break;
-			case CypherParser.DecimalInteger:
+			case CypherScriptParser.DecimalInteger:
 				{
 				this.state = 1565;
-				this.match(CypherParser.DecimalInteger);
+				this.match(CypherScriptParser.DecimalInteger);
 				}
 				break;
 			default:
@@ -6845,7 +6845,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_PropertyExpression(): OC_PropertyExpressionContext {
 		let _localctx: OC_PropertyExpressionContext = new OC_PropertyExpressionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 180, CypherParser.RULE_oC_PropertyExpression);
+		this.enterRule(_localctx, 180, CypherScriptParser.RULE_oC_PropertyExpression);
 		let _la: number;
 		try {
 			let _alt: number;
@@ -6864,10 +6864,10 @@ export class CypherParser extends Parser {
 					this.state = 1570;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === CypherParser.SP) {
+					if (_la === CypherScriptParser.SP) {
 						{
 						this.state = 1569;
-						this.match(CypherParser.SP);
+						this.match(CypherScriptParser.SP);
 						}
 					}
 
@@ -6902,7 +6902,7 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_PropertyKeyName(): OC_PropertyKeyNameContext {
 		let _localctx: OC_PropertyKeyNameContext = new OC_PropertyKeyNameContext(this._ctx, this.state);
-		this.enterRule(_localctx, 182, CypherParser.RULE_oC_PropertyKeyName);
+		this.enterRule(_localctx, 182, CypherScriptParser.RULE_oC_PropertyKeyName);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
@@ -6927,14 +6927,14 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_IntegerLiteral(): OC_IntegerLiteralContext {
 		let _localctx: OC_IntegerLiteralContext = new OC_IntegerLiteralContext(this._ctx, this.state);
-		this.enterRule(_localctx, 184, CypherParser.RULE_oC_IntegerLiteral);
+		this.enterRule(_localctx, 184, CypherScriptParser.RULE_oC_IntegerLiteral);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1579;
 			_la = this._input.LA(1);
-			if (!(((((_la - 97)) & ~0x1F) === 0 && ((1 << (_la - 97)) & ((1 << (CypherParser.HexInteger - 97)) | (1 << (CypherParser.DecimalInteger - 97)) | (1 << (CypherParser.OctalInteger - 97)))) !== 0))) {
+			if (!(((((_la - 97)) & ~0x1F) === 0 && ((1 << (_la - 97)) & ((1 << (CypherScriptParser.HexInteger - 97)) | (1 << (CypherScriptParser.DecimalInteger - 97)) | (1 << (CypherScriptParser.OctalInteger - 97)))) !== 0))) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -6963,14 +6963,14 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_DoubleLiteral(): OC_DoubleLiteralContext {
 		let _localctx: OC_DoubleLiteralContext = new OC_DoubleLiteralContext(this._ctx, this.state);
-		this.enterRule(_localctx, 186, CypherParser.RULE_oC_DoubleLiteral);
+		this.enterRule(_localctx, 186, CypherScriptParser.RULE_oC_DoubleLiteral);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1581;
 			_la = this._input.LA(1);
-			if (!(_la === CypherParser.ExponentDecimalReal || _la === CypherParser.RegularDecimalReal)) {
+			if (!(_la === CypherScriptParser.ExponentDecimalReal || _la === CypherScriptParser.RegularDecimalReal)) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -6999,79 +6999,79 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_SchemaName(): OC_SchemaNameContext {
 		let _localctx: OC_SchemaNameContext = new OC_SchemaNameContext(this._ctx, this.state);
-		this.enterRule(_localctx, 188, CypherParser.RULE_oC_SchemaName);
+		this.enterRule(_localctx, 188, CypherScriptParser.RULE_oC_SchemaName);
 		try {
 			this.state = 1585;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case CypherParser.COUNT:
-			case CypherParser.ANY:
-			case CypherParser.NONE:
-			case CypherParser.SINGLE:
-			case CypherParser.HexLetter:
-			case CypherParser.FILTER:
-			case CypherParser.EXTRACT:
-			case CypherParser.UnescapedSymbolicName:
-			case CypherParser.EscapedSymbolicName:
+			case CypherScriptParser.COUNT:
+			case CypherScriptParser.ANY:
+			case CypherScriptParser.NONE:
+			case CypherScriptParser.SINGLE:
+			case CypherScriptParser.HexLetter:
+			case CypherScriptParser.FILTER:
+			case CypherScriptParser.EXTRACT:
+			case CypherScriptParser.UnescapedSymbolicName:
+			case CypherScriptParser.EscapedSymbolicName:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				this.state = 1583;
 				this.oC_SymbolicName();
 				}
 				break;
-			case CypherParser.UNION:
-			case CypherParser.ALL:
-			case CypherParser.OPTIONAL:
-			case CypherParser.MATCH:
-			case CypherParser.UNWIND:
-			case CypherParser.AS:
-			case CypherParser.MERGE:
-			case CypherParser.ON:
-			case CypherParser.CREATE:
-			case CypherParser.SET:
-			case CypherParser.DETACH:
-			case CypherParser.DELETE:
-			case CypherParser.REMOVE:
-			case CypherParser.WITH:
-			case CypherParser.RETURN:
-			case CypherParser.DISTINCT:
-			case CypherParser.ORDER:
-			case CypherParser.BY:
-			case CypherParser.L_SKIP:
-			case CypherParser.LIMIT:
-			case CypherParser.ASCENDING:
-			case CypherParser.ASC:
-			case CypherParser.DESCENDING:
-			case CypherParser.DESC:
-			case CypherParser.WHERE:
-			case CypherParser.OR:
-			case CypherParser.XOR:
-			case CypherParser.AND:
-			case CypherParser.NOT:
-			case CypherParser.IN:
-			case CypherParser.STARTS:
-			case CypherParser.ENDS:
-			case CypherParser.CONTAINS:
-			case CypherParser.IS:
-			case CypherParser.NULL:
-			case CypherParser.TRUE:
-			case CypherParser.FALSE:
-			case CypherParser.EXISTS:
-			case CypherParser.CASE:
-			case CypherParser.ELSE:
-			case CypherParser.END:
-			case CypherParser.WHEN:
-			case CypherParser.THEN:
-			case CypherParser.CONSTRAINT:
-			case CypherParser.DO:
-			case CypherParser.FOR:
-			case CypherParser.REQUIRE:
-			case CypherParser.UNIQUE:
-			case CypherParser.MANDATORY:
-			case CypherParser.SCALAR:
-			case CypherParser.OF:
-			case CypherParser.ADD:
-			case CypherParser.DROP:
+			case CypherScriptParser.UNION:
+			case CypherScriptParser.ALL:
+			case CypherScriptParser.OPTIONAL:
+			case CypherScriptParser.MATCH:
+			case CypherScriptParser.UNWIND:
+			case CypherScriptParser.AS:
+			case CypherScriptParser.MERGE:
+			case CypherScriptParser.ON:
+			case CypherScriptParser.CREATE:
+			case CypherScriptParser.SET:
+			case CypherScriptParser.DETACH:
+			case CypherScriptParser.DELETE:
+			case CypherScriptParser.REMOVE:
+			case CypherScriptParser.WITH:
+			case CypherScriptParser.RETURN:
+			case CypherScriptParser.DISTINCT:
+			case CypherScriptParser.ORDER:
+			case CypherScriptParser.BY:
+			case CypherScriptParser.L_SKIP:
+			case CypherScriptParser.LIMIT:
+			case CypherScriptParser.ASCENDING:
+			case CypherScriptParser.ASC:
+			case CypherScriptParser.DESCENDING:
+			case CypherScriptParser.DESC:
+			case CypherScriptParser.WHERE:
+			case CypherScriptParser.OR:
+			case CypherScriptParser.XOR:
+			case CypherScriptParser.AND:
+			case CypherScriptParser.NOT:
+			case CypherScriptParser.IN:
+			case CypherScriptParser.STARTS:
+			case CypherScriptParser.ENDS:
+			case CypherScriptParser.CONTAINS:
+			case CypherScriptParser.IS:
+			case CypherScriptParser.NULL:
+			case CypherScriptParser.TRUE:
+			case CypherScriptParser.FALSE:
+			case CypherScriptParser.EXISTS:
+			case CypherScriptParser.CASE:
+			case CypherScriptParser.ELSE:
+			case CypherScriptParser.END:
+			case CypherScriptParser.WHEN:
+			case CypherScriptParser.THEN:
+			case CypherScriptParser.CONSTRAINT:
+			case CypherScriptParser.DO:
+			case CypherScriptParser.FOR:
+			case CypherScriptParser.REQUIRE:
+			case CypherScriptParser.UNIQUE:
+			case CypherScriptParser.MANDATORY:
+			case CypherScriptParser.SCALAR:
+			case CypherScriptParser.OF:
+			case CypherScriptParser.ADD:
+			case CypherScriptParser.DROP:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 1584;
@@ -7099,14 +7099,14 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_ReservedWord(): OC_ReservedWordContext {
 		let _localctx: OC_ReservedWordContext = new OC_ReservedWordContext(this._ctx, this.state);
-		this.enterRule(_localctx, 190, CypherParser.RULE_oC_ReservedWord);
+		this.enterRule(_localctx, 190, CypherScriptParser.RULE_oC_ReservedWord);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1587;
 			_la = this._input.LA(1);
-			if (!(((((_la - 46)) & ~0x1F) === 0 && ((1 << (_la - 46)) & ((1 << (CypherParser.UNION - 46)) | (1 << (CypherParser.ALL - 46)) | (1 << (CypherParser.OPTIONAL - 46)) | (1 << (CypherParser.MATCH - 46)) | (1 << (CypherParser.UNWIND - 46)) | (1 << (CypherParser.AS - 46)) | (1 << (CypherParser.MERGE - 46)) | (1 << (CypherParser.ON - 46)) | (1 << (CypherParser.CREATE - 46)) | (1 << (CypherParser.SET - 46)) | (1 << (CypherParser.DETACH - 46)) | (1 << (CypherParser.DELETE - 46)) | (1 << (CypherParser.REMOVE - 46)) | (1 << (CypherParser.WITH - 46)) | (1 << (CypherParser.RETURN - 46)) | (1 << (CypherParser.DISTINCT - 46)) | (1 << (CypherParser.ORDER - 46)) | (1 << (CypherParser.BY - 46)) | (1 << (CypherParser.L_SKIP - 46)) | (1 << (CypherParser.LIMIT - 46)) | (1 << (CypherParser.ASCENDING - 46)) | (1 << (CypherParser.ASC - 46)) | (1 << (CypherParser.DESCENDING - 46)) | (1 << (CypherParser.DESC - 46)) | (1 << (CypherParser.WHERE - 46)) | (1 << (CypherParser.OR - 46)) | (1 << (CypherParser.XOR - 46)) | (1 << (CypherParser.AND - 46)) | (1 << (CypherParser.NOT - 46)) | (1 << (CypherParser.IN - 46)))) !== 0) || ((((_la - 78)) & ~0x1F) === 0 && ((1 << (_la - 78)) & ((1 << (CypherParser.STARTS - 78)) | (1 << (CypherParser.ENDS - 78)) | (1 << (CypherParser.CONTAINS - 78)) | (1 << (CypherParser.IS - 78)) | (1 << (CypherParser.NULL - 78)) | (1 << (CypherParser.TRUE - 78)) | (1 << (CypherParser.FALSE - 78)) | (1 << (CypherParser.EXISTS - 78)) | (1 << (CypherParser.CASE - 78)) | (1 << (CypherParser.ELSE - 78)) | (1 << (CypherParser.END - 78)) | (1 << (CypherParser.WHEN - 78)) | (1 << (CypherParser.THEN - 78)) | (1 << (CypherParser.CONSTRAINT - 78)))) !== 0) || ((((_la - 110)) & ~0x1F) === 0 && ((1 << (_la - 110)) & ((1 << (CypherParser.DO - 110)) | (1 << (CypherParser.FOR - 110)) | (1 << (CypherParser.REQUIRE - 110)) | (1 << (CypherParser.UNIQUE - 110)) | (1 << (CypherParser.MANDATORY - 110)) | (1 << (CypherParser.SCALAR - 110)) | (1 << (CypherParser.OF - 110)) | (1 << (CypherParser.ADD - 110)) | (1 << (CypherParser.DROP - 110)))) !== 0))) {
+			if (!(((((_la - 46)) & ~0x1F) === 0 && ((1 << (_la - 46)) & ((1 << (CypherScriptParser.UNION - 46)) | (1 << (CypherScriptParser.ALL - 46)) | (1 << (CypherScriptParser.OPTIONAL - 46)) | (1 << (CypherScriptParser.MATCH - 46)) | (1 << (CypherScriptParser.UNWIND - 46)) | (1 << (CypherScriptParser.AS - 46)) | (1 << (CypherScriptParser.MERGE - 46)) | (1 << (CypherScriptParser.ON - 46)) | (1 << (CypherScriptParser.CREATE - 46)) | (1 << (CypherScriptParser.SET - 46)) | (1 << (CypherScriptParser.DETACH - 46)) | (1 << (CypherScriptParser.DELETE - 46)) | (1 << (CypherScriptParser.REMOVE - 46)) | (1 << (CypherScriptParser.WITH - 46)) | (1 << (CypherScriptParser.RETURN - 46)) | (1 << (CypherScriptParser.DISTINCT - 46)) | (1 << (CypherScriptParser.ORDER - 46)) | (1 << (CypherScriptParser.BY - 46)) | (1 << (CypherScriptParser.L_SKIP - 46)) | (1 << (CypherScriptParser.LIMIT - 46)) | (1 << (CypherScriptParser.ASCENDING - 46)) | (1 << (CypherScriptParser.ASC - 46)) | (1 << (CypherScriptParser.DESCENDING - 46)) | (1 << (CypherScriptParser.DESC - 46)) | (1 << (CypherScriptParser.WHERE - 46)) | (1 << (CypherScriptParser.OR - 46)) | (1 << (CypherScriptParser.XOR - 46)) | (1 << (CypherScriptParser.AND - 46)) | (1 << (CypherScriptParser.NOT - 46)) | (1 << (CypherScriptParser.IN - 46)))) !== 0) || ((((_la - 78)) & ~0x1F) === 0 && ((1 << (_la - 78)) & ((1 << (CypherScriptParser.STARTS - 78)) | (1 << (CypherScriptParser.ENDS - 78)) | (1 << (CypherScriptParser.CONTAINS - 78)) | (1 << (CypherScriptParser.IS - 78)) | (1 << (CypherScriptParser.NULL - 78)) | (1 << (CypherScriptParser.TRUE - 78)) | (1 << (CypherScriptParser.FALSE - 78)) | (1 << (CypherScriptParser.EXISTS - 78)) | (1 << (CypherScriptParser.CASE - 78)) | (1 << (CypherScriptParser.ELSE - 78)) | (1 << (CypherScriptParser.END - 78)) | (1 << (CypherScriptParser.WHEN - 78)) | (1 << (CypherScriptParser.THEN - 78)) | (1 << (CypherScriptParser.CONSTRAINT - 78)))) !== 0) || ((((_la - 110)) & ~0x1F) === 0 && ((1 << (_la - 110)) & ((1 << (CypherScriptParser.DO - 110)) | (1 << (CypherScriptParser.FOR - 110)) | (1 << (CypherScriptParser.REQUIRE - 110)) | (1 << (CypherScriptParser.UNIQUE - 110)) | (1 << (CypherScriptParser.MANDATORY - 110)) | (1 << (CypherScriptParser.SCALAR - 110)) | (1 << (CypherScriptParser.OF - 110)) | (1 << (CypherScriptParser.ADD - 110)) | (1 << (CypherScriptParser.DROP - 110)))) !== 0))) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -7135,14 +7135,14 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_SymbolicName(): OC_SymbolicNameContext {
 		let _localctx: OC_SymbolicNameContext = new OC_SymbolicNameContext(this._ctx, this.state);
-		this.enterRule(_localctx, 192, CypherParser.RULE_oC_SymbolicName);
+		this.enterRule(_localctx, 192, CypherScriptParser.RULE_oC_SymbolicName);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1589;
 			_la = this._input.LA(1);
-			if (!(((((_la - 83)) & ~0x1F) === 0 && ((1 << (_la - 83)) & ((1 << (CypherParser.COUNT - 83)) | (1 << (CypherParser.ANY - 83)) | (1 << (CypherParser.NONE - 83)) | (1 << (CypherParser.SINGLE - 83)) | (1 << (CypherParser.HexLetter - 83)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherParser.FILTER - 119)) | (1 << (CypherParser.EXTRACT - 119)) | (1 << (CypherParser.UnescapedSymbolicName - 119)) | (1 << (CypherParser.EscapedSymbolicName - 119)))) !== 0))) {
+			if (!(((((_la - 83)) & ~0x1F) === 0 && ((1 << (_la - 83)) & ((1 << (CypherScriptParser.COUNT - 83)) | (1 << (CypherScriptParser.ANY - 83)) | (1 << (CypherScriptParser.NONE - 83)) | (1 << (CypherScriptParser.SINGLE - 83)) | (1 << (CypherScriptParser.HexLetter - 83)))) !== 0) || ((((_la - 119)) & ~0x1F) === 0 && ((1 << (_la - 119)) & ((1 << (CypherScriptParser.FILTER - 119)) | (1 << (CypherScriptParser.EXTRACT - 119)) | (1 << (CypherScriptParser.UnescapedSymbolicName - 119)) | (1 << (CypherScriptParser.EscapedSymbolicName - 119)))) !== 0))) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -7171,14 +7171,14 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_LeftArrowHead(): OC_LeftArrowHeadContext {
 		let _localctx: OC_LeftArrowHeadContext = new OC_LeftArrowHeadContext(this._ctx, this.state);
-		this.enterRule(_localctx, 194, CypherParser.RULE_oC_LeftArrowHead);
+		this.enterRule(_localctx, 194, CypherScriptParser.RULE_oC_LeftArrowHead);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1591;
 			_la = this._input.LA(1);
-			if (!((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << CypherParser.T__18) | (1 << CypherParser.T__26) | (1 << CypherParser.T__27) | (1 << CypherParser.T__28) | (1 << CypherParser.T__29))) !== 0))) {
+			if (!((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << CypherScriptParser.T__18) | (1 << CypherScriptParser.T__26) | (1 << CypherScriptParser.T__27) | (1 << CypherScriptParser.T__28) | (1 << CypherScriptParser.T__29))) !== 0))) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -7207,14 +7207,14 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_RightArrowHead(): OC_RightArrowHeadContext {
 		let _localctx: OC_RightArrowHeadContext = new OC_RightArrowHeadContext(this._ctx, this.state);
-		this.enterRule(_localctx, 196, CypherParser.RULE_oC_RightArrowHead);
+		this.enterRule(_localctx, 196, CypherScriptParser.RULE_oC_RightArrowHead);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1593;
 			_la = this._input.LA(1);
-			if (!(((((_la - 20)) & ~0x1F) === 0 && ((1 << (_la - 20)) & ((1 << (CypherParser.T__19 - 20)) | (1 << (CypherParser.T__30 - 20)) | (1 << (CypherParser.T__31 - 20)) | (1 << (CypherParser.T__32 - 20)) | (1 << (CypherParser.T__33 - 20)))) !== 0))) {
+			if (!(((((_la - 20)) & ~0x1F) === 0 && ((1 << (_la - 20)) & ((1 << (CypherScriptParser.T__19 - 20)) | (1 << (CypherScriptParser.T__30 - 20)) | (1 << (CypherScriptParser.T__31 - 20)) | (1 << (CypherScriptParser.T__32 - 20)) | (1 << (CypherScriptParser.T__33 - 20)))) !== 0))) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -7243,14 +7243,14 @@ export class CypherParser extends Parser {
 	// @RuleVersion(0)
 	public oC_Dash(): OC_DashContext {
 		let _localctx: OC_DashContext = new OC_DashContext(this._ctx, this.state);
-		this.enterRule(_localctx, 198, CypherParser.RULE_oC_Dash);
+		this.enterRule(_localctx, 198, CypherScriptParser.RULE_oC_Dash);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1595;
 			_la = this._input.LA(1);
-			if (!(((((_la - 14)) & ~0x1F) === 0 && ((1 << (_la - 14)) & ((1 << (CypherParser.T__13 - 14)) | (1 << (CypherParser.T__34 - 14)) | (1 << (CypherParser.T__35 - 14)) | (1 << (CypherParser.T__36 - 14)) | (1 << (CypherParser.T__37 - 14)) | (1 << (CypherParser.T__38 - 14)) | (1 << (CypherParser.T__39 - 14)) | (1 << (CypherParser.T__40 - 14)) | (1 << (CypherParser.T__41 - 14)) | (1 << (CypherParser.T__42 - 14)) | (1 << (CypherParser.T__43 - 14)) | (1 << (CypherParser.T__44 - 14)))) !== 0))) {
+			if (!(((((_la - 14)) & ~0x1F) === 0 && ((1 << (_la - 14)) & ((1 << (CypherScriptParser.T__13 - 14)) | (1 << (CypherScriptParser.T__34 - 14)) | (1 << (CypherScriptParser.T__35 - 14)) | (1 << (CypherScriptParser.T__36 - 14)) | (1 << (CypherScriptParser.T__37 - 14)) | (1 << (CypherScriptParser.T__38 - 14)) | (1 << (CypherScriptParser.T__39 - 14)) | (1 << (CypherScriptParser.T__40 - 14)) | (1 << (CypherScriptParser.T__41 - 14)) | (1 << (CypherScriptParser.T__42 - 14)) | (1 << (CypherScriptParser.T__43 - 14)) | (1 << (CypherScriptParser.T__44 - 14)))) !== 0))) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -8156,20 +8156,20 @@ export class CypherParser extends Parser {
 		"\u0620\u0624\u0629\u0633";
 	public static readonly _serializedATN: string = Utils.join(
 		[
-			CypherParser._serializedATNSegment0,
-			CypherParser._serializedATNSegment1,
-			CypherParser._serializedATNSegment2,
-			CypherParser._serializedATNSegment3,
+			CypherScriptParser._serializedATNSegment0,
+			CypherScriptParser._serializedATNSegment1,
+			CypherScriptParser._serializedATNSegment2,
+			CypherScriptParser._serializedATNSegment3,
 		],
 		"",
 	);
 	public static __ATN: ATN;
 	public static get _ATN(): ATN {
-		if (!CypherParser.__ATN) {
-			CypherParser.__ATN = new ATNDeserializer().deserialize(Utils.toCharArray(CypherParser._serializedATN));
+		if (!CypherScriptParser.__ATN) {
+			CypherScriptParser.__ATN = new ATNDeserializer().deserialize(Utils.toCharArray(CypherScriptParser._serializedATN));
 		}
 
-		return CypherParser.__ATN;
+		return CypherScriptParser.__ATN;
 	}
 
 }
@@ -8184,35 +8184,35 @@ export class OC_CypherContext extends ParserRuleContext {
 			return this.getRuleContext(i, OC_StatementContext);
 		}
 	}
-	public EOF(): TerminalNode { return this.getToken(CypherParser.EOF, 0); }
+	public EOF(): TerminalNode { return this.getToken(CypherScriptParser.EOF, 0); }
 	public SP(): TerminalNode[];
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Cypher; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Cypher; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Cypher) {
 			listener.enterOC_Cypher(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Cypher) {
 			listener.exitOC_Cypher(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Cypher) {
 			return visitor.visitOC_Cypher(this);
 		} else {
@@ -8230,21 +8230,21 @@ export class OC_StatementContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Statement; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Statement; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Statement) {
 			listener.enterOC_Statement(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Statement) {
 			listener.exitOC_Statement(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Statement) {
 			return visitor.visitOC_Statement(this);
 		} else {
@@ -8265,21 +8265,21 @@ export class OC_QueryContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Query; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Query; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Query) {
 			listener.enterOC_Query(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Query) {
 			listener.exitOC_Query(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Query) {
 			return visitor.visitOC_Query(this);
 		} else {
@@ -8306,30 +8306,30 @@ export class OC_RegularQueryContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_RegularQuery; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_RegularQuery; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_RegularQuery) {
 			listener.enterOC_RegularQuery(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_RegularQuery) {
 			listener.exitOC_RegularQuery(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_RegularQuery) {
 			return visitor.visitOC_RegularQuery(this);
 		} else {
@@ -8340,17 +8340,17 @@ export class OC_RegularQueryContext extends ParserRuleContext {
 
 
 export class OC_UnionContext extends ParserRuleContext {
-	public UNION(): TerminalNode | undefined { return this.tryGetToken(CypherParser.UNION, 0); }
+	public UNION(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.UNION, 0); }
 	public SP(): TerminalNode[];
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
-	public ALL(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ALL, 0); }
+	public ALL(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ALL, 0); }
 	public oC_SingleQuery(): OC_SingleQueryContext | undefined {
 		return this.tryGetRuleContext(0, OC_SingleQueryContext);
 	}
@@ -8358,21 +8358,21 @@ export class OC_UnionContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Union; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Union; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Union) {
 			listener.enterOC_Union(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Union) {
 			listener.exitOC_Union(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Union) {
 			return visitor.visitOC_Union(this);
 		} else {
@@ -8393,21 +8393,21 @@ export class OC_SingleQueryContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_SingleQuery; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_SingleQuery; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_SingleQuery) {
 			listener.enterOC_SingleQuery(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_SingleQuery) {
 			listener.exitOC_SingleQuery(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_SingleQuery) {
 			return visitor.visitOC_SingleQuery(this);
 		} else {
@@ -8434,9 +8434,9 @@ export class OC_SinglePartQueryContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_UpdatingClause(): OC_UpdatingClauseContext[];
@@ -8452,21 +8452,21 @@ export class OC_SinglePartQueryContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_SinglePartQuery; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_SinglePartQuery; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_SinglePartQuery) {
 			listener.enterOC_SinglePartQuery(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_SinglePartQuery) {
 			listener.exitOC_SinglePartQuery(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_SinglePartQuery) {
 			return visitor.visitOC_SinglePartQuery(this);
 		} else {
@@ -8511,30 +8511,30 @@ export class OC_MultiPartQueryContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_MultiPartQuery; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_MultiPartQuery; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_MultiPartQuery) {
 			listener.enterOC_MultiPartQuery(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_MultiPartQuery) {
 			listener.exitOC_MultiPartQuery(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_MultiPartQuery) {
 			return visitor.visitOC_MultiPartQuery(this);
 		} else {
@@ -8564,21 +8564,21 @@ export class OC_UpdatingClauseContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_UpdatingClause; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_UpdatingClause; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_UpdatingClause) {
 			listener.enterOC_UpdatingClause(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_UpdatingClause) {
 			listener.exitOC_UpdatingClause(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_UpdatingClause) {
 			return visitor.visitOC_UpdatingClause(this);
 		} else {
@@ -8602,21 +8602,21 @@ export class OC_ReadingClauseContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ReadingClause; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ReadingClause; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ReadingClause) {
 			listener.enterOC_ReadingClause(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ReadingClause) {
 			listener.exitOC_ReadingClause(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ReadingClause) {
 			return visitor.visitOC_ReadingClause(this);
 		} else {
@@ -8627,18 +8627,18 @@ export class OC_ReadingClauseContext extends ParserRuleContext {
 
 
 export class OC_MatchContext extends ParserRuleContext {
-	public MATCH(): TerminalNode { return this.getToken(CypherParser.MATCH, 0); }
+	public MATCH(): TerminalNode { return this.getToken(CypherScriptParser.MATCH, 0); }
 	public oC_Pattern(): OC_PatternContext {
 		return this.getRuleContext(0, OC_PatternContext);
 	}
-	public OPTIONAL(): TerminalNode | undefined { return this.tryGetToken(CypherParser.OPTIONAL, 0); }
+	public OPTIONAL(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.OPTIONAL, 0); }
 	public SP(): TerminalNode[];
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_Where(): OC_WhereContext | undefined {
@@ -8648,21 +8648,21 @@ export class OC_MatchContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Match; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Match; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Match) {
 			listener.enterOC_Match(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Match) {
 			listener.exitOC_Match(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Match) {
 			return visitor.visitOC_Match(this);
 		} else {
@@ -8673,7 +8673,7 @@ export class OC_MatchContext extends ParserRuleContext {
 
 
 export class OC_UnwindContext extends ParserRuleContext {
-	public UNWIND(): TerminalNode { return this.getToken(CypherParser.UNWIND, 0); }
+	public UNWIND(): TerminalNode { return this.getToken(CypherScriptParser.UNWIND, 0); }
 	public oC_Expression(): OC_ExpressionContext {
 		return this.getRuleContext(0, OC_ExpressionContext);
 	}
@@ -8681,12 +8681,12 @@ export class OC_UnwindContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
-	public AS(): TerminalNode { return this.getToken(CypherParser.AS, 0); }
+	public AS(): TerminalNode { return this.getToken(CypherScriptParser.AS, 0); }
 	public oC_Variable(): OC_VariableContext {
 		return this.getRuleContext(0, OC_VariableContext);
 	}
@@ -8694,21 +8694,21 @@ export class OC_UnwindContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Unwind; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Unwind; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Unwind) {
 			listener.enterOC_Unwind(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Unwind) {
 			listener.exitOC_Unwind(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Unwind) {
 			return visitor.visitOC_Unwind(this);
 		} else {
@@ -8719,7 +8719,7 @@ export class OC_UnwindContext extends ParserRuleContext {
 
 
 export class OC_MergeContext extends ParserRuleContext {
-	public MERGE(): TerminalNode { return this.getToken(CypherParser.MERGE, 0); }
+	public MERGE(): TerminalNode { return this.getToken(CypherScriptParser.MERGE, 0); }
 	public oC_PatternPart(): OC_PatternPartContext {
 		return this.getRuleContext(0, OC_PatternPartContext);
 	}
@@ -8727,9 +8727,9 @@ export class OC_MergeContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_MergeAction(): OC_MergeActionContext[];
@@ -8745,21 +8745,21 @@ export class OC_MergeContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Merge; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Merge; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Merge) {
 			listener.enterOC_Merge(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Merge) {
 			listener.exitOC_Merge(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Merge) {
 			return visitor.visitOC_Merge(this);
 		} else {
@@ -8770,40 +8770,40 @@ export class OC_MergeContext extends ParserRuleContext {
 
 
 export class OC_MergeActionContext extends ParserRuleContext {
-	public ON(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ON, 0); }
+	public ON(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ON, 0); }
 	public SP(): TerminalNode[];
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
-	public MATCH(): TerminalNode | undefined { return this.tryGetToken(CypherParser.MATCH, 0); }
+	public MATCH(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.MATCH, 0); }
 	public oC_Set(): OC_SetContext | undefined {
 		return this.tryGetRuleContext(0, OC_SetContext);
 	}
-	public CREATE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.CREATE, 0); }
+	public CREATE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.CREATE, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_MergeAction; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_MergeAction; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_MergeAction) {
 			listener.enterOC_MergeAction(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_MergeAction) {
 			listener.exitOC_MergeAction(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_MergeAction) {
 			return visitor.visitOC_MergeAction(this);
 		} else {
@@ -8814,30 +8814,30 @@ export class OC_MergeActionContext extends ParserRuleContext {
 
 
 export class OC_CreateContext extends ParserRuleContext {
-	public CREATE(): TerminalNode { return this.getToken(CypherParser.CREATE, 0); }
+	public CREATE(): TerminalNode { return this.getToken(CypherScriptParser.CREATE, 0); }
 	public oC_Pattern(): OC_PatternContext {
 		return this.getRuleContext(0, OC_PatternContext);
 	}
-	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherParser.SP, 0); }
+	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.SP, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Create; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Create; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Create) {
 			listener.enterOC_Create(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Create) {
 			listener.exitOC_Create(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Create) {
 			return visitor.visitOC_Create(this);
 		} else {
@@ -8848,7 +8848,7 @@ export class OC_CreateContext extends ParserRuleContext {
 
 
 export class OC_SetContext extends ParserRuleContext {
-	public SET(): TerminalNode { return this.getToken(CypherParser.SET, 0); }
+	public SET(): TerminalNode { return this.getToken(CypherScriptParser.SET, 0); }
 	public oC_SetItem(): OC_SetItemContext[];
 	public oC_SetItem(i: number): OC_SetItemContext;
 	public oC_SetItem(i?: number): OC_SetItemContext | OC_SetItemContext[] {
@@ -8862,30 +8862,30 @@ export class OC_SetContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Set; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Set; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Set) {
 			listener.enterOC_Set(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Set) {
 			listener.exitOC_Set(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Set) {
 			return visitor.visitOC_Set(this);
 		} else {
@@ -8906,9 +8906,9 @@ export class OC_SetItemContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_Variable(): OC_VariableContext | undefined {
@@ -8921,21 +8921,21 @@ export class OC_SetItemContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_SetItem; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_SetItem; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_SetItem) {
 			listener.enterOC_SetItem(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_SetItem) {
 			listener.exitOC_SetItem(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_SetItem) {
 			return visitor.visitOC_SetItem(this);
 		} else {
@@ -8946,7 +8946,7 @@ export class OC_SetItemContext extends ParserRuleContext {
 
 
 export class OC_DeleteContext extends ParserRuleContext {
-	public DELETE(): TerminalNode { return this.getToken(CypherParser.DELETE, 0); }
+	public DELETE(): TerminalNode { return this.getToken(CypherScriptParser.DELETE, 0); }
 	public oC_Expression(): OC_ExpressionContext[];
 	public oC_Expression(i: number): OC_ExpressionContext;
 	public oC_Expression(i?: number): OC_ExpressionContext | OC_ExpressionContext[] {
@@ -8956,35 +8956,35 @@ export class OC_DeleteContext extends ParserRuleContext {
 			return this.getRuleContext(i, OC_ExpressionContext);
 		}
 	}
-	public DETACH(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DETACH, 0); }
+	public DETACH(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DETACH, 0); }
 	public SP(): TerminalNode[];
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Delete; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Delete; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Delete) {
 			listener.enterOC_Delete(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Delete) {
 			listener.exitOC_Delete(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Delete) {
 			return visitor.visitOC_Delete(this);
 		} else {
@@ -8995,14 +8995,14 @@ export class OC_DeleteContext extends ParserRuleContext {
 
 
 export class OC_RemoveContext extends ParserRuleContext {
-	public REMOVE(): TerminalNode { return this.getToken(CypherParser.REMOVE, 0); }
+	public REMOVE(): TerminalNode { return this.getToken(CypherScriptParser.REMOVE, 0); }
 	public SP(): TerminalNode[];
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_RemoveItem(): OC_RemoveItemContext[];
@@ -9018,21 +9018,21 @@ export class OC_RemoveContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Remove; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Remove; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Remove) {
 			listener.enterOC_Remove(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Remove) {
 			listener.exitOC_Remove(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Remove) {
 			return visitor.visitOC_Remove(this);
 		} else {
@@ -9056,21 +9056,21 @@ export class OC_RemoveItemContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_RemoveItem; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_RemoveItem; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_RemoveItem) {
 			listener.enterOC_RemoveItem(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_RemoveItem) {
 			listener.exitOC_RemoveItem(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_RemoveItem) {
 			return visitor.visitOC_RemoveItem(this);
 		} else {
@@ -9081,20 +9081,20 @@ export class OC_RemoveItemContext extends ParserRuleContext {
 
 
 export class OC_InQueryCallContext extends ParserRuleContext {
-	public CALL(): TerminalNode { return this.getToken(CypherParser.CALL, 0); }
+	public CALL(): TerminalNode { return this.getToken(CypherScriptParser.CALL, 0); }
 	public SP(): TerminalNode[];
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_ExplicitProcedureInvocation(): OC_ExplicitProcedureInvocationContext {
 		return this.getRuleContext(0, OC_ExplicitProcedureInvocationContext);
 	}
-	public YIELD(): TerminalNode | undefined { return this.tryGetToken(CypherParser.YIELD, 0); }
+	public YIELD(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.YIELD, 0); }
 	public oC_YieldItems(): OC_YieldItemsContext | undefined {
 		return this.tryGetRuleContext(0, OC_YieldItemsContext);
 	}
@@ -9102,21 +9102,21 @@ export class OC_InQueryCallContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_InQueryCall; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_InQueryCall; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_InQueryCall) {
 			listener.enterOC_InQueryCall(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_InQueryCall) {
 			listener.exitOC_InQueryCall(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_InQueryCall) {
 			return visitor.visitOC_InQueryCall(this);
 		} else {
@@ -9127,14 +9127,14 @@ export class OC_InQueryCallContext extends ParserRuleContext {
 
 
 export class OC_StandaloneCallContext extends ParserRuleContext {
-	public CALL(): TerminalNode { return this.getToken(CypherParser.CALL, 0); }
+	public CALL(): TerminalNode { return this.getToken(CypherScriptParser.CALL, 0); }
 	public SP(): TerminalNode[];
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_ExplicitProcedureInvocation(): OC_ExplicitProcedureInvocationContext | undefined {
@@ -9143,7 +9143,7 @@ export class OC_StandaloneCallContext extends ParserRuleContext {
 	public oC_ImplicitProcedureInvocation(): OC_ImplicitProcedureInvocationContext | undefined {
 		return this.tryGetRuleContext(0, OC_ImplicitProcedureInvocationContext);
 	}
-	public YIELD(): TerminalNode | undefined { return this.tryGetToken(CypherParser.YIELD, 0); }
+	public YIELD(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.YIELD, 0); }
 	public oC_YieldItems(): OC_YieldItemsContext | undefined {
 		return this.tryGetRuleContext(0, OC_YieldItemsContext);
 	}
@@ -9151,21 +9151,21 @@ export class OC_StandaloneCallContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_StandaloneCall; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_StandaloneCall; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_StandaloneCall) {
 			listener.enterOC_StandaloneCall(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_StandaloneCall) {
 			listener.exitOC_StandaloneCall(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_StandaloneCall) {
 			return visitor.visitOC_StandaloneCall(this);
 		} else {
@@ -9192,30 +9192,30 @@ export class OC_YieldItemsContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_YieldItems; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_YieldItems; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_YieldItems) {
 			listener.enterOC_YieldItems(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_YieldItems) {
 			listener.exitOC_YieldItems(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_YieldItems) {
 			return visitor.visitOC_YieldItems(this);
 		} else {
@@ -9236,31 +9236,31 @@ export class OC_YieldItemContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
-	public AS(): TerminalNode | undefined { return this.tryGetToken(CypherParser.AS, 0); }
+	public AS(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.AS, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_YieldItem; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_YieldItem; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_YieldItem) {
 			listener.enterOC_YieldItem(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_YieldItem) {
 			listener.exitOC_YieldItem(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_YieldItem) {
 			return visitor.visitOC_YieldItem(this);
 		} else {
@@ -9271,33 +9271,33 @@ export class OC_YieldItemContext extends ParserRuleContext {
 
 
 export class OC_WithContext extends ParserRuleContext {
-	public WITH(): TerminalNode { return this.getToken(CypherParser.WITH, 0); }
+	public WITH(): TerminalNode { return this.getToken(CypherScriptParser.WITH, 0); }
 	public oC_ProjectionBody(): OC_ProjectionBodyContext {
 		return this.getRuleContext(0, OC_ProjectionBodyContext);
 	}
 	public oC_Where(): OC_WhereContext | undefined {
 		return this.tryGetRuleContext(0, OC_WhereContext);
 	}
-	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherParser.SP, 0); }
+	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.SP, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_With; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_With; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_With) {
 			listener.enterOC_With(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_With) {
 			listener.exitOC_With(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_With) {
 			return visitor.visitOC_With(this);
 		} else {
@@ -9308,7 +9308,7 @@ export class OC_WithContext extends ParserRuleContext {
 
 
 export class OC_ReturnContext extends ParserRuleContext {
-	public RETURN(): TerminalNode { return this.getToken(CypherParser.RETURN, 0); }
+	public RETURN(): TerminalNode { return this.getToken(CypherScriptParser.RETURN, 0); }
 	public oC_ProjectionBody(): OC_ProjectionBodyContext {
 		return this.getRuleContext(0, OC_ProjectionBodyContext);
 	}
@@ -9316,21 +9316,21 @@ export class OC_ReturnContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Return; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Return; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Return) {
 			listener.enterOC_Return(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Return) {
 			listener.exitOC_Return(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Return) {
 			return visitor.visitOC_Return(this);
 		} else {
@@ -9345,15 +9345,15 @@ export class OC_ProjectionBodyContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_ProjectionItems(): OC_ProjectionItemsContext {
 		return this.getRuleContext(0, OC_ProjectionItemsContext);
 	}
-	public DISTINCT(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DISTINCT, 0); }
+	public DISTINCT(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DISTINCT, 0); }
 	public oC_Order(): OC_OrderContext | undefined {
 		return this.tryGetRuleContext(0, OC_OrderContext);
 	}
@@ -9367,21 +9367,21 @@ export class OC_ProjectionBodyContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ProjectionBody; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ProjectionBody; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ProjectionBody) {
 			listener.enterOC_ProjectionBody(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ProjectionBody) {
 			listener.exitOC_ProjectionBody(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ProjectionBody) {
 			return visitor.visitOC_ProjectionBody(this);
 		} else {
@@ -9405,30 +9405,30 @@ export class OC_ProjectionItemsContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ProjectionItems; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ProjectionItems; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ProjectionItems) {
 			listener.enterOC_ProjectionItems(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ProjectionItems) {
 			listener.exitOC_ProjectionItems(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ProjectionItems) {
 			return visitor.visitOC_ProjectionItems(this);
 		} else {
@@ -9446,12 +9446,12 @@ export class OC_ProjectionItemContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
-	public AS(): TerminalNode | undefined { return this.tryGetToken(CypherParser.AS, 0); }
+	public AS(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.AS, 0); }
 	public oC_Variable(): OC_VariableContext | undefined {
 		return this.tryGetRuleContext(0, OC_VariableContext);
 	}
@@ -9459,21 +9459,21 @@ export class OC_ProjectionItemContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ProjectionItem; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ProjectionItem; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ProjectionItem) {
 			listener.enterOC_ProjectionItem(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ProjectionItem) {
 			listener.exitOC_ProjectionItem(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ProjectionItem) {
 			return visitor.visitOC_ProjectionItem(this);
 		} else {
@@ -9484,17 +9484,17 @@ export class OC_ProjectionItemContext extends ParserRuleContext {
 
 
 export class OC_OrderContext extends ParserRuleContext {
-	public ORDER(): TerminalNode { return this.getToken(CypherParser.ORDER, 0); }
+	public ORDER(): TerminalNode { return this.getToken(CypherScriptParser.ORDER, 0); }
 	public SP(): TerminalNode[];
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
-	public BY(): TerminalNode { return this.getToken(CypherParser.BY, 0); }
+	public BY(): TerminalNode { return this.getToken(CypherScriptParser.BY, 0); }
 	public oC_SortItem(): OC_SortItemContext[];
 	public oC_SortItem(i: number): OC_SortItemContext;
 	public oC_SortItem(i?: number): OC_SortItemContext | OC_SortItemContext[] {
@@ -9508,21 +9508,21 @@ export class OC_OrderContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Order; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Order; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Order) {
 			listener.enterOC_Order(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Order) {
 			listener.exitOC_Order(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Order) {
 			return visitor.visitOC_Order(this);
 		} else {
@@ -9533,8 +9533,8 @@ export class OC_OrderContext extends ParserRuleContext {
 
 
 export class OC_SkipContext extends ParserRuleContext {
-	public L_SKIP(): TerminalNode { return this.getToken(CypherParser.L_SKIP, 0); }
-	public SP(): TerminalNode { return this.getToken(CypherParser.SP, 0); }
+	public L_SKIP(): TerminalNode { return this.getToken(CypherScriptParser.L_SKIP, 0); }
+	public SP(): TerminalNode { return this.getToken(CypherScriptParser.SP, 0); }
 	public oC_Expression(): OC_ExpressionContext {
 		return this.getRuleContext(0, OC_ExpressionContext);
 	}
@@ -9542,21 +9542,21 @@ export class OC_SkipContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Skip; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Skip; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Skip) {
 			listener.enterOC_Skip(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Skip) {
 			listener.exitOC_Skip(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Skip) {
 			return visitor.visitOC_Skip(this);
 		} else {
@@ -9567,8 +9567,8 @@ export class OC_SkipContext extends ParserRuleContext {
 
 
 export class OC_LimitContext extends ParserRuleContext {
-	public LIMIT(): TerminalNode { return this.getToken(CypherParser.LIMIT, 0); }
-	public SP(): TerminalNode { return this.getToken(CypherParser.SP, 0); }
+	public LIMIT(): TerminalNode { return this.getToken(CypherScriptParser.LIMIT, 0); }
+	public SP(): TerminalNode { return this.getToken(CypherScriptParser.SP, 0); }
 	public oC_Expression(): OC_ExpressionContext {
 		return this.getRuleContext(0, OC_ExpressionContext);
 	}
@@ -9576,21 +9576,21 @@ export class OC_LimitContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Limit; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Limit; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Limit) {
 			listener.enterOC_Limit(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Limit) {
 			listener.exitOC_Limit(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Limit) {
 			return visitor.visitOC_Limit(this);
 		} else {
@@ -9604,30 +9604,30 @@ export class OC_SortItemContext extends ParserRuleContext {
 	public oC_Expression(): OC_ExpressionContext {
 		return this.getRuleContext(0, OC_ExpressionContext);
 	}
-	public ASCENDING(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ASCENDING, 0); }
-	public ASC(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ASC, 0); }
-	public DESCENDING(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DESCENDING, 0); }
-	public DESC(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DESC, 0); }
-	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherParser.SP, 0); }
+	public ASCENDING(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ASCENDING, 0); }
+	public ASC(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ASC, 0); }
+	public DESCENDING(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DESCENDING, 0); }
+	public DESC(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DESC, 0); }
+	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.SP, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_SortItem; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_SortItem; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_SortItem) {
 			listener.enterOC_SortItem(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_SortItem) {
 			listener.exitOC_SortItem(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_SortItem) {
 			return visitor.visitOC_SortItem(this);
 		} else {
@@ -9638,8 +9638,8 @@ export class OC_SortItemContext extends ParserRuleContext {
 
 
 export class OC_WhereContext extends ParserRuleContext {
-	public WHERE(): TerminalNode { return this.getToken(CypherParser.WHERE, 0); }
-	public SP(): TerminalNode { return this.getToken(CypherParser.SP, 0); }
+	public WHERE(): TerminalNode { return this.getToken(CypherScriptParser.WHERE, 0); }
+	public SP(): TerminalNode { return this.getToken(CypherScriptParser.SP, 0); }
 	public oC_Expression(): OC_ExpressionContext {
 		return this.getRuleContext(0, OC_ExpressionContext);
 	}
@@ -9647,21 +9647,21 @@ export class OC_WhereContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Where; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Where; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Where) {
 			listener.enterOC_Where(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Where) {
 			listener.exitOC_Where(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Where) {
 			return visitor.visitOC_Where(this);
 		} else {
@@ -9685,30 +9685,30 @@ export class OC_PatternContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Pattern; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Pattern; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Pattern) {
 			listener.enterOC_Pattern(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Pattern) {
 			listener.exitOC_Pattern(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Pattern) {
 			return visitor.visitOC_Pattern(this);
 		} else {
@@ -9729,30 +9729,30 @@ export class OC_PatternPartContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_PatternPart; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_PatternPart; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_PatternPart) {
 			listener.enterOC_PatternPart(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_PatternPart) {
 			listener.exitOC_PatternPart(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_PatternPart) {
 			return visitor.visitOC_PatternPart(this);
 		} else {
@@ -9770,21 +9770,21 @@ export class OC_AnonymousPatternPartContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_AnonymousPatternPart; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_AnonymousPatternPart; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_AnonymousPatternPart) {
 			listener.enterOC_AnonymousPatternPart(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_AnonymousPatternPart) {
 			listener.exitOC_AnonymousPatternPart(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_AnonymousPatternPart) {
 			return visitor.visitOC_AnonymousPatternPart(this);
 		} else {
@@ -9811,9 +9811,9 @@ export class OC_PatternElementContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_PatternElement(): OC_PatternElementContext | undefined {
@@ -9823,21 +9823,21 @@ export class OC_PatternElementContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_PatternElement; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_PatternElement; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_PatternElement) {
 			listener.enterOC_PatternElement(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_PatternElement) {
 			listener.exitOC_PatternElement(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_PatternElement) {
 			return visitor.visitOC_PatternElement(this);
 		} else {
@@ -9852,9 +9852,9 @@ export class OC_NodePatternContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_Variable(): OC_VariableContext | undefined {
@@ -9870,21 +9870,21 @@ export class OC_NodePatternContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_NodePattern; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_NodePattern; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_NodePattern) {
 			listener.enterOC_NodePattern(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_NodePattern) {
 			listener.exitOC_NodePattern(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_NodePattern) {
 			return visitor.visitOC_NodePattern(this);
 		} else {
@@ -9901,26 +9901,26 @@ export class OC_PatternElementChainContext extends ParserRuleContext {
 	public oC_NodePattern(): OC_NodePatternContext {
 		return this.getRuleContext(0, OC_NodePatternContext);
 	}
-	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherParser.SP, 0); }
+	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.SP, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_PatternElementChain; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_PatternElementChain; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_PatternElementChain) {
 			listener.enterOC_PatternElementChain(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_PatternElementChain) {
 			listener.exitOC_PatternElementChain(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_PatternElementChain) {
 			return visitor.visitOC_PatternElementChain(this);
 		} else {
@@ -9950,9 +9950,9 @@ export class OC_RelationshipPatternContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_RelationshipDetail(): OC_RelationshipDetailContext | undefined {
@@ -9962,21 +9962,21 @@ export class OC_RelationshipPatternContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_RelationshipPattern; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_RelationshipPattern; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_RelationshipPattern) {
 			listener.enterOC_RelationshipPattern(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_RelationshipPattern) {
 			listener.exitOC_RelationshipPattern(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_RelationshipPattern) {
 			return visitor.visitOC_RelationshipPattern(this);
 		} else {
@@ -9991,9 +9991,9 @@ export class OC_RelationshipDetailContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_Variable(): OC_VariableContext | undefined {
@@ -10012,21 +10012,21 @@ export class OC_RelationshipDetailContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_RelationshipDetail; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_RelationshipDetail; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_RelationshipDetail) {
 			listener.enterOC_RelationshipDetail(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_RelationshipDetail) {
 			listener.exitOC_RelationshipDetail(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_RelationshipDetail) {
 			return visitor.visitOC_RelationshipDetail(this);
 		} else {
@@ -10047,21 +10047,21 @@ export class OC_PropertiesContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Properties; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Properties; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Properties) {
 			listener.enterOC_Properties(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Properties) {
 			listener.exitOC_Properties(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Properties) {
 			return visitor.visitOC_Properties(this);
 		} else {
@@ -10085,30 +10085,30 @@ export class OC_RelationshipTypesContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_RelationshipTypes; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_RelationshipTypes; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_RelationshipTypes) {
 			listener.enterOC_RelationshipTypes(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_RelationshipTypes) {
 			listener.exitOC_RelationshipTypes(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_RelationshipTypes) {
 			return visitor.visitOC_RelationshipTypes(this);
 		} else {
@@ -10132,30 +10132,30 @@ export class OC_NodeLabelsContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_NodeLabels; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_NodeLabels; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_NodeLabels) {
 			listener.enterOC_NodeLabels(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_NodeLabels) {
 			listener.exitOC_NodeLabels(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_NodeLabels) {
 			return visitor.visitOC_NodeLabels(this);
 		} else {
@@ -10169,26 +10169,26 @@ export class OC_NodeLabelContext extends ParserRuleContext {
 	public oC_LabelName(): OC_LabelNameContext {
 		return this.getRuleContext(0, OC_LabelNameContext);
 	}
-	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherParser.SP, 0); }
+	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.SP, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_NodeLabel; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_NodeLabel; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_NodeLabel) {
 			listener.enterOC_NodeLabel(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_NodeLabel) {
 			listener.exitOC_NodeLabel(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_NodeLabel) {
 			return visitor.visitOC_NodeLabel(this);
 		} else {
@@ -10203,9 +10203,9 @@ export class OC_RangeLiteralContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_IntegerLiteral(): OC_IntegerLiteralContext[];
@@ -10221,21 +10221,21 @@ export class OC_RangeLiteralContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_RangeLiteral; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_RangeLiteral; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_RangeLiteral) {
 			listener.enterOC_RangeLiteral(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_RangeLiteral) {
 			listener.exitOC_RangeLiteral(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_RangeLiteral) {
 			return visitor.visitOC_RangeLiteral(this);
 		} else {
@@ -10253,21 +10253,21 @@ export class OC_LabelNameContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_LabelName; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_LabelName; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_LabelName) {
 			listener.enterOC_LabelName(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_LabelName) {
 			listener.exitOC_LabelName(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_LabelName) {
 			return visitor.visitOC_LabelName(this);
 		} else {
@@ -10285,21 +10285,21 @@ export class OC_RelTypeNameContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_RelTypeName; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_RelTypeName; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_RelTypeName) {
 			listener.enterOC_RelTypeName(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_RelTypeName) {
 			listener.exitOC_RelTypeName(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_RelTypeName) {
 			return visitor.visitOC_RelTypeName(this);
 		} else {
@@ -10317,21 +10317,21 @@ export class OC_ExpressionContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Expression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Expression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Expression) {
 			listener.enterOC_Expression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Expression) {
 			listener.exitOC_Expression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Expression) {
 			return visitor.visitOC_Expression(this);
 		} else {
@@ -10355,39 +10355,39 @@ export class OC_OrExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public OR(): TerminalNode[];
 	public OR(i: number): TerminalNode;
 	public OR(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.OR);
+			return this.getTokens(CypherScriptParser.OR);
 		} else {
-			return this.getToken(CypherParser.OR, i);
+			return this.getToken(CypherScriptParser.OR, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_OrExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_OrExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_OrExpression) {
 			listener.enterOC_OrExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_OrExpression) {
 			listener.exitOC_OrExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_OrExpression) {
 			return visitor.visitOC_OrExpression(this);
 		} else {
@@ -10411,39 +10411,39 @@ export class OC_XorExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public XOR(): TerminalNode[];
 	public XOR(i: number): TerminalNode;
 	public XOR(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.XOR);
+			return this.getTokens(CypherScriptParser.XOR);
 		} else {
-			return this.getToken(CypherParser.XOR, i);
+			return this.getToken(CypherScriptParser.XOR, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_XorExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_XorExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_XorExpression) {
 			listener.enterOC_XorExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_XorExpression) {
 			listener.exitOC_XorExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_XorExpression) {
 			return visitor.visitOC_XorExpression(this);
 		} else {
@@ -10467,39 +10467,39 @@ export class OC_AndExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public AND(): TerminalNode[];
 	public AND(i: number): TerminalNode;
 	public AND(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.AND);
+			return this.getTokens(CypherScriptParser.AND);
 		} else {
-			return this.getToken(CypherParser.AND, i);
+			return this.getToken(CypherScriptParser.AND, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_AndExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_AndExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_AndExpression) {
 			listener.enterOC_AndExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_AndExpression) {
 			listener.exitOC_AndExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_AndExpression) {
 			return visitor.visitOC_AndExpression(this);
 		} else {
@@ -10517,39 +10517,39 @@ export class OC_NotExpressionContext extends ParserRuleContext {
 	public NOT(i: number): TerminalNode;
 	public NOT(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.NOT);
+			return this.getTokens(CypherScriptParser.NOT);
 		} else {
-			return this.getToken(CypherParser.NOT, i);
+			return this.getToken(CypherScriptParser.NOT, i);
 		}
 	}
 	public SP(): TerminalNode[];
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_NotExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_NotExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_NotExpression) {
 			listener.enterOC_NotExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_NotExpression) {
 			listener.exitOC_NotExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_NotExpression) {
 			return visitor.visitOC_NotExpression(this);
 		} else {
@@ -10576,30 +10576,30 @@ export class OC_ComparisonExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ComparisonExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ComparisonExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ComparisonExpression) {
 			listener.enterOC_ComparisonExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ComparisonExpression) {
 			listener.exitOC_ComparisonExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ComparisonExpression) {
 			return visitor.visitOC_ComparisonExpression(this);
 		} else {
@@ -10623,30 +10623,30 @@ export class OC_AddOrSubtractExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_AddOrSubtractExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_AddOrSubtractExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_AddOrSubtractExpression) {
 			listener.enterOC_AddOrSubtractExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_AddOrSubtractExpression) {
 			listener.exitOC_AddOrSubtractExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_AddOrSubtractExpression) {
 			return visitor.visitOC_AddOrSubtractExpression(this);
 		} else {
@@ -10670,30 +10670,30 @@ export class OC_MultiplyDivideModuloExpressionContext extends ParserRuleContext 
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_MultiplyDivideModuloExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_MultiplyDivideModuloExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_MultiplyDivideModuloExpression) {
 			listener.enterOC_MultiplyDivideModuloExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_MultiplyDivideModuloExpression) {
 			listener.exitOC_MultiplyDivideModuloExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_MultiplyDivideModuloExpression) {
 			return visitor.visitOC_MultiplyDivideModuloExpression(this);
 		} else {
@@ -10717,30 +10717,30 @@ export class OC_PowerOfExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_PowerOfExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_PowerOfExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_PowerOfExpression) {
 			listener.enterOC_PowerOfExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_PowerOfExpression) {
 			listener.exitOC_PowerOfExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_PowerOfExpression) {
 			return visitor.visitOC_PowerOfExpression(this);
 		} else {
@@ -10758,30 +10758,30 @@ export class OC_UnaryAddOrSubtractExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_UnaryAddOrSubtractExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_UnaryAddOrSubtractExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_UnaryAddOrSubtractExpression) {
 			listener.enterOC_UnaryAddOrSubtractExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_UnaryAddOrSubtractExpression) {
 			listener.exitOC_UnaryAddOrSubtractExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_UnaryAddOrSubtractExpression) {
 			return visitor.visitOC_UnaryAddOrSubtractExpression(this);
 		} else {
@@ -10826,21 +10826,21 @@ export class OC_StringListNullOperatorExpressionContext extends ParserRuleContex
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_StringListNullOperatorExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_StringListNullOperatorExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_StringListNullOperatorExpression) {
 			listener.enterOC_StringListNullOperatorExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_StringListNullOperatorExpression) {
 			listener.exitOC_StringListNullOperatorExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_StringListNullOperatorExpression) {
 			return visitor.visitOC_StringListNullOperatorExpression(this);
 		} else {
@@ -10855,12 +10855,12 @@ export class OC_ListOperatorExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
-	public IN(): TerminalNode | undefined { return this.tryGetToken(CypherParser.IN, 0); }
+	public IN(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.IN, 0); }
 	public oC_PropertyOrLabelsExpression(): OC_PropertyOrLabelsExpressionContext | undefined {
 		return this.tryGetRuleContext(0, OC_PropertyOrLabelsExpressionContext);
 	}
@@ -10877,21 +10877,21 @@ export class OC_ListOperatorExpressionContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ListOperatorExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ListOperatorExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ListOperatorExpression) {
 			listener.enterOC_ListOperatorExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ListOperatorExpression) {
 			listener.exitOC_ListOperatorExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ListOperatorExpression) {
 			return visitor.visitOC_ListOperatorExpression(this);
 		} else {
@@ -10909,34 +10909,34 @@ export class OC_StringOperatorExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
-	public STARTS(): TerminalNode | undefined { return this.tryGetToken(CypherParser.STARTS, 0); }
-	public WITH(): TerminalNode | undefined { return this.tryGetToken(CypherParser.WITH, 0); }
-	public ENDS(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ENDS, 0); }
-	public CONTAINS(): TerminalNode | undefined { return this.tryGetToken(CypherParser.CONTAINS, 0); }
+	public STARTS(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.STARTS, 0); }
+	public WITH(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.WITH, 0); }
+	public ENDS(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ENDS, 0); }
+	public CONTAINS(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.CONTAINS, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_StringOperatorExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_StringOperatorExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_StringOperatorExpression) {
 			listener.enterOC_StringOperatorExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_StringOperatorExpression) {
 			listener.exitOC_StringOperatorExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_StringOperatorExpression) {
 			return visitor.visitOC_StringOperatorExpression(this);
 		} else {
@@ -10951,33 +10951,33 @@ export class OC_NullOperatorExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
-	public IS(): TerminalNode | undefined { return this.tryGetToken(CypherParser.IS, 0); }
-	public NULL(): TerminalNode | undefined { return this.tryGetToken(CypherParser.NULL, 0); }
-	public NOT(): TerminalNode | undefined { return this.tryGetToken(CypherParser.NOT, 0); }
+	public IS(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.IS, 0); }
+	public NULL(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.NULL, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.NOT, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_NullOperatorExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_NullOperatorExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_NullOperatorExpression) {
 			listener.enterOC_NullOperatorExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_NullOperatorExpression) {
 			listener.exitOC_NullOperatorExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_NullOperatorExpression) {
 			return visitor.visitOC_NullOperatorExpression(this);
 		} else {
@@ -11007,30 +11007,30 @@ export class OC_PropertyOrLabelsExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_PropertyOrLabelsExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_PropertyOrLabelsExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_PropertyOrLabelsExpression) {
 			listener.enterOC_PropertyOrLabelsExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_PropertyOrLabelsExpression) {
 			listener.exitOC_PropertyOrLabelsExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_PropertyOrLabelsExpression) {
 			return visitor.visitOC_PropertyOrLabelsExpression(this);
 		} else {
@@ -11050,14 +11050,14 @@ export class OC_AtomContext extends ParserRuleContext {
 	public oC_CaseExpression(): OC_CaseExpressionContext | undefined {
 		return this.tryGetRuleContext(0, OC_CaseExpressionContext);
 	}
-	public COUNT(): TerminalNode | undefined { return this.tryGetToken(CypherParser.COUNT, 0); }
+	public COUNT(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.COUNT, 0); }
 	public SP(): TerminalNode[];
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_ListComprehension(): OC_ListComprehensionContext | undefined {
@@ -11066,13 +11066,13 @@ export class OC_AtomContext extends ParserRuleContext {
 	public oC_PatternComprehension(): OC_PatternComprehensionContext | undefined {
 		return this.tryGetRuleContext(0, OC_PatternComprehensionContext);
 	}
-	public ALL(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ALL, 0); }
+	public ALL(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ALL, 0); }
 	public oC_FilterExpression(): OC_FilterExpressionContext | undefined {
 		return this.tryGetRuleContext(0, OC_FilterExpressionContext);
 	}
-	public ANY(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ANY, 0); }
-	public NONE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.NONE, 0); }
-	public SINGLE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.SINGLE, 0); }
+	public ANY(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ANY, 0); }
+	public NONE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.NONE, 0); }
+	public SINGLE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.SINGLE, 0); }
 	public oC_RelationshipsPattern(): OC_RelationshipsPatternContext | undefined {
 		return this.tryGetRuleContext(0, OC_RelationshipsPatternContext);
 	}
@@ -11092,21 +11092,21 @@ export class OC_AtomContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Atom; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Atom; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Atom) {
 			listener.enterOC_Atom(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Atom) {
 			listener.exitOC_Atom(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Atom) {
 			return visitor.visitOC_Atom(this);
 		} else {
@@ -11120,11 +11120,11 @@ export class OC_LiteralContext extends ParserRuleContext {
 	public oC_NumberLiteral(): OC_NumberLiteralContext | undefined {
 		return this.tryGetRuleContext(0, OC_NumberLiteralContext);
 	}
-	public StringLiteral(): TerminalNode | undefined { return this.tryGetToken(CypherParser.StringLiteral, 0); }
+	public StringLiteral(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.StringLiteral, 0); }
 	public oC_BooleanLiteral(): OC_BooleanLiteralContext | undefined {
 		return this.tryGetRuleContext(0, OC_BooleanLiteralContext);
 	}
-	public NULL(): TerminalNode | undefined { return this.tryGetToken(CypherParser.NULL, 0); }
+	public NULL(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.NULL, 0); }
 	public oC_MapLiteral(): OC_MapLiteralContext | undefined {
 		return this.tryGetRuleContext(0, OC_MapLiteralContext);
 	}
@@ -11135,21 +11135,21 @@ export class OC_LiteralContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Literal; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Literal; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Literal) {
 			listener.enterOC_Literal(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Literal) {
 			listener.exitOC_Literal(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Literal) {
 			return visitor.visitOC_Literal(this);
 		} else {
@@ -11160,27 +11160,27 @@ export class OC_LiteralContext extends ParserRuleContext {
 
 
 export class OC_BooleanLiteralContext extends ParserRuleContext {
-	public TRUE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.TRUE, 0); }
-	public FALSE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.FALSE, 0); }
+	public TRUE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.TRUE, 0); }
+	public FALSE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.FALSE, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_BooleanLiteral; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_BooleanLiteral; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_BooleanLiteral) {
 			listener.enterOC_BooleanLiteral(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_BooleanLiteral) {
 			listener.exitOC_BooleanLiteral(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_BooleanLiteral) {
 			return visitor.visitOC_BooleanLiteral(this);
 		} else {
@@ -11195,9 +11195,9 @@ export class OC_ListLiteralContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_Expression(): OC_ExpressionContext[];
@@ -11213,21 +11213,21 @@ export class OC_ListLiteralContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ListLiteral; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ListLiteral; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ListLiteral) {
 			listener.enterOC_ListLiteral(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ListLiteral) {
 			listener.exitOC_ListLiteral(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ListLiteral) {
 			return visitor.visitOC_ListLiteral(this);
 		} else {
@@ -11241,26 +11241,26 @@ export class OC_PartialComparisonExpressionContext extends ParserRuleContext {
 	public oC_AddOrSubtractExpression(): OC_AddOrSubtractExpressionContext | undefined {
 		return this.tryGetRuleContext(0, OC_AddOrSubtractExpressionContext);
 	}
-	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherParser.SP, 0); }
+	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.SP, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_PartialComparisonExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_PartialComparisonExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_PartialComparisonExpression) {
 			listener.enterOC_PartialComparisonExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_PartialComparisonExpression) {
 			listener.exitOC_PartialComparisonExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_PartialComparisonExpression) {
 			return visitor.visitOC_PartialComparisonExpression(this);
 		} else {
@@ -11278,30 +11278,30 @@ export class OC_ParenthesizedExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ParenthesizedExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ParenthesizedExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ParenthesizedExpression) {
 			listener.enterOC_ParenthesizedExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ParenthesizedExpression) {
 			listener.exitOC_ParenthesizedExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ParenthesizedExpression) {
 			return visitor.visitOC_ParenthesizedExpression(this);
 		} else {
@@ -11328,30 +11328,30 @@ export class OC_RelationshipsPatternContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_RelationshipsPattern; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_RelationshipsPattern; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_RelationshipsPattern) {
 			listener.enterOC_RelationshipsPattern(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_RelationshipsPattern) {
 			listener.exitOC_RelationshipsPattern(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_RelationshipsPattern) {
 			return visitor.visitOC_RelationshipsPattern(this);
 		} else {
@@ -11368,26 +11368,26 @@ export class OC_FilterExpressionContext extends ParserRuleContext {
 	public oC_Where(): OC_WhereContext | undefined {
 		return this.tryGetRuleContext(0, OC_WhereContext);
 	}
-	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherParser.SP, 0); }
+	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.SP, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_FilterExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_FilterExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_FilterExpression) {
 			listener.enterOC_FilterExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_FilterExpression) {
 			listener.exitOC_FilterExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_FilterExpression) {
 			return visitor.visitOC_FilterExpression(this);
 		} else {
@@ -11405,12 +11405,12 @@ export class OC_IdInCollContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
-	public IN(): TerminalNode { return this.getToken(CypherParser.IN, 0); }
+	public IN(): TerminalNode { return this.getToken(CypherScriptParser.IN, 0); }
 	public oC_Expression(): OC_ExpressionContext {
 		return this.getRuleContext(0, OC_ExpressionContext);
 	}
@@ -11418,21 +11418,21 @@ export class OC_IdInCollContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_IdInColl; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_IdInColl; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_IdInColl) {
 			listener.enterOC_IdInColl(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_IdInColl) {
 			listener.exitOC_IdInColl(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_IdInColl) {
 			return visitor.visitOC_IdInColl(this);
 		} else {
@@ -11450,12 +11450,12 @@ export class OC_FunctionInvocationContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
-	public DISTINCT(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DISTINCT, 0); }
+	public DISTINCT(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DISTINCT, 0); }
 	public oC_Expression(): OC_ExpressionContext[];
 	public oC_Expression(i: number): OC_ExpressionContext;
 	public oC_Expression(i?: number): OC_ExpressionContext | OC_ExpressionContext[] {
@@ -11469,21 +11469,21 @@ export class OC_FunctionInvocationContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_FunctionInvocation; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_FunctionInvocation; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_FunctionInvocation) {
 			listener.enterOC_FunctionInvocation(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_FunctionInvocation) {
 			listener.exitOC_FunctionInvocation(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_FunctionInvocation) {
 			return visitor.visitOC_FunctionInvocation(this);
 		} else {
@@ -11504,21 +11504,21 @@ export class OC_FunctionNameContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_FunctionName; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_FunctionName; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_FunctionName) {
 			listener.enterOC_FunctionName(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_FunctionName) {
 			listener.exitOC_FunctionName(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_FunctionName) {
 			return visitor.visitOC_FunctionName(this);
 		} else {
@@ -11529,7 +11529,7 @@ export class OC_FunctionNameContext extends ParserRuleContext {
 
 
 export class OC_ExistentialSubqueryContext extends ParserRuleContext {
-	public EXISTS(): TerminalNode { return this.getToken(CypherParser.EXISTS, 0); }
+	public EXISTS(): TerminalNode { return this.getToken(CypherScriptParser.EXISTS, 0); }
 	public oC_RegularQuery(): OC_RegularQueryContext | undefined {
 		return this.tryGetRuleContext(0, OC_RegularQueryContext);
 	}
@@ -11537,9 +11537,9 @@ export class OC_ExistentialSubqueryContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_Pattern(): OC_PatternContext | undefined {
@@ -11552,21 +11552,21 @@ export class OC_ExistentialSubqueryContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ExistentialSubquery; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ExistentialSubquery; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ExistentialSubquery) {
 			listener.enterOC_ExistentialSubquery(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ExistentialSubquery) {
 			listener.exitOC_ExistentialSubquery(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ExistentialSubquery) {
 			return visitor.visitOC_ExistentialSubquery(this);
 		} else {
@@ -11584,9 +11584,9 @@ export class OC_ExplicitProcedureInvocationContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_Expression(): OC_ExpressionContext[];
@@ -11602,21 +11602,21 @@ export class OC_ExplicitProcedureInvocationContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ExplicitProcedureInvocation; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ExplicitProcedureInvocation; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ExplicitProcedureInvocation) {
 			listener.enterOC_ExplicitProcedureInvocation(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ExplicitProcedureInvocation) {
 			listener.exitOC_ExplicitProcedureInvocation(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ExplicitProcedureInvocation) {
 			return visitor.visitOC_ExplicitProcedureInvocation(this);
 		} else {
@@ -11634,21 +11634,21 @@ export class OC_ImplicitProcedureInvocationContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ImplicitProcedureInvocation; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ImplicitProcedureInvocation; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ImplicitProcedureInvocation) {
 			listener.enterOC_ImplicitProcedureInvocation(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ImplicitProcedureInvocation) {
 			listener.exitOC_ImplicitProcedureInvocation(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ImplicitProcedureInvocation) {
 			return visitor.visitOC_ImplicitProcedureInvocation(this);
 		} else {
@@ -11666,21 +11666,21 @@ export class OC_ProcedureResultFieldContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ProcedureResultField; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ProcedureResultField; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ProcedureResultField) {
 			listener.enterOC_ProcedureResultField(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ProcedureResultField) {
 			listener.exitOC_ProcedureResultField(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ProcedureResultField) {
 			return visitor.visitOC_ProcedureResultField(this);
 		} else {
@@ -11701,21 +11701,21 @@ export class OC_ProcedureNameContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ProcedureName; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ProcedureName; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ProcedureName) {
 			listener.enterOC_ProcedureName(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ProcedureName) {
 			listener.exitOC_ProcedureName(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ProcedureName) {
 			return visitor.visitOC_ProcedureName(this);
 		} else {
@@ -11739,21 +11739,21 @@ export class OC_NamespaceContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Namespace; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Namespace; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Namespace) {
 			listener.enterOC_Namespace(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Namespace) {
 			listener.exitOC_Namespace(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Namespace) {
 			return visitor.visitOC_Namespace(this);
 		} else {
@@ -11771,9 +11771,9 @@ export class OC_ListComprehensionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_Expression(): OC_ExpressionContext | undefined {
@@ -11783,21 +11783,21 @@ export class OC_ListComprehensionContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ListComprehension; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ListComprehension; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ListComprehension) {
 			listener.enterOC_ListComprehension(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ListComprehension) {
 			listener.exitOC_ListComprehension(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ListComprehension) {
 			return visitor.visitOC_ListComprehension(this);
 		} else {
@@ -11818,9 +11818,9 @@ export class OC_PatternComprehensionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_Variable(): OC_VariableContext | undefined {
@@ -11833,21 +11833,21 @@ export class OC_PatternComprehensionContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_PatternComprehension; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_PatternComprehension; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_PatternComprehension) {
 			listener.enterOC_PatternComprehension(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_PatternComprehension) {
 			listener.exitOC_PatternComprehension(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_PatternComprehension) {
 			return visitor.visitOC_PatternComprehension(this);
 		} else {
@@ -11861,26 +11861,26 @@ export class OC_PropertyLookupContext extends ParserRuleContext {
 	public oC_PropertyKeyName(): OC_PropertyKeyNameContext | undefined {
 		return this.tryGetRuleContext(0, OC_PropertyKeyNameContext);
 	}
-	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherParser.SP, 0); }
+	public SP(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.SP, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_PropertyLookup; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_PropertyLookup; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_PropertyLookup) {
 			listener.enterOC_PropertyLookup(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_PropertyLookup) {
 			listener.exitOC_PropertyLookup(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_PropertyLookup) {
 			return visitor.visitOC_PropertyLookup(this);
 		} else {
@@ -11891,8 +11891,8 @@ export class OC_PropertyLookupContext extends ParserRuleContext {
 
 
 export class OC_CaseExpressionContext extends ParserRuleContext {
-	public END(): TerminalNode { return this.getToken(CypherParser.END, 0); }
-	public ELSE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ELSE, 0); }
+	public END(): TerminalNode { return this.getToken(CypherScriptParser.END, 0); }
+	public ELSE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ELSE, 0); }
 	public oC_Expression(): OC_ExpressionContext[];
 	public oC_Expression(i: number): OC_ExpressionContext;
 	public oC_Expression(i?: number): OC_ExpressionContext | OC_ExpressionContext[] {
@@ -11906,12 +11906,12 @@ export class OC_CaseExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
-	public CASE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.CASE, 0); }
+	public CASE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.CASE, 0); }
 	public oC_CaseAlternative(): OC_CaseAlternativeContext[];
 	public oC_CaseAlternative(i: number): OC_CaseAlternativeContext;
 	public oC_CaseAlternative(i?: number): OC_CaseAlternativeContext | OC_CaseAlternativeContext[] {
@@ -11925,21 +11925,21 @@ export class OC_CaseExpressionContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_CaseExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_CaseExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_CaseExpression) {
 			listener.enterOC_CaseExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_CaseExpression) {
 			listener.exitOC_CaseExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_CaseExpression) {
 			return visitor.visitOC_CaseExpression(this);
 		} else {
@@ -11950,7 +11950,7 @@ export class OC_CaseExpressionContext extends ParserRuleContext {
 
 
 export class OC_CaseAlternativeContext extends ParserRuleContext {
-	public WHEN(): TerminalNode { return this.getToken(CypherParser.WHEN, 0); }
+	public WHEN(): TerminalNode { return this.getToken(CypherScriptParser.WHEN, 0); }
 	public oC_Expression(): OC_ExpressionContext[];
 	public oC_Expression(i: number): OC_ExpressionContext;
 	public oC_Expression(i?: number): OC_ExpressionContext | OC_ExpressionContext[] {
@@ -11960,35 +11960,35 @@ export class OC_CaseAlternativeContext extends ParserRuleContext {
 			return this.getRuleContext(i, OC_ExpressionContext);
 		}
 	}
-	public THEN(): TerminalNode { return this.getToken(CypherParser.THEN, 0); }
+	public THEN(): TerminalNode { return this.getToken(CypherScriptParser.THEN, 0); }
 	public SP(): TerminalNode[];
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_CaseAlternative; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_CaseAlternative; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_CaseAlternative) {
 			listener.enterOC_CaseAlternative(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_CaseAlternative) {
 			listener.exitOC_CaseAlternative(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_CaseAlternative) {
 			return visitor.visitOC_CaseAlternative(this);
 		} else {
@@ -12006,21 +12006,21 @@ export class OC_VariableContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Variable; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Variable; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Variable) {
 			listener.enterOC_Variable(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Variable) {
 			listener.exitOC_Variable(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Variable) {
 			return visitor.visitOC_Variable(this);
 		} else {
@@ -12041,21 +12041,21 @@ export class OC_NumberLiteralContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_NumberLiteral; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_NumberLiteral; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_NumberLiteral) {
 			listener.enterOC_NumberLiteral(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_NumberLiteral) {
 			listener.exitOC_NumberLiteral(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_NumberLiteral) {
 			return visitor.visitOC_NumberLiteral(this);
 		} else {
@@ -12070,9 +12070,9 @@ export class OC_MapLiteralContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	public oC_PropertyKeyName(): OC_PropertyKeyNameContext[];
@@ -12097,21 +12097,21 @@ export class OC_MapLiteralContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_MapLiteral; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_MapLiteral; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_MapLiteral) {
 			listener.enterOC_MapLiteral(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_MapLiteral) {
 			listener.exitOC_MapLiteral(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_MapLiteral) {
 			return visitor.visitOC_MapLiteral(this);
 		} else {
@@ -12125,26 +12125,26 @@ export class OC_ParameterContext extends ParserRuleContext {
 	public oC_SymbolicName(): OC_SymbolicNameContext | undefined {
 		return this.tryGetRuleContext(0, OC_SymbolicNameContext);
 	}
-	public DecimalInteger(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DecimalInteger, 0); }
+	public DecimalInteger(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DecimalInteger, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Parameter; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Parameter; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Parameter) {
 			listener.enterOC_Parameter(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Parameter) {
 			listener.exitOC_Parameter(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Parameter) {
 			return visitor.visitOC_Parameter(this);
 		} else {
@@ -12171,30 +12171,30 @@ export class OC_PropertyExpressionContext extends ParserRuleContext {
 	public SP(i: number): TerminalNode;
 	public SP(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(CypherParser.SP);
+			return this.getTokens(CypherScriptParser.SP);
 		} else {
-			return this.getToken(CypherParser.SP, i);
+			return this.getToken(CypherScriptParser.SP, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_PropertyExpression; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_PropertyExpression; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_PropertyExpression) {
 			listener.enterOC_PropertyExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_PropertyExpression) {
 			listener.exitOC_PropertyExpression(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_PropertyExpression) {
 			return visitor.visitOC_PropertyExpression(this);
 		} else {
@@ -12212,21 +12212,21 @@ export class OC_PropertyKeyNameContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_PropertyKeyName; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_PropertyKeyName; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_PropertyKeyName) {
 			listener.enterOC_PropertyKeyName(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_PropertyKeyName) {
 			listener.exitOC_PropertyKeyName(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_PropertyKeyName) {
 			return visitor.visitOC_PropertyKeyName(this);
 		} else {
@@ -12237,28 +12237,28 @@ export class OC_PropertyKeyNameContext extends ParserRuleContext {
 
 
 export class OC_IntegerLiteralContext extends ParserRuleContext {
-	public HexInteger(): TerminalNode | undefined { return this.tryGetToken(CypherParser.HexInteger, 0); }
-	public OctalInteger(): TerminalNode | undefined { return this.tryGetToken(CypherParser.OctalInteger, 0); }
-	public DecimalInteger(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DecimalInteger, 0); }
+	public HexInteger(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.HexInteger, 0); }
+	public OctalInteger(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.OctalInteger, 0); }
+	public DecimalInteger(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DecimalInteger, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_IntegerLiteral; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_IntegerLiteral; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_IntegerLiteral) {
 			listener.enterOC_IntegerLiteral(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_IntegerLiteral) {
 			listener.exitOC_IntegerLiteral(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_IntegerLiteral) {
 			return visitor.visitOC_IntegerLiteral(this);
 		} else {
@@ -12269,27 +12269,27 @@ export class OC_IntegerLiteralContext extends ParserRuleContext {
 
 
 export class OC_DoubleLiteralContext extends ParserRuleContext {
-	public ExponentDecimalReal(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ExponentDecimalReal, 0); }
-	public RegularDecimalReal(): TerminalNode | undefined { return this.tryGetToken(CypherParser.RegularDecimalReal, 0); }
+	public ExponentDecimalReal(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ExponentDecimalReal, 0); }
+	public RegularDecimalReal(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.RegularDecimalReal, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_DoubleLiteral; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_DoubleLiteral; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_DoubleLiteral) {
 			listener.enterOC_DoubleLiteral(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_DoubleLiteral) {
 			listener.exitOC_DoubleLiteral(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_DoubleLiteral) {
 			return visitor.visitOC_DoubleLiteral(this);
 		} else {
@@ -12310,21 +12310,21 @@ export class OC_SchemaNameContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_SchemaName; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_SchemaName; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_SchemaName) {
 			listener.enterOC_SchemaName(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_SchemaName) {
 			listener.exitOC_SchemaName(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_SchemaName) {
 			return visitor.visitOC_SchemaName(this);
 		} else {
@@ -12335,78 +12335,78 @@ export class OC_SchemaNameContext extends ParserRuleContext {
 
 
 export class OC_ReservedWordContext extends ParserRuleContext {
-	public ALL(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ALL, 0); }
-	public ASC(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ASC, 0); }
-	public ASCENDING(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ASCENDING, 0); }
-	public BY(): TerminalNode | undefined { return this.tryGetToken(CypherParser.BY, 0); }
-	public CREATE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.CREATE, 0); }
-	public DELETE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DELETE, 0); }
-	public DESC(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DESC, 0); }
-	public DESCENDING(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DESCENDING, 0); }
-	public DETACH(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DETACH, 0); }
-	public EXISTS(): TerminalNode | undefined { return this.tryGetToken(CypherParser.EXISTS, 0); }
-	public LIMIT(): TerminalNode | undefined { return this.tryGetToken(CypherParser.LIMIT, 0); }
-	public MATCH(): TerminalNode | undefined { return this.tryGetToken(CypherParser.MATCH, 0); }
-	public MERGE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.MERGE, 0); }
-	public ON(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ON, 0); }
-	public OPTIONAL(): TerminalNode | undefined { return this.tryGetToken(CypherParser.OPTIONAL, 0); }
-	public ORDER(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ORDER, 0); }
-	public REMOVE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.REMOVE, 0); }
-	public RETURN(): TerminalNode | undefined { return this.tryGetToken(CypherParser.RETURN, 0); }
-	public SET(): TerminalNode | undefined { return this.tryGetToken(CypherParser.SET, 0); }
-	public L_SKIP(): TerminalNode | undefined { return this.tryGetToken(CypherParser.L_SKIP, 0); }
-	public WHERE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.WHERE, 0); }
-	public WITH(): TerminalNode | undefined { return this.tryGetToken(CypherParser.WITH, 0); }
-	public UNION(): TerminalNode | undefined { return this.tryGetToken(CypherParser.UNION, 0); }
-	public UNWIND(): TerminalNode | undefined { return this.tryGetToken(CypherParser.UNWIND, 0); }
-	public AND(): TerminalNode | undefined { return this.tryGetToken(CypherParser.AND, 0); }
-	public AS(): TerminalNode | undefined { return this.tryGetToken(CypherParser.AS, 0); }
-	public CONTAINS(): TerminalNode | undefined { return this.tryGetToken(CypherParser.CONTAINS, 0); }
-	public DISTINCT(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DISTINCT, 0); }
-	public ENDS(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ENDS, 0); }
-	public IN(): TerminalNode | undefined { return this.tryGetToken(CypherParser.IN, 0); }
-	public IS(): TerminalNode | undefined { return this.tryGetToken(CypherParser.IS, 0); }
-	public NOT(): TerminalNode | undefined { return this.tryGetToken(CypherParser.NOT, 0); }
-	public OR(): TerminalNode | undefined { return this.tryGetToken(CypherParser.OR, 0); }
-	public STARTS(): TerminalNode | undefined { return this.tryGetToken(CypherParser.STARTS, 0); }
-	public XOR(): TerminalNode | undefined { return this.tryGetToken(CypherParser.XOR, 0); }
-	public FALSE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.FALSE, 0); }
-	public TRUE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.TRUE, 0); }
-	public NULL(): TerminalNode | undefined { return this.tryGetToken(CypherParser.NULL, 0); }
-	public CONSTRAINT(): TerminalNode | undefined { return this.tryGetToken(CypherParser.CONSTRAINT, 0); }
-	public DO(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DO, 0); }
-	public FOR(): TerminalNode | undefined { return this.tryGetToken(CypherParser.FOR, 0); }
-	public REQUIRE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.REQUIRE, 0); }
-	public UNIQUE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.UNIQUE, 0); }
-	public CASE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.CASE, 0); }
-	public WHEN(): TerminalNode | undefined { return this.tryGetToken(CypherParser.WHEN, 0); }
-	public THEN(): TerminalNode | undefined { return this.tryGetToken(CypherParser.THEN, 0); }
-	public ELSE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ELSE, 0); }
-	public END(): TerminalNode | undefined { return this.tryGetToken(CypherParser.END, 0); }
-	public MANDATORY(): TerminalNode | undefined { return this.tryGetToken(CypherParser.MANDATORY, 0); }
-	public SCALAR(): TerminalNode | undefined { return this.tryGetToken(CypherParser.SCALAR, 0); }
-	public OF(): TerminalNode | undefined { return this.tryGetToken(CypherParser.OF, 0); }
-	public ADD(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ADD, 0); }
-	public DROP(): TerminalNode | undefined { return this.tryGetToken(CypherParser.DROP, 0); }
+	public ALL(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ALL, 0); }
+	public ASC(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ASC, 0); }
+	public ASCENDING(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ASCENDING, 0); }
+	public BY(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.BY, 0); }
+	public CREATE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.CREATE, 0); }
+	public DELETE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DELETE, 0); }
+	public DESC(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DESC, 0); }
+	public DESCENDING(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DESCENDING, 0); }
+	public DETACH(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DETACH, 0); }
+	public EXISTS(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.EXISTS, 0); }
+	public LIMIT(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.LIMIT, 0); }
+	public MATCH(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.MATCH, 0); }
+	public MERGE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.MERGE, 0); }
+	public ON(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ON, 0); }
+	public OPTIONAL(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.OPTIONAL, 0); }
+	public ORDER(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ORDER, 0); }
+	public REMOVE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.REMOVE, 0); }
+	public RETURN(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.RETURN, 0); }
+	public SET(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.SET, 0); }
+	public L_SKIP(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.L_SKIP, 0); }
+	public WHERE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.WHERE, 0); }
+	public WITH(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.WITH, 0); }
+	public UNION(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.UNION, 0); }
+	public UNWIND(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.UNWIND, 0); }
+	public AND(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.AND, 0); }
+	public AS(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.AS, 0); }
+	public CONTAINS(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.CONTAINS, 0); }
+	public DISTINCT(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DISTINCT, 0); }
+	public ENDS(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ENDS, 0); }
+	public IN(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.IN, 0); }
+	public IS(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.IS, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.NOT, 0); }
+	public OR(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.OR, 0); }
+	public STARTS(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.STARTS, 0); }
+	public XOR(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.XOR, 0); }
+	public FALSE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.FALSE, 0); }
+	public TRUE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.TRUE, 0); }
+	public NULL(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.NULL, 0); }
+	public CONSTRAINT(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.CONSTRAINT, 0); }
+	public DO(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DO, 0); }
+	public FOR(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.FOR, 0); }
+	public REQUIRE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.REQUIRE, 0); }
+	public UNIQUE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.UNIQUE, 0); }
+	public CASE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.CASE, 0); }
+	public WHEN(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.WHEN, 0); }
+	public THEN(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.THEN, 0); }
+	public ELSE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ELSE, 0); }
+	public END(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.END, 0); }
+	public MANDATORY(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.MANDATORY, 0); }
+	public SCALAR(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.SCALAR, 0); }
+	public OF(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.OF, 0); }
+	public ADD(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ADD, 0); }
+	public DROP(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.DROP, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_ReservedWord; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_ReservedWord; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_ReservedWord) {
 			listener.enterOC_ReservedWord(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_ReservedWord) {
 			listener.exitOC_ReservedWord(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_ReservedWord) {
 			return visitor.visitOC_ReservedWord(this);
 		} else {
@@ -12417,34 +12417,34 @@ export class OC_ReservedWordContext extends ParserRuleContext {
 
 
 export class OC_SymbolicNameContext extends ParserRuleContext {
-	public UnescapedSymbolicName(): TerminalNode | undefined { return this.tryGetToken(CypherParser.UnescapedSymbolicName, 0); }
-	public EscapedSymbolicName(): TerminalNode | undefined { return this.tryGetToken(CypherParser.EscapedSymbolicName, 0); }
-	public HexLetter(): TerminalNode | undefined { return this.tryGetToken(CypherParser.HexLetter, 0); }
-	public COUNT(): TerminalNode | undefined { return this.tryGetToken(CypherParser.COUNT, 0); }
-	public FILTER(): TerminalNode | undefined { return this.tryGetToken(CypherParser.FILTER, 0); }
-	public EXTRACT(): TerminalNode | undefined { return this.tryGetToken(CypherParser.EXTRACT, 0); }
-	public ANY(): TerminalNode | undefined { return this.tryGetToken(CypherParser.ANY, 0); }
-	public NONE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.NONE, 0); }
-	public SINGLE(): TerminalNode | undefined { return this.tryGetToken(CypherParser.SINGLE, 0); }
+	public UnescapedSymbolicName(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.UnescapedSymbolicName, 0); }
+	public EscapedSymbolicName(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.EscapedSymbolicName, 0); }
+	public HexLetter(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.HexLetter, 0); }
+	public COUNT(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.COUNT, 0); }
+	public FILTER(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.FILTER, 0); }
+	public EXTRACT(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.EXTRACT, 0); }
+	public ANY(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.ANY, 0); }
+	public NONE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.NONE, 0); }
+	public SINGLE(): TerminalNode | undefined { return this.tryGetToken(CypherScriptParser.SINGLE, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_SymbolicName; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_SymbolicName; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_SymbolicName) {
 			listener.enterOC_SymbolicName(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_SymbolicName) {
 			listener.exitOC_SymbolicName(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_SymbolicName) {
 			return visitor.visitOC_SymbolicName(this);
 		} else {
@@ -12459,21 +12459,21 @@ export class OC_LeftArrowHeadContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_LeftArrowHead; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_LeftArrowHead; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_LeftArrowHead) {
 			listener.enterOC_LeftArrowHead(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_LeftArrowHead) {
 			listener.exitOC_LeftArrowHead(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_LeftArrowHead) {
 			return visitor.visitOC_LeftArrowHead(this);
 		} else {
@@ -12488,21 +12488,21 @@ export class OC_RightArrowHeadContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_RightArrowHead; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_RightArrowHead; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_RightArrowHead) {
 			listener.enterOC_RightArrowHead(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_RightArrowHead) {
 			listener.exitOC_RightArrowHead(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_RightArrowHead) {
 			return visitor.visitOC_RightArrowHead(this);
 		} else {
@@ -12517,21 +12517,21 @@ export class OC_DashContext extends ParserRuleContext {
 		super(parent, invokingState);
 	}
 	// @Override
-	public get ruleIndex(): number { return CypherParser.RULE_oC_Dash; }
+	public get ruleIndex(): number { return CypherScriptParser.RULE_oC_Dash; }
 	// @Override
-	public enterRule(listener: CypherListener): void {
+	public enterRule(listener: CypherScriptListener): void {
 		if (listener.enterOC_Dash) {
 			listener.enterOC_Dash(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: CypherListener): void {
+	public exitRule(listener: CypherScriptListener): void {
 		if (listener.exitOC_Dash) {
 			listener.exitOC_Dash(this);
 		}
 	}
 	// @Override
-	public accept<Result>(visitor: CypherVisitor<Result>): Result {
+	public accept<Result>(visitor: CypherScriptVisitor<Result>): Result {
 		if (visitor.visitOC_Dash) {
 			return visitor.visitOC_Dash(this);
 		} else {

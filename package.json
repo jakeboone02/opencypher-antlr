@@ -17,6 +17,6 @@
     "build": "tsc",
     "start": "node dist > out/results.txt",
     "reset": "yarn build && yarn start",
-    "gen-parser": "antlr4ts -visitor src/antlr/Cypher.g4 -o ."
+    "gen-parser": "antlr4ts -visitor src/antlr/CypherScript.g4 -o ."
   }
 }

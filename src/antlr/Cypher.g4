@@ -28,10 +28,7 @@
 grammar Cypher;
 
 oC_Cypher
-      :  SP? oC_Statement ( SP? ';' )? SP? EOF
-         // The next line is the only deviation from the official grammar.
-         // It allows multiple statements, as long as they are separated by semicolons.
-         | SP? oC_Statement ( SP? ';' SP? oC_Statement )* ( SP? ';' )? SP? EOF ;
+      :  SP? oC_Statement ( SP? ';' )? SP? EOF ;
 
 oC_Statement
          :  oC_Query ;
