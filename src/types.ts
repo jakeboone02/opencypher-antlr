@@ -180,7 +180,8 @@ export interface AnonymousPatternPart extends ASTNode {
 export interface PatternElement extends ASTNode {
   type: "PatternElement";
   parens?: boolean;
-  // TODO
+  left: NodePattern;
+  relationships: PatternElementChain;
 }
 export interface NodePattern extends ASTNode {
   type: "NodePattern";
@@ -190,9 +191,10 @@ export interface NodePattern extends ASTNode {
 }
 export interface PatternElementChain extends ASTNode {
   type: "PatternElementChain";
-  // TODO: this might not be right
-  relationship: RelationshipPattern;
-  node: NodePattern;
+  value: [
+    [RelationshipPattern, NodePattern],
+    ...[RelationshipPattern, NodePattern][]
+  ];
 }
 export interface RelationshipPattern extends ASTNode {
   type: "RelationshipPattern";
@@ -215,11 +217,7 @@ export interface Properties extends ASTNode {
 }
 export interface RelationshipTypes extends ASTNode {
   type: "RelationshipTypes";
-  // TODO: may not need the `true` bit here
-  names: [
-    RelationshipType & { precedingSemicolon: true },
-    ...RelationshipType[]
-  ];
+  names: [RelationshipType, ...RelationshipType[]];
 }
 export interface RelationshipType extends ASTNode {
   type: "RelationshipType";
@@ -376,15 +374,22 @@ export interface PartialComparisonExpression extends ASTNode {
 }
 export interface ParenthesizedExpression extends ASTNode {
   type: "ParenthesizedExpression";
+  value: Expression;
 }
 export interface RelationshipsPattern extends ASTNode {
   type: "RelationshipsPattern";
+  left: NodePattern;
+  right?: PatternElementChain;
 }
 export interface FilterExpression extends ASTNode {
   type: "FilterExpression";
+  value: IdInColl;
+  where?: Where;
 }
 export interface IdInColl extends ASTNode {
   type: "IdInColl";
+  variable: Variable;
+  expression: Expression;
 }
 export interface FunctionInvocation extends ASTNode {
   type: "FunctionInvocation";
@@ -394,10 +399,14 @@ export interface FunctionInvocation extends ASTNode {
 }
 export interface FunctionName extends ASTNode {
   type: "FunctionName";
-  names: [SymbolicName, ...SymbolicName[]]; // names.join('.')
+  names: [Namespace, ...SymbolicName[]]; // names.map(n => n.text).join('.')
 }
 export interface ExistentialSubquery extends ASTNode {
   type: "ExistentialSubquery";
+  // `query` and `pattern` are mutually exclusive
+  query?: RegularQuery;
+  pattern?: Pattern;
+  where?: Where; // optionally exists only if `pattern` is present
 }
 export interface ExplicitProcedureInvocation extends ASTNode {
   type: "ExplicitProcedureInvocation";
@@ -413,10 +422,11 @@ export interface ProcedureResultField extends ASTNode {
 }
 export interface ProcedureName extends ASTNode {
   type: "ProcedureName";
-  names: [SymbolicName, ...SymbolicName[]]; // names.join('.')
+  names: [Namespace, ...SymbolicName[]]; // names.join('.')
 }
 export interface Namespace extends ASTNode {
   type: "Namespace";
+  value: SymbolicName;
 }
 export interface ListComprehension extends ASTNode {
   type: "ListComprehension";
@@ -425,6 +435,10 @@ export interface ListComprehension extends ASTNode {
 }
 export interface PatternComprehension extends ASTNode {
   type: "PatternComprehension";
+  variable?: Variable;
+  relationships: RelationshipsPattern;
+  where?: Where;
+  expression: Expression;
 }
 export interface PropertyLookup extends ASTNode {
   type: "PropertyLookup";
@@ -432,12 +446,18 @@ export interface PropertyLookup extends ASTNode {
 }
 export interface CaseExpression extends ASTNode {
   type: "CaseExpression";
+  expression?: Expression;
+  alternatives?: CaseAlternative[];
+  else?: Expression;
 }
 export interface CaseAlternative extends ASTNode {
   type: "CaseAlternative";
+  when: Expression;
+  then: Expression;
 }
 export interface Variable extends ASTNode {
   type: "Variable";
+  value: SymbolicName;
 }
 export interface NumberLiteral extends ASTNode {
   type: "NumberLiteral";
@@ -449,9 +469,12 @@ export interface MapLiteral extends ASTNode {
 }
 export interface Parameter extends ASTNode {
   type: "Parameter";
+  value: SymbolicName | DecimalInteger;
 }
 export interface PropertyExpression extends ASTNode {
   type: "PropertyExpression";
+  value: Atom;
+  properties?: PropertyLookup[];
 }
 export interface PropertyKeyName extends ASTNode {
   type: "PropertyKeyName";
