@@ -1,0 +1,9 @@
+<html><head><title>NodePattern</title><meta charset="UTF-8"></meta></head><body><h1>NodePattern</h1><object data="NodePattern.svg" type="image/svg+xml"></object><h2>EBNF</h2><pre><code>NodePattern = <a href="http://unicode.org/cldr/utility/list-unicodeset.jsp?abb=on&esc=on&a=%5B%5Cu0028%5D">'('</a>, [<a href="whitespace.html">SP</a>], [<a href="#Variable">Variable</a>, [<a href="whitespace.html">SP</a>]], [<a href="#NodeLabels">NodeLabels</a>, [<a href="whitespace.html">SP</a>]], [<a href="#Properties">Properties</a>, [<a href="whitespace.html">SP</a>]], <a href="http://unicode.org/cldr/utility/list-unicodeset.jsp?abb=on&esc=on&a=%5B%5Cu0029%5D">')'</a> ;
+</code></pre><a name="Variable"></a><pre><code>Variable = <a href="SymbolicName.html">SymbolicName</a> ;
+</code></pre><a name="NodeLabels"></a><pre><code>NodeLabels = <a href="#NodeLabel">NodeLabel</a>, { [<a href="whitespace.html">SP</a>], <a href="#NodeLabel">NodeLabel</a> } ;
+</code></pre><a name="NodeLabel"></a><pre><code>NodeLabel = <a href="http://unicode.org/cldr/utility/list-unicodeset.jsp?abb=on&esc=on&a=%5B%5Cu003A%5D">':'</a>, [<a href="whitespace.html">SP</a>], <a href="#LabelName">LabelName</a> ;
+</code></pre><a name="LabelName"></a><pre><code>LabelName = <a href="SchemaName.html">SchemaName</a> ;
+</code></pre><a name="Properties"></a><pre><code>Properties = <a href="MapLiteral.html">MapLiteral</a>
+           | <a href="Parameter.html">Parameter</a>
+           ;
+</code></pre><h2>Referenced from</h2><ul><li><a href="PatternElement.html">PatternElement</a></li><li><a href="PatternComprehension.html">PatternComprehension</a></li><li><a href="Atom.html">Atom</a></li></ul></body></html>

@@ -1,0 +1,5 @@
+<html><head><title>PatternElement</title><meta charset="UTF-8"></meta></head><body><h1>PatternElement</h1><object data="PatternElement.svg" type="image/svg+xml"></object><h2>EBNF</h2><pre><code>PatternElement = (<a href="NodePattern.html">NodePattern</a>, { [<a href="whitespace.html">SP</a>], <a href="#PatternElementChain">PatternElementChain</a> })
+               | (<a href="http://unicode.org/cldr/utility/list-unicodeset.jsp?abb=on&esc=on&a=%5B%5Cu0028%5D">'('</a>, <a href="PatternElement.html">PatternElement</a>, <a href="http://unicode.org/cldr/utility/list-unicodeset.jsp?abb=on&esc=on&a=%5B%5Cu0029%5D">')'</a>)
+               ;
+</code></pre><a name="PatternElementChain"></a><pre><code>PatternElementChain = <a href="RelationshipPattern.html">RelationshipPattern</a>, [<a href="whitespace.html">SP</a>], <a href="NodePattern.html">NodePattern</a> ;
+</code></pre><h2>Referenced from</h2><ul><li><a href="Pattern.html">Pattern</a></li><li><a href="Merge.html">Merge</a></li><li><a href="PatternElement.html">PatternElement</a></li></ul></body></html>

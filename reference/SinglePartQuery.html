@@ -1,0 +1,14 @@
+<html><head><title>SinglePartQuery</title><meta charset="UTF-8"></meta></head><body><h1>SinglePartQuery</h1><object data="SinglePartQuery.svg" type="image/svg+xml"></object><h2>EBNF</h2><pre><code>SinglePartQuery = ({ <a href="#ReadingClause">ReadingClause</a>, [<a href="whitespace.html">SP</a>] }, <a href="Return.html">Return</a>)
+                | ({ <a href="#ReadingClause">ReadingClause</a>, [<a href="whitespace.html">SP</a>] }, <a href="#UpdatingClause">UpdatingClause</a>, { [<a href="whitespace.html">SP</a>], <a href="#UpdatingClause">UpdatingClause</a> }, [[<a href="whitespace.html">SP</a>], <a href="Return.html">Return</a>])
+                ;
+</code></pre><a name="ReadingClause"></a><pre><code>ReadingClause = <a href="Match.html">Match</a>
+              | <a href="Unwind.html">Unwind</a>
+              | <a href="InQueryCall.html">InQueryCall</a>
+              ;
+</code></pre><a name="UpdatingClause"></a><pre><code>UpdatingClause = <a href="Create.html">Create</a>
+               | <a href="Merge.html">Merge</a>
+               | <a href="Delete.html">Delete</a>
+               | <a href="Set.html">Set</a>
+               | <a href="Remove.html">Remove</a>
+               ;
+</code></pre><h2>Referenced from</h2><ul><li><a href="ExistentialSubquery.html">ExistentialSubquery</a></li><li><a href="Cypher.html">Cypher</a></li><li><a href="MultiPartQuery.html">MultiPartQuery</a></li></ul></body></html>

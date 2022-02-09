@@ -1,0 +1,12 @@
+<html><head><title>MultiPartQuery</title><meta charset="UTF-8"></meta></head><body><h1>MultiPartQuery</h1><object data="MultiPartQuery.svg" type="image/svg+xml"></object><h2>EBNF</h2><pre><code>MultiPartQuery = { { <a href="#ReadingClause">ReadingClause</a>, [<a href="whitespace.html">SP</a>] }, { <a href="#UpdatingClause">UpdatingClause</a>, [<a href="whitespace.html">SP</a>] }, <a href="With.html">With</a>, [<a href="whitespace.html">SP</a>] }-, <a href="SinglePartQuery.html">SinglePartQuery</a> ;
+</code></pre><a name="ReadingClause"></a><pre><code>ReadingClause = <a href="Match.html">Match</a>
+              | <a href="Unwind.html">Unwind</a>
+              | <a href="InQueryCall.html">InQueryCall</a>
+              ;
+</code></pre><a name="UpdatingClause"></a><pre><code>UpdatingClause = <a href="Create.html">Create</a>
+               | <a href="Merge.html">Merge</a>
+               | <a href="Delete.html">Delete</a>
+               | <a href="Set.html">Set</a>
+               | <a href="Remove.html">Remove</a>
+               ;
+</code></pre><h2>Referenced from</h2><ul><li><a href="ExistentialSubquery.html">ExistentialSubquery</a></li><li><a href="Cypher.html">Cypher</a></li></ul></body></html>

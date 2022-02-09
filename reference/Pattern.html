@@ -1,0 +1,7 @@
+<html><head><title>Pattern</title><meta charset="UTF-8"></meta></head><body><h1>Pattern</h1><object data="Pattern.svg" type="image/svg+xml"></object><h2>EBNF</h2><pre><code>Pattern = <a href="#PatternPart">PatternPart</a>, { [<a href="whitespace.html">SP</a>], <a href="http://unicode.org/cldr/utility/list-unicodeset.jsp?abb=on&esc=on&a=%5B%5Cu002C%5D">','</a>, [<a href="whitespace.html">SP</a>], <a href="#PatternPart">PatternPart</a> } ;
+</code></pre><a name="PatternPart"></a><pre><code>PatternPart = (<a href="#Variable">Variable</a>, [<a href="whitespace.html">SP</a>], <a href="http://unicode.org/cldr/utility/list-unicodeset.jsp?abb=on&esc=on&a=%5B%5Cu003D%5D">'='</a>, [<a href="whitespace.html">SP</a>], <a href="#AnonymousPatternPart">AnonymousPatternPart</a>)
+            | <a href="#AnonymousPatternPart">AnonymousPatternPart</a>
+            ;
+</code></pre><a name="Variable"></a><pre><code>Variable = <a href="SymbolicName.html">SymbolicName</a> ;
+</code></pre><a name="AnonymousPatternPart"></a><pre><code>AnonymousPatternPart = <a href="PatternElement.html">PatternElement</a> ;
+</code></pre><h2>Referenced from</h2><ul><li><a href="ExistentialSubquery.html">ExistentialSubquery</a></li><li><a href="Create.html">Create</a></li><li><a href="Match.html">Match</a></li></ul></body></html>
